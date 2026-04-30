@@ -3,135 +3,133 @@ new-page: true
 is-special: true
 go-to: menu
 
-= Library
+= Indeks
 
-Herein contains relevant information about revolutionary Russia in 1917.
+Tu zawarte są istotne informacje na temat rewolucyjnej Rosji roku 1917.
 
 @menu
 
-- @government: The structure of the Provisional Government
-- @timeline: Timeline of recent Russian history
-- @soviet_: Details of the Petrograd Soviet
-- @demographics: Demographics
-- @parties: Parties
-- @economy: Economics
-- @paramilitaries: Defense and military affairs
-- @factions: Internal factions
-- @figures: Figures and charts
-- @backSpecialScene: Exit library.
+- @government: Struktura Rządu Tymczasowego
+- @timeline: Istotne wydarzenia z niedawnej historii Rosji
+- @soviet_: Szczegóły Piotrogrodzkiego Sowietu
+- @demographics: Demografia
+- @parties: Partie
+- @economy: Gospodarka
+- @paramilitaries: Obronność i sprawy armii
+- @factions: Frakcje wewnętrzne
+- @figures: Liczby i wykresy
+- @backSpecialScene: Zamknij indeks.
 
 @government
 go-to: menu
 
-= The Provisional Government
+= Rząd Tymczasowy
 
-With the abdication of the Tsar, power in Russia has been transferred to the Provisional Government, comprised primarily of liberal members of the Duma and led by Prince Georgy Lvov, a reformist noble. The government has already been recognized by the powers of the Entente.
+Po abdykacji cara władza w Rosji przeszła w ręce Rządu Tymczasowego, złożonego przede wszystkim z liberalnych członków Dumy i przewodzonego przez księcia Gieorgija Lwowa, reformistycznego arystokraty. Rząd ten został już uznany za prawowity przez Ententę.
 
-The leaders of the Provisional Government see its role as continuing to persecute the war and maintaining stability until an elected Constituent Assembly is ready to decide Russia's final form of government.
+Przodujący członkowie Rządu Tymczasowego uznają za swój obowiązek dalsze prowadzenie wojny i utrzymanie stabilności państwa dopóki ogólnie wybrane Zgromadzenie Ustawodawcze nie będzie gotowe by zadecydować o ostatecznej formie rządów w Rosji.
 
-[? if m_in_gov or sr_in_gov: Recently, socialist parties have joined the Provisional Government as a way to shore up its stability. ?]
+[? if m_in_gov or sr_in_gov: Ostatnimi czasy, partie socjalistyczne dołączyły do Rządu Tymczasowego by zwiększyć jego stabilność. ?]
 
-Prime Minister: [+ prime_minister +] ([+ prime_minister_party +])
+Premier: [+ prime_minister +] ([+ prime_minister_party +])
 
-Interior Minister: [+ interior_minister +] ([+ interior_minister_party +])
+Minister Spraw Wewnętrznych: [+ interior_minister +] ([+ interior_minister_party +])
 
-Foreign Minister: [+ foreign_minister +] ([+ foreign_minister_party +])
+Minister Spraw Zagranicznych: [+ foreign_minister +] ([+ foreign_minister_party +])
 
-War Minister: [+ war_minister +] ([+ war_minister_party +])
+Minister Wojny: [+ war_minister +] ([+ war_minister_party +])
 
-Finance Minister: [+ finance_minister +] ([+ finance_minister_party +])
+Minister Finansów: [+ finance_minister +] ([+ finance_minister_party +])
 
-Justice Minister: [+ justice_minister +] ([+ justice_minister_party +])
+Minister Sprawiedliwości: [+ justice_minister +] ([+ justice_minister_party +])
 
-Agriculture Minister: [+ agriculture_minister +] ([+ agriculture_minister_party +])
+Minister Rolnictwa: [+ agriculture_minister +] ([+ agriculture_minister_party +])
 
-Transport Minister: [+ transport_minister +] ([+ transport_minister_party +])
+Minister Transportu: [+ transport_minister +] ([+ transport_minister_party +])
 
-Industry and Trade Minister: [+ trade_minister +] ([+ trade_minister_party +])
+Minister Przemysłu i Handlu: [+ trade_minister +] ([+ trade_minister_party +])
 
-Education Minister: [+ education_minister +] ([+ education_minister_party +])
+Minister Edukacji: [+ education_minister +] ([+ education_minister_party +])
 
-[? if post_minister: Posts and Telegraph Minister: [+ post_minister +] ([+ post_minister_party +]) ?]
+[? if post_minister: Minister Poczty i Telegrafów: [+ post_minister +] ([+ post_minister_party +]) ?]
 
-[? if labor_minister: Labor Minister: [+ labor_minister +] ([+ labor_minister_party +]) ?]
+[? if labor_minister: Minister Pracy: [+ labor_minister +] ([+ labor_minister_party +]) ?]
 
-Provisional government efficacy: [+ prov_gov_efficacy : efficacy +]
+Wydajność Rządu: [+ prov_gov_efficacy : efficacy +]
 
-Provisional government legitimacy: [+ prov_gov_legitimacy : legitimacy +]
+Legitymizacja Rządu: [+ prov_gov_legitimacy : legitimacy +]
 
 @soviet_
 go-to: menu
 
-= Petrograd Soviet
+= Piotrogrodzki Sowiet (Piotrogrodzka Rada)
 
-The Petrograd Soviet of Workers' and Soldiers' Deputies is an elected council comprised of representatives of workers and soldiers throughout the city. Organized in the wake of the general strike and the breakdown of the established order, it harkens back to the Petrograd Soviet of 1905, which functioned as an alternative government in the city during the revolution of that year.
+Piotrogrodzka Rada Delegatów Robotniczych i Żołnierskich (tu nazywana krótko Piotrogrodzkim Sowietem) jest wybieranym zgromadzeniem reprezentantów robotników i żołnierzy z całego miasta. Zorganizowana w następstwie strajku generalnego i upadku istniejącego systemu, odwołuje się do Piotrogrodzkiej Rady Delegatów Robotniczych z roku 1905, która funkcjonowała jako opozycyjna siedziba władz miejskich w trakcie rewolucji tegoż roku.
 
-The leaders of the Soviet were mostly Social Democrat and SR intellectuals who organized an Executive Committee, and elected the Menshevik Nikolai Chkheidze as the chairman. They see its role as acting as a watchdog over the Provisional Government, accepting its authority insofar as it does not contradict the directives of the Soviet.
+Radzie przewodzili przede wszystkim socjaldemokratyczni i eserowscy intelektualiści, którzy powołali Komitet Wykonawczy i obrali Mienszewika Nikoloza Czcheidze przewodniczącym. W ich oczach Rada ma nadzorować działania Rządu Tymczasowego, akceptując jego autorytet dopóki, dopóty nie sprzeciwia się decyzjom samej Rady.
 
-Chair: [+ soviet_chair +] ([+ soviet_chair_party +])
+Przewodniczący: [+ soviet_chair +] ([+ soviet_chair_party +])
 
-Executive committee: [? if m_in_exco: Mensheviks, ?] [? if sr_in_exco: SRs ?] [? if b_in_exco: Bolsheviks ?]
+Komitet wykonawczy: [? if m_in_exco: Mienszewicy, ?] [? if sr_in_exco: Eserzy ?] [? if b_in_exco: Bolszewicy ?]
 
-Overal composition:
+Kompozycja:
 
-Mensheviks: [+ m_soviet +] %
+Mienszewicy: [+ m_soviet +] %
 
-Bolsheviks: [+ b_soviet +] %
+Bolszewicy: [+ b_soviet +] %
 
-SRs: [+ sr_soviet +] %
+Eserzy: [+ sr_soviet +] %
 
-Anarchists: [+ anarchist_soviet +] %
+Anarchiści: [+ anarchist_soviet +] %
 
-Others: [+ other_soviet +] %
+Inni: [+ other_soviet +] %
 
-Soviet efficacy: [+ soviet_efficacy : efficacy +]
+Wydajność Sowietu: [+ soviet_efficacy : efficacy +]
 
-Soviet cooperation with Provisional Government: [+ soviet_cooperation : efficacy +]
-
-
+Kooperacja Sowietu i Rządu Tymczasowego: [+ soviet_cooperation : efficacy +]
 
 
 @timeline
 go-to: menu
 
-= Timeline of recent Russian history
+= Ważne wydarzenia z niedawnej historii Rosji
 
 # What is to be done? Land and Liberty, People's Will
 # Emancipation of the serfs
-**1861**: Tsar Alexander II decrees the emancipation of the serfs. However, the former serfs are still ridden by debts and poverty, as they had to pay redemption taxes to buy their freedom from the nobles.
+**1861**: Car Aleksander II wydaje reformę uwłaszczeniową. Wyzwoleni chłopi pańszczyźniani wciąż są jednak przytloczeni biedą i długami, które powstały podczas płacenia podatków wymaganych dla uzyskania wolności od ich panów.
 
-#**1863**: The novel *What Is to Be Done?* by Nikolay Chernyshevsky is published, becoming the inspiration for a generation of revolutionaries.
+#**1863**: Nikołaj Czernyszewski wydaje powieść *Co robić?*. Staje się ona inspiracją dla pokolenia rewolucjonistów
 
-**1860s-70s**: The ideology of *narodism*, or populism, is developed from various strands of non-Marxist socialist and anarchist thought. This ideology sees the Russian peasants as the protagonists of the future revolution, in contrast to Marxism which sees the urban proletariat as the most revolutionary class. The adherents of narodism launch a movement to "go to the people", going to the countryside to spread revolutionary ideology. This movement fails utterly.
+**lata 60 i 70 XIX w.**: Ideologia *narodnictwa*, czy populizmu, powstaje z różnych nurtów myśli niemarksistowskiej socjalistycznej oraz anarchistycznej. Ideologia ta uznaje rosyjskich chłopów za protagonistów przyszłej rewolucji, w opozycji do marksizmu który widzi podstawę rewolucji w szeregach miejskich proletariuszy. Wyznawcy narodnictwa rozpoczynają ruch "wyjścia do ludu", wybierając się w tereny wiejskie by krzewić idee rewolucyjne. Ruch ten odnosi klęskę.
 
-**1879**: People's Will is formed, a secretive group of narodniks aiming to use direct action to overthrow the Tsar. Increasingly the narodniks turn to terrorism and assassinations as a way to spread their revolutionary message.
+**1879**: Powstaje Wola Ludu, sekretna grupa narodników dążąca do użycia bezpośredniego działania do obalenia cara. Narodnicy coraz częściej sięgają po terroryzm i zabójstwa w celu poularyzacji ich rewolucyjnego przesłania.
 
-**1881**: People's Will assassinates Tsar Alexander II. Now, Tsar Alexander III takes power, beginning an era of reaction, a return to "Orthodoxy, Autocracy, and Nationality".
+**1881**: Wola Ludu dokonuje udanego zamachu na cara Aleksandra II. Władzę obejmuje Aleksander III, który rozpoczyna erę reakcji i powrotu do "Ortodoksjii, Autokracji i Narodowości".
 
-#**1891**: A great famine occurs centered in the Volga region. Bad weather is exacerbated by primitive agricultural techniques and government mismanagement, leading to hundreds of thousands of deaths.
+#**1891**: Głód uderza w Nadwołże. Efekty złej pogody spotęgowane są zacofaną technologią rolniczą i nieudolnością rządzących, prowadząc do setek tysięcy zgonów.
 
-**1894**: Tsar Alexander III passes away at the age of 49, and Tsar Nicholas II takes the throne at the age of 26. Soon after, he marries Alexandra, who was originally a German princess. She is not liked by the Russian people.
+**1894**: Car Aleksander III umiera w wieku 49 lat, car Mikołaj II obejmuje tron w wieku 26 lat. Wkrótce żeni się z Aleksandrą, niemiecką księżniczką niepopularną wśród Rosjan.
 
-**1897**: The first and only census of the Russian Empire was taken, recording a total of over 125 million inhabitants.
+**1897**: Sporządzony jest pierwszy i jedyny spis ludności Cesartswa Rosyjskiego, odnotowując 125 milionów obywateli.
 
 # RSDLP is formed
-**1898**: The Russian Social Democratic Labor Party, or RSDLP, is formed, in an attempt to unite all revolutionary Marxist forces in Russia.
+**1898**: W nadziei na zjednoczenie wszystkich prorewolucyjnych sił marksistowskich w Rosji powstaje Socjaldemokratyczna Partia Robotnicza Rosji - SDPRR.
 
-**1902**: The Party of Socialist Revolutionaries, or SRs, is formed, uniting various groups of narodniks and agrarian socialists.
+**1902**: Powstaje partia Socjalistów-Rewolucjonistów - Eserowcy - jednocząc różne grupy narodników i agrarnych socjalistów.
 
-**1903**: At the Second Congress of the RSDLP, the division between Bolsheviks and Mensheviks develops, as Vladimir Lenin and Julius Martov clash over various ideological questions.
+**1903**: Na drugim kongresie SDPRR dochodzi do podziału na Mienszewików i Bolszewików gdy Włodzimierz Lenin i Julij Martow ścierają się w różnych kwestiach ideologicznych.
 
-**1904**: The Russo-Japanese War begins, due to imperialist competition over northeastern China.
+**1904**: W wyniku imperialistycznej rywalizacji o wpływy w Północno-Zachodnich Chinach wybucha wojna rosyjsko-japońska.
 
-**1905**: The Russo-Japanese War ends in major defeats for Russia. Largely due to the privations and defeats of the war, the Revolution of 1905 erupts, starting with the "Bloody Sunday" massacre in St. Petersburg. In response to the Revolution, the tsar issues the October Manifesto, proclaiming some form of constitutional government for Russia and the creation of a Duma, or national legislature. The Constitutional Democratic Party (Kadets) were formed to run for the Duma.
+**1905**: Wojna rosyjsko-japońska kończy się zaskakującą i upokarzającą klęską Rosji. W wyniku prywatyzacji i porażek na froncie dochodzi do rewolucji 1905 roku, która rozpoczyna się "Krwawą Niedzielą" w Petersburgu. W odpowiedzi na rewolucję, car ogłasza Manifest Październikowy, obiecujący pewną formę konstytucyjnej władzy w Rosji i powstanie ciała legislacyjnego w postaci Dumy. Partia Konstytucyjno-Demokratyczna (Kadeci) powstaje by uczestniczyć w wyborach do Dumy.
 
-**1906-1907**: The first and second Dumas were held, based on elections with biased voting rules. Despite the electoral system favoring the wealthy, liberal and socialist parties comprise a majority of the members. The second Duma ends with a coup by Prime Minister Stolypin, with changed voting rules creating a much more conservative Duma. 
+**1906-1907**: Zwołana jest pierwsza i druga Duma, oparta na wyborach ze stronniczymi regułami wyborczymi. Mimo systemu faworyzującego bogatych, liberalne i socjalistyczne partie zdobywają większość mandatów. Druga Duma kończy się przewrotem premiera Stołypina, zmienione zasady głosowania prowadzą do znacznego wzrostu wpływu konserwatyzmu w Dumie. 
 
-**1906**: Stolypin reforms begin, breaking up the traditional agrarian communes and creating private land ownership. The goal is to improve agricultural productivity.
+**1906**: Rozpoczynają się reformy Stołypina, rozbijające tradycyjne społeczności wiejskie i zastępujące je prywatnym posiadaniem ziemi. Ich celem jest poprawa produkcji w rolnictwie.
 
-**1900s**: Grigori Rasputin becomes acquainted with the imperial family, and a becomes a strong influence on Empress Alexandra. 
+**1900s**: Grigorij Rasputin zbliża się do rosyjskiej rodziny królewskiej i zaczyna wywierać znaczący wpływ na cesarzową Aleksandrę. 
 
-**1914**: The Great War begins with the assassination of Archduke Franz Ferdinand of Austria in Sarajevo, and the Austrian declaration of war on Serbia, leading to a cascading series of war declarations and mobilizations that encompasses all of Europe. The two sides are the Entente of France, Britain, and Russia, and the Central Powers of Germany, Austria, and Turkey (and other countries on both sides). The war goes terribly for Russia, with the defeat in the Battle of Tannenberg.
+**1914**: Wielka Wojna rozpoczyna się w następstwie zabójstwa arcyksięcia Franciszka Ferdynanda w Sarajewie, będącego pretekstem dla austriackiej inwazji na Serbię, co prowadzi do fali wypowiedzeń wojny i mobilizacji w Europie. Przeciw sobie staje Ententa (Trójprzymierze, od fran. *entente*), złożona przede wszystkim z Francji, Wielkiej Brytanii i Rosji oraz Państwa Centralne (Trójporozumienie) w formie Niemiec, Austrii i Turcji (opisując w dużym skrócie). Wojna przebiega tragicznie po stronie Rosji, począwszy od wielkiej porażki pod Tannenbergiem.
 
 # Zimmerwald Conference
 **1915**: The Zimmerwald Conference is held in Switzerland, bringing together a group of anti-war socialists, including many Russian exiles such as Lenin. They draft a statement against the war. The Russian Empire faces a series of military defeats, culminating in the Great Retreat from all of Poland.
