@@ -96,7 +96,7 @@ Q.unemployed_disp = Q.unemployed.toFixed(1);
 
 = [+ player_party_name +] Status
 
-Tydzien [+ week +], [+ month : month +] [+ year +]
+Tydzień [+ week +], [+ month : month +] [+ year +]
 
 Pozycja: [+ position +]
 
@@ -291,29 +291,29 @@ title: Rząd
 
 [+ government_form : leader +]: [+ prime_minister +] ([+ prime_minister_party +])
 
-Sprawy Wewnętrzne [+ government_form : minister +]: [+ interior_minister +] ([+ interior_minister_party +])
+[+ government_form : minister +] Spraw Wewnętrznych: [+ interior_minister +] ([+ interior_minister_party +])
 
-Sprawy Zagraniczne [+ government_form : minister +]: [+ foreign_minister +] ([+ foreign_minister_party +])
+[+ government_form : minister +] Spraw Zagranicznych: [+ foreign_minister +] ([+ foreign_minister_party +])
 
-Wojna [+ government_form : minister +]: [+ war_minister +] ([+ war_minister_party +])
+[+ government_form : minister +] Wojny: [+ war_minister +] ([+ war_minister_party +])
 
-Finanse [+ government_form : minister +]: [+ finance_minister +] ([+ finance_minister_party +])
+[+ government_form : minister +] Finansów: [+ finance_minister +] ([+ finance_minister_party +])
 
-Sprawiedliwość [+ government_form : minister +]: [+ justice_minister +] ([+ justice_minister_party +])
+[+ government_form : minister +] Sprawiedliwości: [+ justice_minister +] ([+ justice_minister_party +])
 
-Agrokultura [+ government_form : minister +]: [+ agriculture_minister +] ([+ agriculture_minister_party +])
+[+ government_form : minister +] Rolnictwa: [+ agriculture_minister +] ([+ agriculture_minister_party +])
 
-Transport [+ government_form : minister +]: [+ transport_minister +] ([+ transport_minister_party +])
+[+ government_form : minister +] Transportu: [+ transport_minister +] ([+ transport_minister_party +])
 
-Przemysł i Handel [+ government_form : minister +]: [+ trade_minister +] ([+ trade_minister_party +])
+[+ government_form : minister +] Przemysłu i Handlu: [+ trade_minister +] ([+ trade_minister_party +])
 
 # there is no content for the education minister for now.
-Edukacja [+ government_form : minister +]: [+ education_minister +] ([+ education_minister_party +])
+[+ government_form : minister +] Edukacji: [+ education_minister +] ([+ education_minister_party +])
 
 
-[? if post_minister: Poczta i Telegrafy [+ government_form : minister +]: [+ post_minister +] ([+ post_minister_party +]) ?]
+[? if post_minister: [+ government_form : minister +] Poczty i Telegrafów: [+ post_minister +] ([+ post_minister_party +]) ?]
 
-[? if labor_minister: Praca [+ government_form : minister +]: [+ labor_minister +] ([+ labor_minister_party +]) ?]
+[? if labor_minister: [+ government_form : minister +] Pracy: [+ labor_minister +] ([+ labor_minister_party +]) ?]
 
 Wydajność Rządu: [+ prov_gov_efficacy : efficacy +]
 
@@ -473,7 +473,6 @@ Niezadowolenie żołnierzy: [+ soldier_unrest : war_weariness +]
 Poziom zbrodni: [+ crime : war_weariness +]
 
 
-//is that used anywhere???
 @policy
 title: Policy
 
