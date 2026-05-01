@@ -359,7 +359,7 @@ Sprzętu rolniczego: [+ agricultural_industry +]%
 
 Sprzętu transportowego: [+ transportation_industry +]%
 
-Środki produkcji: [+ capital_industry +]%
+Środków produkcji: [+ capital_industry +]%
 
 Łączna produkcja przemysłowa (% roku 1916): [+ industry +]%
 
@@ -387,7 +387,7 @@ Postęp reformy rolnej: [+ land_reform_progress : land_reform_progress +]
 
 = Finanse i Zadłużenie
 
-Biland Budżetu: [+ budget +]
+Budżet: [+ budget +]
 
 Długoterminowe zadłużenie wewnętrzne: [+ domestic_debt +]
 

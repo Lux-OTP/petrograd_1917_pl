@@ -127,54 +127,54 @@ go-to: menu
 
 **1906**: Rozpoczynają się reformy Stołypina, rozbijające tradycyjne społeczności wiejskie i zastępujące je prywatnym posiadaniem ziemi. Ich celem jest poprawa produkcji w rolnictwie.
 
-**1900s**: Grigorij Rasputin zbliża się do rosyjskiej rodziny królewskiej i zaczyna wywierać znaczący wpływ na cesarzową Aleksandrę. 
+**Początek XX w.**: Grigorij Rasputin zbliża się do rosyjskiej rodziny królewskiej i zaczyna wywierać znaczący wpływ na cesarzową Aleksandrę. 
 
 **1914**: Wielka Wojna rozpoczyna się w następstwie zabójstwa arcyksięcia Franciszka Ferdynanda w Sarajewie, będącego pretekstem dla austriackiej inwazji na Serbię, co prowadzi do fali wypowiedzeń wojny i mobilizacji w Europie. Przeciw sobie staje Ententa (Trójprzymierze, od fran. *entente*), złożona przede wszystkim z Francji, Wielkiej Brytanii i Rosji oraz Państwa Centralne (Trójporozumienie) w formie Niemiec, Austrii i Turcji (opisując w dużym skrócie). Wojna przebiega tragicznie po stronie Rosji, począwszy od wielkiej porażki pod Tannenbergiem.
 
 # Zimmerwald Conference
-**1915**: The Zimmerwald Conference is held in Switzerland, bringing together a group of anti-war socialists, including many Russian exiles such as Lenin. They draft a statement against the war. The Russian Empire faces a series of military defeats, culminating in the Great Retreat from all of Poland.
+**1915**: W Szwajcarii odbywa się konferencja w Zimmerwaldzie, zrzeszając grupę antywojennych socjalistów, w tym wielu rosyjskich uchodżców takich jak Lenin. Tworzą oni dokument ostro potępiający toczącą się wojnę. Cesarstwo Rosyjskie doznaje serii porażek militarnych, uwieńczonych Wielkim Odwrotem z większości kontrolowanego terenu dawnej I Rzeczpospolitej.
 
 # Brusilov Offensive
-**1916**: The Brusilov Offensive is the most successful Russian operation in the war, leading to advances against Austria before stalling out. Despite the success, millions of casualties are taken by Russia. In December, Rasputin is assassinated by a group of nationalist nobles.
+**1916**: Ofensywa Brusiłowa przechodzi do historii jako najbardziej udana rosyjska ofensywa w Wielkiej Wojnie. Owocuje ona sporymi zdobyczami na froncie austriackim dopóki nie zostaje zatrzymana po utraceniu impetu. Pomimo sukcesu, Rosja notuje miliony strat. W grudniu Rasputin zostaje zamordowany przez grupę nacjonalistycznych arystokratów.
 
 
 @demographics
 go-to: menu
 
-**Demographic Groups**
+**Grupy demograficzne**
 
-**Peasants**: The largest demographic in Russia, peasants are subsistence farmers who were largely serfs before the emancipation of Tsar Alexander II, and are still deeply tied to the traditional communes. They are a majority of Russia's population, but obviously have very little presence in the city.
+**Chłopi**: Największa grupa demograficzna w Rosji, chłopi utrzymują się z produkcji rolnej, w większości obowiązywała ich pańszczyzna przed edyktem cara Aleksandra I. Wciąż są mocno przywiązani do tradycyjnych gmin. Stanowią większość populacji Rosji, choć oczywiście w samym mieście stanowią niewielki odsetek ludności.
 
-**Working Class**: The urban working class - blue-collar workers in factories, workshops, mines, and the like. Most are socialist, supporting either the Bolsheviks, Mensheviks, or SRs. Around 10-20% nationally (much increased due to the war), but a much larger proportion in Petrograd.
+**Klasa Robotnicza**: Miejska klasa robotnicza - robotnicy fizyczni w fabrykach, warsztatach, kopalniach itp. W większości socjaliści popierający Bolszewików, Mienszewików czy Eserów. Około 10-20% w skali kraju (wskaźnik ten jest znacząco wyższy z powodu wojny), lecz o wiele większy ułamek w samym Piotrogrodzie.
 
-**Middle Class**: Urban traders and merchants, bureaucrats, professionals, and the intelligensia. At most 10% of the population, but more common in Petrograd.
+**Klasa Średnia**: Miejscy handlarze, biurokraci, profesjonalni robotnicy i inteligencja. Co najwyżej 10% populacji w skali kraju, o wiele więcej w samym mieście.
 
-**Soldiers**: There are nearly 10 million men [? if womens_battalion: (and some women) ?] who serve in the armies and fleets. Most of them were conscripted from the peasantry.
+**Żołnierze**: Blisko 10 milionów ludzi służy w rosyjskich armiach i flotach. Większość z nich wywodzi się z chłopstwa.
 
-**Minority nationalities**: At the last census, non-Russian-speakers made up a majority of the population of the empire. The largest minority group are the Ukrainians.
+**Mniejszości narodowe**: W spisie ludności, ludność która nie posługuje się rosyjskim stanowiła większość populacji Cesartwa. Największą z mniejszości są Ukraińcy.
 
-Here is the population by native language as of the 1897 census:
+Spis ludności wg ojczystego języka wedle spisu z 1897 roku:
 
 {!<table>
-<tr><td>Russian</td><td>44.31</td></tr>
-<tr><td>Ukrainian</td><td>17.81</td></tr>
-<tr><td>Polish</td><td>6.31</td></tr>
-<tr><td>Belarusian</td><td>4.68</td></tr>
-<tr><td>Jewish</td><td>4.03</td></tr>
-<tr><td>Kyrgyz-Kazakh</td><td>3.25</td></tr>
-<tr><td>Tatar</td><td>2.97</td></tr>
-<tr><td>German</td><td>1.43</td></tr>
-<tr><td>Latvian</td><td>1.14</td></tr>
-<tr><td>Bashkir</td><td>1.05</td></tr>
-<tr><td>Lithuanian</td><td>0.96</td></tr>
-<tr><td>Armenian</td><td>0.93</td></tr>
-<tr><td>Romanian</td><td>0.89</td></tr>
-<tr><td>Mordovian</td><td>0.81</td></tr>
-<tr><td>Estonian</td><td>0.80</td></tr>
+<tr><td>Rosjanie</td><td>44.31</td></tr>
+<tr><td>Ukraińcy</td><td>17.81</td></tr>
+<tr><td>Polacy</td><td>6.31</td></tr>
+<tr><td>Białorusini</td><td>4.68</td></tr>
+<tr><td>Żydzi</td><td>4.03</td></tr>
+<tr><td>Kirgizi-Kazakowie</td><td>3.25</td></tr>
+<tr><td>Tatarzy</td><td>2.97</td></tr>
+<tr><td>Niemcy</td><td>1.43</td></tr>
+<tr><td>Łotysze</td><td>1.14</td></tr>
+<tr><td>Baszkirowie</td><td>1.05</td></tr>
+<tr><td>Litwini</td><td>0.96</td></tr>
+<tr><td>Armeńczycy</td><td>0.93</td></tr>
+<tr><td>Rumuni</td><td>0.89</td></tr>
+<tr><td>Mordwini</td><td>0.81</td></tr>
+<tr><td>Estończycy</td><td>0.80</td></tr>
 <tr><td>Sartic</td><td>0.77</td></tr>
-<tr><td>Chuvash</td><td>0.67</td></tr>
-<tr><td>Georgian</td><td>0.66</td></tr>
-<tr><td>Uzbek</td><td>0.58</td></tr>
+<tr><td>Czuwasze</td><td>0.67</td></tr>
+<tr><td>Gruzini</td><td>0.66</td></tr>
+<tr><td>Uzbekowie</td><td>0.58</td></tr>
 </table>!}
 
 @economy
@@ -186,51 +186,51 @@ Q.food_requisitioned_disp = (Q.food_requisitioned*100).toFixed(1);
 !}
 go-to: menu
 
-= Industrial Production
+= Produkcja Przemysłowa
 
-Military: [+ military_industry +]%
+Wojskowa: [+ military_industry +]%
 
-Civilian goods: [+ civilian_industry +]%
+Cywilna: [+ civilian_industry +]%
 
-Agricultural equipment: [+ agricultural_industry +]%
+Sprzętu rolniczego: [+ agricultural_industry +]%
 
-Transportation equipment: [+ transportation_industry +]%
+Sprzętu transportowego: [+ transportation_industry +]%
 
-Capital goods: [+ capital_industry +]%
+Środków produkcji: [+ capital_industry +]%
 
 Total industrial production (% of 1916): [+ industry +]%
 
-= Railways
+= Koleje
 
-Military usage: [+ military_trains +]%
+Użytek armii: [+ military_trains +]%
 
-Civilian usage: [+ civilian_trains +]%
+Użytek cywilny: [+ civilian_trains +]%
 
-Total transport capacity: [+ trains_total +] million tons/year
+Łączna przepustowość kolei: [+ trains_total +] milionów ton rocznie
 
-= Agriculture
+= Rolnictwo
 
-Food production: [+ food_total +] million tons/year
+Produkcja żywności: [+ food_total +] milionów ton rocznie
 
-Food sold to cities and towns: [+ food_sold_disp +]%
+Żywność sprzedawana miastom: [+ food_sold_disp +]%
 
-Food requisitioned by the military: [+ food_requisitioned_disp +]%
+Żywność rekwirowana przez armię: [+ food_requisitioned_disp +]%
 
-= Food Consumption
+= Spożycie żywności
 
-Urban food demand: [+ food_demand_urban +] million kg/year
+Zapotrzebowanie w miastach: [+ food_demand_urban +] milionów ton rocznie
 
-Urban food supply: [+ food_supply_urban +] million kg/year
+Zaopatrzenie w miastach: [+ food_supply_urban +] milionów ton rocznie
 
-Food shortage: [+ hunger +]% 
+Niedostatek żywności: [+ hunger +]% 
 
-= Finances and Debt
+= Finanse i Zadłużenie
 
-Budget balance: [+ budget +]
+Budżet: [+ budget +]
 
-Long-term domestic debt: [+ domestic_debt +]
+Długoterminowe zadłużenie wewnętrzne: [+ domestic_debt +]
 
-Foreign debt: [+ foreign_debt +]
+Zadłużenie zagraniczne: [+ foreign_debt +]
 
 
 @election_projections
