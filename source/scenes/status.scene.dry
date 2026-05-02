@@ -106,7 +106,7 @@ Dostępne zasoby partii:
 [? if player_party == "k": [+ k_resources +] ?]
 [? if player_party == "sr": [+ sr_resources +] ?]
 
-Wewnętrzna kontestacja:
+Rozłamowość:
 [? if player_party == "b": [+ b_dissent_percent : dissent +] ?]
 [? if player_party == "m": [+ m_dissent_percent : dissent +] ?]
 [? if player_party == "k": [+ k_dissent_percent : dissent +] ?]
@@ -126,7 +126,7 @@ Budżet: [+ budget +]
 
 [? if ca_election_held: Posiedzenie Zgromadzenia Konstytucyjnego: Tydzień [+ ca_week +], [+ ca_month : month +] [+ ca_year +] ?]
 
-= Piotrogrodzki Sowiet
+= Piotrogrodzka Rada
 
 Przewodniczący: [+ soviet_chair +] ([+ soviet_chair_party +])
 
@@ -319,7 +319,7 @@ Wydajność Rządu: [+ prov_gov_efficacy : efficacy +]
 
 Legitymizacja Rządu: [+ prov_gov_legitimacy : legitimacy +]
 
-= Piotrogrodzki Sowiet
+= Piotrogrodzka Rada
 
 Przewodniczący: [+ soviet_chair +] ([+ soviet_chair_party +])
 
@@ -336,9 +336,9 @@ Inni: [+ other_soviet +]%
 [? if right_sr_split: Prawi Eserzy: [+ right_sr_soviet_votes_dec +]% ?]
 [? if left_sr_split: Lewi Eserzy: [+ left_sr_soviet_votes_dec +]% ?]
 
-Wydajność Sowietu: [+ soviet_efficacy : efficacy +]
+Wydajność Rady: [+ soviet_efficacy : efficacy +]
 
-Kooperacja Sowietu i Rządu Tymczasowego: [+ soviet_cooperation : efficacy +]
+Kooperacja Rady i Rządu Tymczasowego: [+ soviet_cooperation : efficacy +]
 
 @economy
 title: Gospodarka
@@ -409,7 +409,7 @@ Front Północny: [+ northern_front_soldiers +] dywizji
 Front Zachodni: [+ western_front_soldiers +] dywizji
 {!</br>!}[+ western_progress : war_progress +]
 
-Front Południowozachodni: [+ southwestern_front_soldiers +] dywizji
+Front Południowo-Zachodni: [+ southwestern_front_soldiers +] dywizji
 {!</br>!}[+ southwestern_progress : war_progress +]
 
 Front Rumuński: [+ romanian_front_soldiers +] dywizji
@@ -424,7 +424,7 @@ Morale: [+ morale : efficacy +]
 
 Dyscyplina: [+ discipline : efficacy +]
 
-Zaopatrzenie: [+ supply_quality : efficacy +]
+Jakość zaopatrzenia: [+ supply_quality : efficacy +]
 
 = Stosunki Międzynarodowe
 

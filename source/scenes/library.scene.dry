@@ -11,7 +11,7 @@ Tu zawarte są istotne informacje na temat rewolucyjnej Rosji roku 1917.
 
 - @government: Struktura Rządu Tymczasowego
 - @timeline: Istotne wydarzenia z niedawnej historii Rosji
-- @soviet_: Szczegóły Piotrogrodzkiego Sowietu
+- @soviet_: Szczegóły Piotrogrodzkiej Rady
 - @demographics: Demografia
 - @parties: Partie
 - @economy: Gospodarka
@@ -62,9 +62,9 @@ Legitymizacja Rządu: [+ prov_gov_legitimacy : legitimacy +]
 @soviet_
 go-to: menu
 
-= Piotrogrodzki Sowiet (Piotrogrodzka Rada)
+= Piotrogrodzka Rada
 
-Piotrogrodzka Rada Delegatów Robotniczych i Żołnierskich (tu nazywana krótko Piotrogrodzkim Sowietem) jest wybieranym zgromadzeniem reprezentantów robotników i żołnierzy z całego miasta. Zorganizowana w następstwie strajku generalnego i upadku istniejącego systemu, odwołuje się do Piotrogrodzkiej Rady Delegatów Robotniczych z roku 1905, która funkcjonowała jako opozycyjna siedziba władz miejskich w trakcie rewolucji tegoż roku.
+Piotrogrodzka Rada Delegatów Robotniczych i Żołnierskich jest wybieranym zgromadzeniem reprezentantów robotników i żołnierzy z całego miasta. Zorganizowana w następstwie strajku generalnego i upadku istniejącego systemu, odwołuje się do Piotrogrodzkiej Rady Delegatów Robotniczych z roku 1905, która funkcjonowała jako opozycyjna siedziba władz miejskich w trakcie rewolucji tegoż roku.
 
 Radzie przewodzili przede wszystkim socjaldemokratyczni i eserowscy intelektualiści, którzy powołali Komitet Wykonawczy i obrali Mienszewika Nikoloza Czcheidze przewodniczącym. W ich oczach Rada ma nadzorować działania Rządu Tymczasowego, akceptując jego autorytet dopóki, dopóty nie sprzeciwia się decyzjom samej Rady.
 
@@ -84,9 +84,9 @@ Anarchiści: [+ anarchist_soviet +] %
 
 Inni: [+ other_soviet +] %
 
-Wydajność Sowietu: [+ soviet_efficacy : efficacy +]
+Wydajność Rady: [+ soviet_efficacy : efficacy +]
 
-Kooperacja Sowietu i Rządu Tymczasowego: [+ soviet_cooperation : efficacy +]
+Kooperacja Rady i Rządu Tymczasowego: [+ soviet_cooperation : efficacy +]
 
 
 @timeline
@@ -236,47 +236,47 @@ Zadłużenie zagraniczne: [+ foreign_debt +]
 @election_projections
 go-to: menu
 
-**Projected election results** (if the election were to be held now):
+**Przewidywane wyniki wyborów** (jeśli wybory miałyby się odbyć w tym momencie):
 
 @parties
 go-to: menu
 
-**Major Parties:**
+**Ważniejsze partie:**
 
-**Russian Social-Democratic Labor Party (Mensheviks)** - The "minority" faction of the RSDLP, the Mensheviks emerged from party splits, reunifications, and further splits in the 1900s. It is in fact the larger party, seeking to organize a mass party among the working class. A social-democratic party based on the teachings of Karl Marx, the party argues that the current revolution is the "bourgeois" revolution. The task of socialists is to achieve a democratic republic and gain political and economic rights for workers. The Mensheviks are deeply divided on their attitudes towards the war and participation in a bourgeois government.
+**Socjaldemokratyczna Partia Robotnicza Rosji (Mienszewicy)** - "Mniejszość" SDPRR, Mienszewicy wyłonili się jako partia z rozłamów, zjednoczeń i dalszych rozłamów w pierwszej dekadzie XX wieku. Są większą organizacją niż Bolszewicy, dążą do stworzenia partii masowej pośród klasy robotniczej. Jako partia socjaldemokratyczna oparta na dziełach Karola Marksa, Mienszewicy uważają że aktualna rewolucja jest rewolucją "burżuazyjną".  Zadaniem socjalistów jest teraz zorganizowanie demokratycznej republiki i zdobycie politycznych i gospodarczych praw dla robotników. Mienszewicy są głęboko podzieleni w kwestiach wojny i udziału w burżuazyjnym rządzie.
 
-[? if player_party = "Bolshevik": Current relations: [+ bolshevik_menshevik : relationships +] ?]
-[? if player_party = "SR": Current relations: [+ sr_menshevik_relation : relationships +] ?]
-[? if player_party = "Kadet": Current relations: [+ kadet_menshevik_relation : relationships +] ?]
+[? if player_party = "Bolshevik": Aktualne relacje: [+ bolshevik_menshevik : relationships +] ?]
+[? if player_party = "SR": Aktualne relacje: [+ sr_menshevik_relation : relationships +] ?]
+[? if player_party = "Kadet": Aktualne relacje: [+ kadet_menshevik_relation : relationships +] ?]
 
-**Russian Social-Democratic Labor Party (Bolsheviks)** - The "majority" faction of the RSDLP is in fact the smaller party. Created largely by Vladimir Lenin's arguments in the various RSDLP congresses, the Bolsheviks are seen as more radical. They are a disciplined party of revolutionaries.
+**Socjaldemokratyczna Partia Robotnicza Rosji (Bolszewicy)** - Frakcja zwana "większością" w SDPRR jest tak naprawdę mniejszą z partii. Sformowani poprzez dysputy prowadzone na zjazdach SDPRR przez Włodzimierza Lenina, Bolszewicy są uznawani za bardziej radykalnych od Mienszewików. Są zdyscyplinowaną i scentralizowaną partią profesjonalnych rewolucjonistów.
 
-[? if player_party = "Menshevik": Current relations: [+ menshevik_bolshevik_relation : relationships +] ?]
-[? if player_party = "SR": Current relations: [+ sr_bolshevik_relation : relationships +] ?]
-[? if player_party = "Kadet": Current relations: [+ kadet_bolshevik_relation : relationships +] ?]
+[? if player_party = "Menshevik": Aktualne relacje: [+ menshevik_bolshevik_relation : relationships +] ?]
+[? if player_party = "SR": Aktualne relacje: [+ sr_bolshevik_relation : relationships +] ?]
+[? if player_party = "Kadet": Aktualne relacje: [+ kadet_bolshevik_relation : relationships +] ?]
 
-**Party of Socialist-Revolutionaries (SR)** - The SRs are based in the Russian ideology of *narodism*, or populism, which is an agrarian socialism that sees the traditional Russian village (the *obshchina*) as the basis of a future socialist society. Their support is strongest in the peasantry, but they have substantial support among workers as well. The SRs are deeply divided between left and right wings based on their attitudes towards the war and participation in government.
+**Partia Socjalistów-Rewolucjonistów (Eserzy)** - Eserzy opierają się na rosyjskiej ideologii *narodnictwa*, czy populizmu, to jest agrarnego socjalizmu który uznaje tradycyjną rosyjską wieś (*obszczinę*) za fundament przyszłego socjalistycznego społeczeństwa. Ich bazą poparcia są chłopi, lecz mają też znaczące wpływy wśród robotników. Eserzy są głęboko podzieleni między prawe i lewe skrzydła partii, niezgodne co do stosunku do wojny i uczestnictwa w rządzie.
 
 
-[? if player_party = "Menshevik": Current relations: [+ menshevik_sr_relation : relationships +] ?]
-[? if player_party = "Bolshevik": Current relations: [+ bolshevik_sr_relation : relationships +] ?]
-[? if player_party = "Kadet": Current relations: [+ kadet_sr_relation : relationships +] ?]
+[? if player_party = "Menshevik": Aktualne relacje: [+ menshevik_sr_relation : relationships +] ?]
+[? if player_party = "Bolshevik": Aktualne relacje: [+ bolshevik_sr_relation : relationships +] ?]
+[? if player_party = "Kadet": Aktualne relacje: [+ kadet_sr_relation : relationships +] ?]
 
-**Constitutional Democratic Party (Kadets)** - The Kadets were formerly on the left of the political spectrum, but they have moved to the center-right following the revolution. They are a liberal party whose goal is to establish a democratic republic or constitutional monarchy with moderate social reforms, while winning the war. They consider themselves a party representing all of Russian society, but are predominantly based in the middle class.
+**Partia Konstytucyjno-Demokratyczna (Kadeci)** - Kadeci byli niegdyś na lewej stronie politycznego spektrum, lecz przesunęli się ku centroprawicy po rewolucji. Są liberalną partią której celem jest ustanowienie demokratycznej republiki lub monarchii konstytucyjnej z umiarkowanymi reformami społecznymi, przy jednoczesnym osiągnięciu zwycięstwa w wojnie. Uznają się za partię reprezentującą całość rosyjskiego społeczeństwa, lecz opierają się przede wszystkim na poparciu klasy średniej.
 
-[? if player_party = "Menshevik": Current relations: [+ menshevik_kadet_relation : relationships +] ?]
-[? if player_party = "Bolshevik": Current relations: [+ bolshevik_kadet_relation : relationships +] ?]
-[? if player_party = "SR": Current relations: [+ sr_kadet_relation : relationships +] ?]
+[? if player_party = "Menshevik": Aktualne relacje: [+ menshevik_kadet_relation : relationships +] ?]
+[? if player_party = "Bolshevik": Aktualne relacje: [+ bolshevik_kadet_relation : relationships +] ?]
+[? if player_party = "SR": Aktualne relacje: [+ sr_kadet_relation : relationships +] ?]
 
-**Other parties:**
+**Pomniejsze partie:**
 
-**Popular Socialists** and **Trudoviks** ware rooted in the same *narodist* ideology as the SRs, but argued for a non-revolutionary path to socialism. Alexander Kerensky is the most well-known Trudovik.
+**Ludowi Socjaliści** i **Trudowicy** wywodzą się z tej samej ideologii *narodnictwa* co Eserzy, lecz opowiadają się za nierewolucyjną ścieżką do socjalizmu. Aleksaner Kiereński jest najszerzej znanym trudowikiem.
 
-**Conservatives** have been largely marginalized since the February Revolution. The **Octobrists** are a conservative-liberal faction that supports constitutional monarchy. Much more radical were the **Union of the Russian People** and the **Black Hundreds**, extremist nationalist and antisemitic groups that were suppressed following the February Revolution.
+**Konserwatyści** zostali zepchnięci na margines w wyniku Rewolucji Lutowej. **Oktiabryści** są konserwatywno-liberalną grupą która propaguje ustanowienie monarchii konstytucyjnej. O wiele bardziej radykalne są **Unia Rosyjskiego Ludu** i **Czarnej Sotnii**, nacjonalistyczne i antysemickie grupy których działalność została stłumiona w następstwie Rewolucji Lutowej.
 
-**Anarchists** are not a formally organized party, but they are prevalent among some of the workers. They are the most radical group and seek to replace the Provisional Government with a federation of free soviets.
+**Anarchiści** nie są formalnie zorganizowaną partią, lecz mają posłuch wśród wielu robotników. Są najbardziej radykalną grupą i dążą do zastąpienia Rządu Tymczasowego federacją wolnych rad.
 
-There are many **minority nationality parties**, based in the Empire's various nationalities. Some are autonomous branches of broader parties, such as the Ukrainian SRs and Social Democrats. Others are autonomous national movements (often having some national-liberal influences), such as the Kazakh Alash party or the Azeri Musavat party.
+Mnóstwo jest **partii mniejszości narodowych**, opartych na przeróżnych ludach Cesarstwa. Niektóre, takie jak Eserzy czy Socjaldemokraci w Ukrainie, są autonomicznymi gałęziami większych partii. Inne stanowią odrębne ruchy narodowościowe (przeważnie o narodowo-liberalnych wpływach), takie jak kazachska partia Alasz czy azerska partia Musawat.
 
 
 @paramilitaries
@@ -284,71 +284,72 @@ on-arrival: {!
 !}
 go-to: menu
 
-= Armies and Fronts
+= Armie i Fronty
 
-Northern Front: [+ northern_front_soldiers +] divisions - {!</br>!}[+ northern_progress : war_progress +]
+Front Północny: [+ northern_front_soldiers +] dywizji -
+{!</br>!}[+ northern_progress : war_progress +]
 
-Western Front: [+ western_front_soldiers +] divisions - 
+Front Zachodni: [+ western_front_soldiers +] dywizji -
 {!</br>!}[+ western_progress : war_progress +]
 
-Southwestern Front: [+ southwestern_front_soldiers +] divisions - 
+Front Południowo-Zachodni: [+ southwestern_front_soldiers +] dywizji -
 {!</br>!}[+ southwestern_progress : war_progress +]
 
-Romanian Front: [+ romanian_front_soldiers +] divisions - 
+Front Rumuński: [+ romanian_front_soldiers +] dywizji -
 {!</br>!}[+ romanian_progress : war_progress +]
 
-Caucasus Front: [+ caucasus_front_soldiers +] divisions - 
+Front Kaukaski: [+ caucasus_front_soldiers +] dywizji -
 {!</br>!}[+ caucasus_progress : war_progress +]
 
-Garrisons and reserves: [+ reserve_soldiers +] divisions
+Garnizony i rezerwy: [+ reserve_soldiers +] dywizji -
 
-= Morale and readiness
+= Morale i gotowość
 
 Morale: [+ morale : efficacy +]
 
-Discipline: [+ discipline : efficacy +]
+Dyscyplina: [+ discipline : efficacy +]
 
-Supply quality: [+ supply_quality : efficacy +]
+Jakość zaopatrzenia: [+ supply_quality : efficacy +]
 
-= Enemy forces
+= Wrogie siły
 
-Northwestern Front: [+ northwestern_enemy_soldiers +] divisions
+Front Północno-Zachodni: [+ northwestern_enemy_soldiers +] dywizji
 
-Southwestern Front: [+ southwestern_enemy_soldiers +] divisions
+Front Południowo-Zachodni: [+ southwestern_enemy_soldiers +] dywizji
 
-Caucasus Front: [+ caucasus_enemy_soldiers +] divisions
+Front Kaukaski: [+ caucasus_enemy_soldiers +] dywizji
 
-= Forces in Petrograd
+= Siły w Piotrogrodzie
 
-**Workers' Militias**: The industrial workers of Petrograd have organized militias for defense of their neighborhoods against criminals and counter-revolutionaries.
+**Milicje robotnicze**: Robotnicy Piotrogrodu zorganizowali milicje w celu obrony swoich sąsiedztw przeciw przestępcom i kontrrewolucjonistom.
 
-Strength: [+ workers_militia_strength +] thousand
+Liczebność: [+ workers_militia_strength +] tys.
 
-Militarization: [+ workers_militia_militancy : militancy +]
+Militaryzacja: [+ workers_militia_militancy : militancy +]
 
-Loyalties:
+Lojalność:
 
-Mensheviks: [+ workers_militia_m_loyalty : strength_2 +], Bolsheviks: [+ workers_militia_b_loyalty : strength_2 +], SRs: [+ workers_militia_sr_loyalty : strength_2 +], Independent: [+ workers_militia_independent : strength_2 +]
+Mienszewicy: [+ workers_militia_m_loyalty : strength_2 +], Bolszewicy: [+ workers_militia_b_loyalty : strength_2 +], Eserzy: [+ workers_militia_sr_loyalty : strength_2 +], Niezależne: [+ workers_militia_independent : strength_2 +]
 
-**City Militias**: In the wake of the revolution, militias were formed to replace the tsarist police. Consisting mostly of middle-class students and youth, these bodies are mostly loyal to the bourgeois government.
+**Milicje miejskie**: W następswie Rewolucji Lutowej carska policja została zastąpiona milicjami miejskimi. Złożone głównie ze studentów i młodzieży z klasy średniej, są one lojalne przede wszystkim Rządowi Tymczasowemu.
 
-Strength: [+ city_militia_strength +] thousand
+Liczebność: [+ city_militia_strength +] tys.
 
-Militarization: [+ city_militia_militancy : militancy +]
+Militaryzacja: [+ city_militia_militancy : militancy +]
 
-Loyalties:
+Lojalność:
 
-Mensheviks: [+ city_militia_m_loyalty : strength_2 +], Kadets: [+ city_militia_k_loyalty : strength_2 +], SRs: [+ city_militia_sr_loyalty : strength_2 +], Independent: [+ city_militia_independent : strength_2 +]
+Mienszewicy: [+ city_militia_m_loyalty : strength_2 +], Kadeci: [+ city_militia_k_loyalty : strength_2 +], Eserzy: [+ city_militia_sr_loyalty : strength_2 +], Niezależne: [+ city_militia_independent : strength_2 +]
 
-**Petrograd Garrison**: The military forces stationed in Petrograd were the heart of the February revolution.
+**Garnizon Piotrogrodzki**: Siły zbrojne stacjonujące w mieście były sercem Rewolucji Lutowej.
 
-Strength: [+ garrison_strength +] thousand
+Liczebność: [+ garrison_strength +] tys.
 
-Militarization: [+ garrison_militancy : militancy +]
+Militaryzacja: [+ garrison_militancy : militancy +]
 
-Loyalties:
+Lojalność:
 
-Mensheviks: [+ garrison_m_loyalty : strength +], Bolsheviks: [+ garrison_b_loyalty : strength +], Kadets: [+ garrison_k_loyalty : strength +], SRs: [+ garrison_sr_loyalty : strength +], Independent: [+ garrison_independent : strength +]
+Mienszewicy: [+ garrison_m_loyalty : strength +], Bolszewicy: [+ garrison_b_loyalty : strength +], Kadeci: [+ garrison_k_loyalty : strength +], Eserzy: [+ garrison_sr_loyalty : strength +], Niezależne: [+ garrison_independent : strength +]
 
 
 
@@ -358,66 +359,63 @@ go-to: factions_b if player_party = "b"; factions_k if player_party = "k"; facti
 @factions_b
 go-to: menu
 
-**Internal factions of the Bolsheviks:**
+**Frakcje wewnętrzne Bolszewików:**
 
-Overall dissent: [+ b_dissent_percent : dissent +]
+Ogólna Rozłamowość: [+ b_dissent_percent : dissent +]
 
-**Moderates**
+**Umiarkowani**
 
-The moderates among the Bolsheviks seek to work with other socialist parties to form a homogeneous socialist government. They are opposed to using force to take power. This grouping is led by Lev Kamenev and Grigory Zinoviev.
+Frakcja Umiarkowana Bolszewików dąży do współpracy z innymi partiami socjalistycznymi w celu stworzenia jednego, socjalistycznego rządu. Sprzeciwiają się przejęciu władzy siłą. Przewodzą im Lew Kamieniew i Grigorij Zinowjew.
 
-Strength: [+ moderate_strength : strength_2 +]
+Siła: [+ moderate_strength : strength_2 +]
 
-Dissent: [+ moderate_dissent : dissent +]
+Rozłamowość: [+ moderate_dissent : dissent +]
 
-**Center**
+**Centrum**
 
-Most Bolsheviks are pragmatists willing to be pulled in either a more or less radical direction, depending on the circumstances.
+Większość Bolszewików to pragmatyści skłonni do obrania mniej lub bardziej radykalnego kursu w zależności od okoliczności.
 
-Strength: [+ center_strength : strength_2 +]
+Siła: [+ center_strength : strength_2 +]
 
-Dissent: [+ center_dissent : dissent +]
+Rozłamowość: [+ center_dissent : dissent +]
 
 
-**Leninists**
+**Leniniści**
 
-Vladimir Lenin is by far the most influential Bolshevik, although his influence has waned due to his long exile. Lenin is against all cooperation with the Provisional Government or any socialist party that would cooperate with it, and is willing to risk a civil war to end the Great War.
+Włodzimierz Lenin jest najbardziej wpływowym członkiem w partii Bolszewików, choć jego potęga zmalała podczas długiego wygnania. Lenin sprzeciwia się współpracy z Rządem Tymczasowym i każdą partią socjalistyczną która kolaborowałaby z nim, a także skłonny zaryzykować rzucenie kraju w wir wojny domowej w celu zakończenia Wielkiej Wojny.
 
-Strength: [+ leninist_strength : strength_2 +]
+Siła: [+ leninist_strength : strength_2 +]
 
-Dissent: [+ leninist_dissent : dissent +]
+Rozłamowość: [+ leninist_dissent : dissent +]
 
 
 
 @factions_k
 go-to: menu
 
-**Internal factions of the Kadets:**
+**Frakcje Wewnętrzne Kadetów:**
 
-**Right Kadets**
+**Prawi Kadeci**
 
-The grouping of Pavel Milyukov backed the revolution because they believed they could manage the war better than the Tsar. They are very much Russian nationalists who support expanding the Russian Empire's territory.
+Ugrupowanie Pawła Milukowa wsparło rewolucję ponieważ wierzyło że jest w stanie poprowadzić wojnę lepiej niż carat. Są rosyjskimi nacjonalistami którzy popierają rozrost terytoriów imperium.
 
-Strength: [+ right_kadet_strength : strength_2 +]
+Siła: [+ right_kadet_strength : strength_2 +]
 
-Dissent: [+ right_kadet_dissent : dissent +]
-
-
-**Left Kadets**
-
-Nikolai Nekrasov and his allies are willing to work with moderate socialists to build a democratic Russia that respects the rights of workers and minorities without totally restructuring society, while not compromising on the war or Russia's territorial integrity.
-
-Strength: [+ left_kadet_strength : strength_2 +]
-
-Dissent: [+ left_kadet_dissent : dissent +]
+Rozłamowość: [+ right_kadet_dissent : dissent +]
 
 
+**Lewi Kadeci**
 
+Nikołaj Niekrasow i jego poplecznicy są skłonni do współpracy z umiarkowanymi socjalistami w celu budowy demokratycznej Rosji która szanuje prawa robotników i mniejszości narodowościowych bez całkowitej restrykturyzacji społeczeństwa, bez kompromisów w sprawie wojny czy rosyjskiej integralności terytorialnej.
+
+Siła: [+ left_kadet_strength : strength_2 +]
+
+Rozłamowość: [+ left_kadet_dissent : dissent +]
 
 @factions_m
 go-to: menu
 
-**Internal factions of the Mensheviks:**
+**Frakcje Wewnętrzne Mienszewików:**
 
 Overall dissent: [+ m_dissent_percent : dissent +]
 
