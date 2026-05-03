@@ -248,10 +248,10 @@ switch (Q.player_party) {
 [? if player_party == "b": Leniniści ?]
 [? if player_party == "b": dissent: [+ leninist_dissent : dissent +], strength: [+ leninist_strength : strength_2 +]?]
 
-[? if player_party == "m": Socjaliści-patrioci ?]
+[? if player_party == "m": Socjaliści-Patrioci ?]
 [? if player_party == "m": dissent: [+ social_patriot_dissent : dissent +], strength: [+ social_patriot_strength : strength_2 +]?]
 
-[? if player_party == "m": Rewolucjoniści-defensiści  ?]
+[? if player_party == "m": Rewolucjoniści - Defensiści  ?]
 [? if player_party == "m": dissent: [+ defensist_dissent : dissent +], strength: [+ defensist_strength : strength_2 +]?]
 
 [? if player_party == "m": Internacjonaliści ?]

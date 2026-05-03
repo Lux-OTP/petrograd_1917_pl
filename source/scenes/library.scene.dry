@@ -417,67 +417,67 @@ go-to: menu
 
 **Frakcje Wewnętrzne Mienszewików:**
 
-Overall dissent: [+ m_dissent_percent : dissent +]
+Ogólna Rozłamowość: [+ m_dissent_percent : dissent +]
 
-**Social Patriots**
+**Socjaliści-Patrioci**
 
-A substantial grouping of Menshevik-aligned Social Democrats actively support the war and the cause of Allied victory, even before the revolution. The venerable Social Democrat Georgy Plekhanov leads a faction called "Unity", a misleadingly named pro-war grouping.
+Wpływowa grupa mienszewickich Socjaldemokratów aktywnie wspierająca działania wojenne i sprawę Ententy, nawet przed rewolucją. Sędziwy Socjaldemokrata Gieorgij Plechanow przewodzi frakcji znanej jako "Jedność", zwodniczo określonej grupie prowojennej.
 
-Strength: [+ social_patriot_strength : strength_2 +]
+Siła: [+ social_patriot_strength : strength_2 +]
 
-Dissent: [+ social_patriot_dissent : dissent +]
-
-
-**Revolutionary Defensists**
-
-Ideologically defined by Irakli Tsereteli's "Siberian Zimmerwaldists", the revolutionary defensists only support a defensive war to protect the gains of the revolution, while calling for the international proletariat to rise up and force the powers to accept a general peace without annexations or indemnities. Until the proletariat of Germany rise up, they say that war is still necessary to defend against the Kaiser's counterrevolutionary attack.
-
-Strength: [+ defensist_strength : strength_2 +]
-
-Dissent: [+ defensist_dissent : dissent +]
+Rozłamowość: [+ social_patriot_dissent : dissent +]
 
 
-**Internationalists**
+**Rewolucjoniści - Defensiści**
 
-Many Social Democrats believe that the cause of the war is primarily French and British imperialism, and that Russian workers and peasants have no business dying for Western or Russian capitalists. They are willing to accept a separate peace, even if it means a loss of territory.
+Ideologicznie zdefiniowani przez "Syberyjskich Zimmerwaldystów" Irakliego Cereteliego, rewolucjoniści-defensiści wspierają wojnę defensywną jako środek obrony zdobyczy rewolucji, wzywając międzynarodowy proletariat do powstania i wymuszenia na walczących krajach zaakceptowanie generalnego pokoju bez aneksacji i odszkodowań. Defensiści uważają że dopóki proletariat Niemiec nie powstanie przeciw monarchii, wojna jest niezbędna w celu obrony przed kontrrewolucyjnym atakiem kajzera.
 
-Strength: [+ internationalist_strength : strength_2 +]
+Siła: [+ defensist_strength : strength_2 +]
 
-Dissent: [+ internationalist_dissent : dissent +]
+Rozłamowość: [+ defensist_dissent : dissent +]
+
+
+**Internacjonaliści**
+
+Wielu Socjaldemokratów wierzy że główną przyczyną wojny jest francuski i brytyjski imperializm, i że rosyjscy robotnicy i chłopi nie mają interesu w umieraniu za zachodnich czy rosyjskich kapitalistów. Są skłonni zaakceptować oddzielny pokój, nawet kosztem strat terytorialnych.
+
+Siła: [+ internationalist_strength : strength_2 +]
+
+Rozłamowość: [+ internationalist_dissent : dissent +]
 
 
 @factions_sr
 go-to: menu
 
-**Internal factions of the SRs:**
+**Frakcje Wewnętrzne Eserów:**
 
-Overall dissent: [+ sr_dissent_percent : dissent +]
+Ogólna Rozłamowość: [+ sr_dissent_percent : dissent +]
 
-**Right SRs**
+**Prawi Eserzy**
 
-The right wing of the Socialist Revolutionaries support the war as necessary in order to defend Russia against Germany. They are willing to place social revolution on hold and work with the bourgeoisie until the war ends and the Constituent Assembly is called.
+Prawe skrzydło Socjalistów-Rewolucjonistów popiera wojnę jako niezbędną w celu obrony Rosji przed Niemcami. Są gotowi "wstrzymać" rewolucję i pracować z burżuazją do czasu zakończenia wojny i zwołania Zgromadzenia Ustawodawczego.
 
-Strength: [+ right_sr_strength : strength_2 +]
+Siła: [+ right_sr_strength : strength_2 +]
 
-Dissent: [+ right_sr_dissent : dissent +]
-
-
-**Center SRs**
-
-Led by the venerable Viktor Chernov, the center of the SRs hope for an international socialist revolution to end the war, but are willing to accept a separate peace. Chernov's primary interest is in rural land redistribution.
-
-Strength: [+ center_sr_strength : strength_2 +]
-
-Dissent: [+ center_sr_dissent : dissent +]
+Rozłamowość: [+ right_sr_dissent : dissent +]
 
 
-**Left SRs**
+**Eserzy - Centryści**
 
-The left wing of the SRs seek an immediate end to the war and are willing to accept territorial losses. Their goal is immediate social revolution, to redistribute land to the peasants and the means of production to the workers.
+Przewodzene przez szanowanego Wiktora Czernowa, centrum Eserów mają nadzieję na zakończenie wojny przez międzynarodową rewolucję, lecz są skłonni zaakceptować oddzielny traktat pokojowy z Państwami Centralnymi. Najwyższym priorytetem Czernowa jest redystrybucja gruntów rolnych.
 
-Strength: [+ left_sr_strength : strength_2 +]
+Siła: [+ center_sr_strength : strength_2 +]
 
-Dissent: [+ left_sr_dissent : dissent +]
+Rozłamowość: [+ center_sr_dissent : dissent +]
+
+
+**Lewi Eserzy**
+
+Lewe skrzydło Eserów dąży do natychmiastowego zakończenia wojny i jest skłonne zaakceptować straty terytorialne. Ich celem jest natychmiastowa rewolucja społeczna oraz redystrybucja ziemi pośród chłopów i środków produkcji pośród robotników.
+
+Siła: [+ left_sr_strength : strength_2 +]
+
+Rozłamowość: [+ left_sr_dissent : dissent +]
 
 
 @figures
@@ -614,39 +614,39 @@ if (window && d3) {
 }
 !}
 
-= Petrograd Soviet
+= Piotrogrodzka Rada
 
 {!<svg id="soviet" style="width: 500px; height: 250px;"> </svg>!}
 
 {!<table>!}
 {!<tr><td>Party</td><td>Vote share</td></tr>!}
 
-{!<tr><td><div class="box b"> </div> !} Bolsheviks: {!</td><td>!} [+ b_soviet +]% {!</td>!}
+{!<tr><td><div class="box b"> </div> !} Bolszewicy: {!</td><td>!} [+ b_soviet +]% {!</td>!}
 
-[? if internationalist_soviet_votes_dec : {!<tr><td><div class="box internationalist"></div> Menshevik-Internationalists: </td><td>!} [+ internationalist_soviet_votes_dec +]% {!</td>!} ?]
+[? if internationalist_soviet_votes_dec : {!<tr><td><div class="box internationalist"></div> Mienszewicy - Internacjonaliści: </td><td>!} [+ internationalist_soviet_votes_dec +]% {!</td>!} ?]
 
-{!<tr><td><div class="box m"> </div> !} Mensheviks: {!</td><td>!} [+ m_soviet +]% {!</td>!}
+{!<tr><td><div class="box m"> </div> !} Mienszewicy: {!</td><td>!} [+ m_soviet +]% {!</td>!}
 
-[? if defensist_soviet_votes_dec : {!<tr><td><div class="box defensist"></div> Menshevik-Defensists: </td><td>!} [+ defensist_soviet_votes_dec +]% {!</td>!} ?]
+[? if defensist_soviet_votes_dec : {!<tr><td><div class="box defensist"></div> Mienszewicy - Defensiści: </td><td>!} [+ defensist_soviet_votes_dec +]% {!</td>!} ?]
 
-[? if left_sr_soviet_votes_dec : {!<tr><td><div class="box left_sr"></div> !}Left-SRs: {!</td><td>!} [+ left_sr_soviet_votes_dec +]% {!</td>!} ?]
+[? if left_sr_soviet_votes_dec : {!<tr><td><div class="box left_sr"></div> !}Lewi Eserzy: {!</td><td>!} [+ left_sr_soviet_votes_dec +]% {!</td>!} ?]
 
-{!<tr><td><div class="box sr"> </div> !} SRs: {!</td><td>!} [+ sr_soviet +]% {!</td>!}
+{!<tr><td><div class="box sr"> </div> !} Eserzy: {!</td><td>!} [+ sr_soviet +]% {!</td>!}
 
-[? if right_sr_soviet_votes_dec : {!<tr><td><div class="box right_sr"></div> !}Right-SRs: {!</td><td>!} [+ right_sr_soviet_votes_dec +]% {!</td>!} ?]
+[? if right_sr_soviet_votes_dec : {!<tr><td><div class="box right_sr"></div> !}Prawi Eserzy: {!</td><td>!} [+ right_sr_soviet_votes_dec +]% {!</td>!} ?]
 
-{!<tr><td><div class="box a"> </div> !} Anarchists: {!</td><td>!} [+ anarchist_soviet +]% {!</td>!}
+{!<tr><td><div class="box a"> </div> !} Anarchiści: {!</td><td>!} [+ anarchist_soviet +]% {!</td>!}
 
-{!<tr><td><div class="box other"> </div> !} Others: {!</td><td>!} [+ other_soviet +]% {!</td>!}
+{!<tr><td><div class="box other"> </div> !} Inni: {!</td><td>!} [+ other_soviet +]% {!</td>!}
 {!</table>!}
 
 
-= Soviet support history
+= Historyczne dane poparcia w Radzie
 
 {!<svg id="soviet_support_history" style="width: 500px; height: 400px;"> </svg>!}
 
 
-= Economic history
+= Historyczne dane gospodarcze
 
 {!<svg id="economic_history" style="width: 500px; height: 300px;"> </svg>!}
 
