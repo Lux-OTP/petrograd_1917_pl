@@ -1,16 +1,16 @@
-title: Credits
+title: Źródła
 
-Many works were referenced in the making of this game.
+Wiele źródeł zostało wykorzystanych przy tworzeniu tej gry.
 
-- @books: Books
-- @articles: Articles
-- @images: Image sources
-- @music: Music sources
-- @root: Back
+- @books: Książki
+- @articles: Artykuły
+- @images: Ilustracje
+- @music: Muzyka
+- @root: Powrót
 
 @books
 
-= General Sources
+= Źródła ogólne
 
 Acton, Edward, V. I︠U︡ Cherni︠a︡ev, V. I͡U Cherni͡aev, and William G. Rosenberg. Critical Companion to the Russian Revolution, 1914-1921. Indiana University Press, 1997.
 
@@ -33,7 +33,7 @@ Wade, Rex A. Revolutionary Russia: New Approaches. Psychology Press, 2004.
 Wade, Rex A. The Russian Revolution, 1917. Cambridge University Press, 2005.
 
 
-= Primary Sources and Firsthand Accounts
+= Źródła bezpośrednie i przekazy świadków
 
 Browder, Robert Paul, and Aleksandr Fyodorovich Kerensky. The Russian Provisional Government, 1917: Documents. Stanford University Press, 1961.
 
@@ -42,7 +42,7 @@ Carmichael, Joel, and Nikolai Nikolaevich Sukhanov. The Russian Revolution 1917:
 Woytinsky, Wladimir. Stormy Passage. Vanguard Press, 1961. http://archive.org/details/Woytinsky-Stormy-passage.
 
 
-= Specific Parties, Groups, and Events
+= Poszczególne partie, grupy i wydarzenia
 
 Avrich, Paul. The Russian Anarchists. Oakland, CA: AK Press, 2005.
 
@@ -67,7 +67,7 @@ Radkey, Oliver Henry. The Agrarian Foes of Bolshevism: Promise and Default of th
 Rosenberg, William G. Liberals in the Russian Revolution: The Constitutional Democratic Party, 1917-1921. Princeton: Princeton University Press, 2019. https://muse.jhu.edu/pub/267/monograph/book/64914.
 
 
-= Biographies
+= Biografie
 
 Barnett, Vincent. Kondratiev and the Dynamics of Economic Development: Long Cycles and Industrial Growth in Historical Context. Palgrave Macmillan, 1998. http://archive.org/details/kondratievdynami0000vinc.
 
@@ -78,7 +78,7 @@ Roobol, W. H. Tsereteli — A Democrat in the Russian Revolution. Dordrecht: Spr
 Trapeznik, A. “The Revolutionary Career of Viktor Mikhailovich Chernov (1873-1952).” Thesis, University of Tasmania, 1989. https://doi.org/10.25959/23242076.v1.
 
 
-- @credits: Back
+- @credits: Powrót
 
 @articles
 
@@ -107,7 +107,7 @@ Trapeznik, A. “The Revolutionary Career of Viktor Mikhailovich Chernov (1873-1
 ———. “Warfare 1914-1918 (Russian Empire) / 1.0 / Handbook.” Accessed January 6, 2025. https://encyclopedia.1914-1918-online.net/article/warfare-1914-1918-russian-empire/.
 
 
-= Economics and statistics
+= Gospodarka i statystyki
 
 Markevich, Andrei, and Mark Harrison. “Great War, Civil War, and Recovery: Russia’s National Income, 1913 to 1928.” The Journal of Economic History 71, no. 3 (2011): 672–703.
 
@@ -116,7 +116,7 @@ Harrison, Mark, and Andrei Markevich. “Russia’s Home Front, 1914-1922: The E
 “Russian Empire Occupations In The Late 19th-Early 20th Centuries » Census Data.” Accessed June 5, 2024. https://stat1897.histcensus.asu.ru/en/data/.
 
 
-= Specific Parties, Groups, and Events
+= Poszczególne partie, grupy i wydarzenia
 
 Clements, Barbara Evans. “Working-Class and Peasant Women in the Russian Revolution, 1917-1923.” Signs 8, no. 2 (1982): 215–35.
 
@@ -145,9 +145,9 @@ Shuichi, Kojima. “Neo-Narodnkis’ View of the Russian Agricultural Developmen
 
 @images
 
-= Portraits
+= Portrety
 
-**Bolsheviks**
+**Bolszewicy**
 
 dzerzhinsky.jpg: Новости, RIA Novosti / РИА. English:  “Dzerzhinsky”. Chairman of Vecheka (All-Russian Extraordinary Commission to Combat Counter-Revolution and Sabotage)-OGPU (Unified State Political Administration) Felix Dzerzhinsky (1877-1926). September 28, 1918. RIA Novosti archive, image #6464, http://visualrian.ru/ru/site/gallery/#6464 6x8 film / 6х8 негатив. https://commons.wikimedia.org/wiki/File:RIAN_archive_6464_Dzerzhinsky.jpg. Public Domain.
 
@@ -171,7 +171,7 @@ sverdlov.jpg: Оцуп, Пётр Адольфович. Председатель 
 
 zinoviev.jpg: Bolshevik Revolutionary Grigory Zinoviev (1883-1936). 1921. This image  is available from the United States Library of Congress’s Prints and Photographs division under the digital ID ggbain.28902. https://commons.wikimedia.org/wiki/File:Grigory_Zinoviev_02.jpg. Public Domain.
 
-**Mensheviks**
+**Mienszewicy**
 
 axelrod.jpg: Русский:  Павел Борисович Аксельрод. 1928. http://www.peoples.ru/state/revolutionary/pavel_akselrod/. https://commons.wikimedia.org/wiki/File:Pavel_Axelrod.jpg. Public Domain.
 
@@ -198,7 +198,7 @@ voitinsky.jpg: Photograph of Voitinsky with His Wife Emma Savelyevna Shadkhan, I
 zasulich.jpg: Русский:  Засулич, Вера Ивановна. before 1906. Журнал “Поток”, № 3-4, 1906. URL: http://elib.shpl.ru/ru/nodes/15782-3-4#page/8/mode/inspect/zoom/7. https://commons.wikimedia.org/wiki/File:Zasulich_Vera.jpg. Public Domain.
 
 
-**Kadets**
+**Kadeci**
 
 miliukov.jpg: English:  Paul Milioukoff. Cropped. March 24, 1921. https://collections.albert-kahn.hauts-de-seine.fr/document/proprit-d-albert-kahn-boulogne-france-monsieur-paul-milioukoff/617a7a44cf8b8968b33831bc. https://commons.wikimedia.org/wiki/File:Paul_Milioukoff_(cropped).jpg. Public Domain.
 
@@ -217,7 +217,7 @@ panina.jpg: Bain. English:  Countess Sofia Vladimirovna Panina (1871-1956). 1888
 konovalov.jpg: Буллы, Фотография ателье. Русский:  Депутат Четвертой Государственной Думы От Костромской Губернии, Министр Торговли и Промышленности, Заместитель Министра - Председателя Временного Правительства 5 - Го Состава Александр Иванович Коновалов. 1917. http://photoarchive.spb.ru:9090/www/showObject.do?object=2500215479. https://commons.wikimedia.org/wiki/File:Alexander_Konovalov_(cropped).jpeg. PPublic Domain.
 
 
-**SRs**
+**Eserzy**
 
 avksentiev.jpg: English:  Nikolai Avksentiev. March 24, 1921. Musée départemental Albert-Kahn. https://commons.wikimedia.org/wiki/File:Nicolas_Avksentieff_(cropped).jpg. Public Domain.
 
@@ -248,14 +248,14 @@ verkhovsky.jpg: Unknown author. Русский:  Александр Иванов
 zenzinov.jpg: Unknown author. Русский:  Русский Революционер, Террорист Владимир Михайлович Зензинов (1880-1953). 1900s. Из книги В. Хазана “Пинхас Рутенберг. От террориста к сионисту”, Гешарим, 2008. https://commons.wikimedia.org/wiki/File:Vladimir_Mikhaylovich_Zenzinov.jpg. Public Domain.
 
 
-**Others**
+**Inni**
 
 kornilov.jpg: Unknown author. Deutsch:  Lawr Georgijewitsch Kornilow, 1916English:  Lavr Georgievich Kornilov, 1916Română:  Laur Gheorghievici Kornilov, 1916Polski:  Ławr Gieorgijewicz Korniłow, 1916Русский:  Лавръ Георгіевичъ Корниловъ, 1916 г.Українська:  Лавр Георгійович Корнілов, 1916 р. 1916. http://ru.wikipedia.org/wiki/%D0%A4%D0%B0%D0%B9%D0%BB:%D0%9B.%D0%93._%D0%9A%D0%BE%D1%80%D0%BD%D0%B8%D0%BB%D0%BE%D0%B2_(1916%D0%B3.).jpg. https://commons.wikimedia.org/wiki/File:Kornilov1916.jpeg. Public Domain.
 
 kornilov_2.jpg: Unknown author. English:  Gen.Lavr Kornilov (d. 1918), CiC of Russian Army. His Arrival at State Council. Moscow, August 1917. August 27, 1917. http://www.whiteforce.newmail.ru/kornilov.htm. https://commons.wikimedia.org/wiki/File:Lavr_Kornilov_Moscow_1917.jpg. Public Domain.
 
 
-= Artwork, Newspapers, and Posters
+= Dzieła sztuki, gazety i plakaty
 
 america.jpg: Old Russian Poster Depicting Uncle Sam Shaking Hands with Representative of Russian Democracy. 1917. http://img-fotki.yandex.ru/get/12/rolmts.4/0_44f9_3974c65d_XL http://www.liveinternet.ru/users/708893/page46.shtml. https://commons.wikimedia.org/wiki/File:UncleSamshakinghandswithrussian.jpg. Public Domain.
 
@@ -320,7 +320,7 @@ war_poster.jpg: Христолюбивое Воинство. 1914. нэб.рф. 
 ww1.jpg: Poster. 1917. Бабурина Н. И. Русский плакат первой мировой войны. М., 1992. https://commons.wikimedia.org/wiki/File:Russian_poster_WWI_088.jpg. Public Domain.
 
 
-= Photographs and Others
+= Fotografie i inne
 
 army_1.jpg: English:  Russion Troops Going to the Front: Supports for the Imperial Guards Being Hurried into the Fighting Line. June 7, 2005. 300 ppi scan of the National Geographic Magazine, Volume 31 (1917), page 372. https://commons.wikimedia.org/wiki/File:Russian_Troops_NGM-v31-p372.jpg. Public Domain.
 
@@ -373,7 +373,7 @@ universal.jpg: Central Council of Ukraine. English: First Universal of the Centr
 womens_day.jpg: Euskara:  Emakumeen Nazioarteko Egunaren Aldarria Petrogradon, 1917an. Otsaileko Iraultzaren Hasiera Izan Zen. March 8, 1917. Русский:  Государственный музей политической истории России English:  State museum of political history of Russia. https://commons.wikimedia.org/wiki/File:1917_International_Women%27s_Day_-_Petrograd.jpg. Public Domain.
 
 
-- @credits: Back
+- @credits: Powrót
 
 
 @music
@@ -409,4 +409,4 @@ OdessaMama.mp3: RUSSISCH- JUDISCHE ORCHESTER. ODESSA MAMA. Columbia, 1917. http:
 VolgaBoatmen.ogg: Шаляпин, Фёдор. The Song, “Song of the Volga Boatmen”, or Referred to in Russian as “Эй, Ухнем!” (Ey, Heave Ho!). 1902. http://www.sovmusic.ru/download.php?fname=eyukhne2. https://commons.wikimedia.org/wiki/File:%D0%AD%D0%B9,_%D1%83%D1%85%D0%BD%D0%B5%D0%BC!_-_%D0%A4%D1%91%D0%B4%D0%BE%D1%80_%D0%A8%D0%B0%D0%BB%D1%8F%D0%BF%D0%B8%D0%BD.ogg. Public Domain.
 
 
-- @credits: Back
+- @credits: Powrót
