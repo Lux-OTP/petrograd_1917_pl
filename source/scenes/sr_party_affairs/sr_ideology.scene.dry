@@ -1,4 +1,4 @@
-title: Questions of Ideology
+title: Kwestie ideologiczne
 new-page: true
 view-if: sr_ideology_timer <= 0
 on-arrival: sr_ideology_timer += 1; week_actions += 1
@@ -7,17 +7,17 @@ is-card: true
 card-image: img/portraits/taburin_sr.jpg
 tags: sr_party
 
-= Questions of Ideology
+= Kwestie ideologiczne
 
-The revolution has opened up a space for raucous debate on the future of the country. Within the Socialist-Revolutionaries, many questions are hotly contested.
+Rewolucja stworzyła przestrzeń dla burzliwej debaty na temat przyszłości naszego kraju. Wewnątrz Partii Socjalistów-Rewolucjonistów, sprawa odpowiedzi na wiele kwestii jest paląca.
 
-Should we change the party's position on any of these issues?
+Czy powinniśmy zmienić oficjalną linię na temat któregoś z tych problemów?
 
-- @sr_war_policy: War policy
-- @sr_prov_gov_policy: The Provisional Government
-- @sr_industrial_policy: Industrial policy
+- @sr_war_policy: Polityka wojenna
+- @sr_prov_gov_policy: Rząd Tymczasowy
+- @sr_industrial_policy: Polityka przemysłowa
 #- @sr_rural_policy: Rural policy
 #- @sr_nationalities: The nationalities
-- @root: No, we will not change any of our ideological positions.
+- @root: Nie, nie zmienimy żadnej z naszych obecnych pozycji.
 - @easy_discard
 - @cancel_advisor_action
