@@ -1,11 +1,11 @@
-title: Election Simulation
+title: Symulacja wyborów
 set-jump: post_election
 
 
-- @1917_1: Constituent Assembly (March 1917 support levels)
-- @1917_11: Constituent Assembly (November 1917)
-- @ps_1917_3: Petrograd Soviet (March 1917)
-- @ps_1917_8: Petrograd Soviet (August 1917)
+- @1917_1: Zgromadzenie Ustawodawcze (Poziom poparcia z marca 1917)
+- @1917_11: Zgromadzenie Ustawodawcze (Poziom poparcia z listopada 1917)
+- @ps_1917_3: Rada Piotrogrodzka (Poziom poparcia z marca 1917)
+- @ps_1917_8: Rada Piotrogrodzka (Poziom poparcia z sierpnia 1917)
 
 @1917_1
 on-arrival: {!
@@ -498,33 +498,33 @@ Q.muslim_national_r = Q.musavat_assembly_votes_dec + Q.alash_assembly_votes_dec 
 // minority parties
 !}
 
-**Election results:**
+**Wyniki wyborów:**
 
-SR: [+ sr_r +]%
+Eserzy: [+ sr_r +]%
 
-Ukrainian SRs: [+ ukrainian_sr_assembly_votes_dec +]%
+Ukraińscy Eserzy: [+ ukrainian_sr_assembly_votes_dec +]%
 
-Mensheviks: [+ m_r +]%
+Mienszewicy: [+ m_r +]%
 
-Bolsheviks: [+ b_r +]%
+Bolszewicy: [+ b_r +]%
 
-Kadets: [+ k_r +]%
+Kadeci: [+ k_r +]%
 
-Conservatives: [+ conservative_r +]%
+Konserwatyści: [+ conservative_r +]%
 
-Popular Socialists: [+ popular_socialist_r +]%
+Ludowi Socjaliści: [+ popular_socialist_r +]%
 
-Cossacks: [+ cossacks_assembly_votes_dec +]%
+Kozacy: [+ cossacks_assembly_votes_dec +]%
 
-Muslim Socialists: [+ muslim_socialists_assembly_votes_dec +]%
+Muzułmańscy Socjaliści: [+ muslim_socialists_assembly_votes_dec +]%
 
-Muslim national parties (Alash, Musavat, others): [+ muslim_national_r +]%
+Muzułmańskie partie narodowe (Alasz, Musawat i inne): [+ muslim_national_r +]%
 
-Armenian Revolutionary Federation (Dashnaks): [+ dashnak_assembly_votes_dec +]%
+Armeńska Federacja Rewolucyjna (Dasznacy): [+ dashnak_assembly_votes_dec +]%
 
-Jewish National List: [+ jewish_national_list_assembly_votes_dec +]%
+Żydowska Lista Narodowa: [+ jewish_national_list_assembly_votes_dec +]%
 
-Other: [+ other_r +]%
+Inni: [+ other_r +]%
 
 
 @post_election_soviet
@@ -541,16 +541,16 @@ Q.other_r = Q.other_soviet_votes_dec + Q.k_soviet_votes_dec + Q.conservative_sov
 // minority parties
 !}
 
-**Election results:**
+**Wyniki wyborów:**
 
-SR: [+ sr_r +]
+Eserzy: [+ sr_r +]
 
-Mensheviks: [+ m_r +]
+Mienszewicy: [+ m_r +]
 
-Bolsheviks: [+ b_r +]
+Bolszewicy: [+ b_r +]
 
-Popular Socialists: [+ popular_socialist_r +]
+Ludowi Socjaliści: [+ popular_socialist_r +]
 
-Anarchists: [+ anarchist_r +]
+Anarchiści: [+ anarchist_r +]
 
-Other: [+ other_r +]
+Inni: [+ other_r +]

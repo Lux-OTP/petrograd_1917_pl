@@ -126,7 +126,7 @@ Budżet: [+ budget +]
 
 [? if ca_election_held: Posiedzenie Zgromadzenia Konstytucyjnego: Tydzień [+ ca_week +], [+ ca_month : month +] [+ ca_year +] ?]
 
-= Piotrogrodzka Rada
+= Rada Piotrogrodzka
 
 Przewodniczący: [+ soviet_chair +] ([+ soviet_chair_party +])
 
@@ -319,7 +319,7 @@ Wydajność Rządu: [+ prov_gov_efficacy : efficacy +]
 
 Legitymizacja Rządu: [+ prov_gov_legitimacy : legitimacy +]
 
-= Piotrogrodzka Rada
+= Rada Piotrogrodzka
 
 Przewodniczący: [+ soviet_chair +] ([+ soviet_chair_party +])
 

@@ -11,7 +11,7 @@ Tu zawarte są istotne informacje na temat rewolucyjnej Rosji roku 1917.
 
 - @government: Struktura Rządu Tymczasowego
 - @timeline: Istotne wydarzenia z niedawnej historii Rosji
-- @soviet_: Szczegóły Piotrogrodzkiej Rady
+- @soviet_: Szczegóły Rady Piotrogrodzkiej
 - @demographics: Demografia
 - @parties: Partie
 - @economy: Gospodarka
@@ -62,9 +62,9 @@ Legitymizacja Rządu: [+ prov_gov_legitimacy : legitimacy +]
 @soviet_
 go-to: menu
 
-= Piotrogrodzka Rada
+= Rada Piotrogrodzka
 
-Piotrogrodzka Rada Delegatów Robotniczych i Żołnierskich jest wybieranym zgromadzeniem reprezentantów robotników i żołnierzy z całego miasta. Zorganizowana w następstwie strajku generalnego i upadku istniejącego systemu, odwołuje się do Piotrogrodzkiej Rady Delegatów Robotniczych z roku 1905, która funkcjonowała jako opozycyjna siedziba władz miejskich w trakcie rewolucji tegoż roku.
+Rada Piotrogrodzka Delegatów Robotniczych i Żołnierskich jest wybieranym zgromadzeniem reprezentantów robotników i żołnierzy z całego miasta. Zorganizowana w następstwie strajku generalnego i upadku istniejącego systemu, odwołuje się do Rady Piotrogrodzkiej Delegatów Robotniczych z roku 1905, która funkcjonowała jako opozycyjna siedziba władz miejskich w trakcie rewolucji tegoż roku.
 
 Radzie przewodzili przede wszystkim socjaldemokratyczni i eserowscy intelektualiści, którzy powołali Komitet Wykonawczy i obrali Mienszewika Nikoloza Czcheidze przewodniczącym. W ich oczach Rada ma nadzorować działania Rządu Tymczasowego, akceptując jego autorytet dopóki, dopóty nie sprzeciwia się decyzjom samej Rady.
 
@@ -614,7 +614,7 @@ if (window && d3) {
 }
 !}
 
-= Piotrogrodzka Rada
+= Rada Piotrogrodzka
 
 {!<svg id="soviet" style="width: 500px; height: 250px;"> </svg>!}
 

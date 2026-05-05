@@ -190,7 +190,7 @@ view-if: k_coup > 0 and coup_victory = 1
 tags: endings
 go-to: eg_menu
 
-Przewrót Korniłowa okazał się sukcesem. Piotrogrodzka Rada została rozwiązana, zaś Rząd Tymczasowy rządzi jako dyktatura wojskowa. Siły lojalne wobec Rady zaczynają się jednak buntować - wojna domowa rysuje się na horyzoncie.
+Przewrót Korniłowa okazał się sukcesem. Rada Piotrogrodzka została rozwiązana, zaś Rząd Tymczasowy rządzi jako dyktatura wojskowa. Siły lojalne wobec Rady zaczynają się jednak buntować - wojna domowa rysuje się na horyzoncie.
 
 @coup_defeated
 title: Porażka Przewrotu Korniłowa
