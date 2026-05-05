@@ -230,9 +230,9 @@ go-to: eg_menu if started == 1; root.start_menu_2 if started == 0
 
 [? if game_achievement_rev_failed : **Неудавшаяся революция (Nieudana Rewolucja)** - jako Bolszewicy, rozpocznij rewolucję i przegraj. ?]
 
-[? if game_achievement_constituent_assembly : **Учредительное собрание (Zgromadzenie Ustawodawcze)** - dotrwaj do końca gry jako Mienszewicy, Eserzy bądź Kadeci na przynajmniej Średnim poziomie trudności. ?]
+[? if game_achievement_constituent_assembly : **Учредительное собрание (Zgromadzenie Ustawodawcze)** - przeprowadź wybory do Zgromadzenia Ustawodawczego jako Mienszewicy, Eserzy bądź Kadeci na przynajmniej Średnim poziomie trudności. ?]
 
-[? if game_achievement_free_russia : **Свободная Россия (Wolna Rosja)** - dotrwaj do końca gry jako Mienszewicy, Eserzy bądź Kadeci na Wysokim poziomie trudności. ?]
+[? if game_achievement_free_russia : **Свободная Россия (Wolna Rosja)** - przeprowadź wybory do Zgromadzenia Ustawodawczego jako Mienszewicy, Eserzy bądź Kadeci na Wysokim poziomie trudności. ?]
 
 [? if game_achievement_red_october : **Красный Октябрь (Czerwony Październik)** - jako Bolszewicy, rozpocznij rewolucję i wygraj. ?]
 
@@ -266,7 +266,7 @@ go-to: eg_menu if started == 1; root.start_menu_2 if started == 0
 
 [? if game_achievement_end_famine : **Конец голода (Koniec głodu)** - głód został obniżony do niskiego poziomu. ?]
 
-[? if game_achievement_low_inflation : **Прекращение эмиссии (Zatrzymanie emisji)** - inflacja jest pod pewną kontrolą. ?]
+[? if game_achievement_low_inflation : **Прекращение эмиссии (Zatrzymanie drukarek)** - inflacja jest pod pewną kontrolą. ?]
 
 [? if game_achievement_law_and_order : **Правопорядок (Prawo i Porządek)** - zniewluj niezadowolenie żołnierzy, robotników i chłopów. ?]
 
@@ -281,9 +281,9 @@ go-to: eg_menu if started == 1; root.start_menu_2 if started == 0
 
 [? if achievement_rev_failed : **Неудавшаяся революция (Nieudana Rewolucja)** - jako Bolszewicy, rozpocznij rewolucję i przegraj. ?]
 
-[? if achievement_constituent_assembly : **Учредительное собрание (Zgromadzenie Ustawodawcze)** - dotrwaj do końca gry jako Mienszewicy, Eserzy bądź Kadeci na przynajmniej Średnim poziomie trudności. ?]
+[? if achievement_constituent_assembly : **Учредительное собрание (Zgromadzenie Ustawodawcze)** - przeprowadź wybory do Zgromadzenia Ustawodawczego jako Mienszewicy, Eserzy bądź Kadeci na przynajmniej Średnim poziomie trudności. ?]
 
-[? if achievement_free_russia : **Свободная Россия (Wolna Rosja)** - dotrwaj do końca gry jako Mienszewicy, Eserzy bądź Kadeci na Wysokim poziomie trudności. ?]
+[? if achievement_free_russia : **Свободная Россия (Wolna Rosja)** - przeprowadź wybory do Zgromadzenia Ustawodawczego jako Mienszewicy, Eserzy bądź Kadeci na Wysokim poziomie trudności. ?]
 
 [? if achievement_red_october : **Красный Октябрь (Czerwony Październik)** - jako Bolszewicy, rozpocznij rewolucję i wygraj. ?]
 
@@ -317,7 +317,7 @@ go-to: eg_menu if started == 1; root.start_menu_2 if started == 0
 
 [? if achievement_end_famine : **Конец голода (Koniec głodu)** - głód został obniżony do niskiego poziomu. ?]
 
-[? if achievement_low_inflation : **Прекращение эмиссии (Zatrzymanie emisji)** - inflacja jest pod pewną kontrolą. ?]
+[? if achievement_low_inflation : **Прекращение эмиссии (Zatrzymanie drukarek)** - inflacja jest pod pewną kontrolą. ?]
 
 [? if achievement_law_and_order : **Правопорядок (Prawo i Porządek)** - zniewluj niezadowolenie żołnierzy, robotników i chłopów. ?]
 
@@ -325,55 +325,55 @@ go-to: eg_menu if started == 1; root.start_menu_2 if started == 0
 
 [? if achievement_coup_defeated: **Корниловцы разгромлены (Korniłowcy pokonani)** - ponieś klęskę przy przeprowadzaniu przewrotu wojskowego. ?]
 
-= Incomplete Achievements
+= Niezdobyte osiągnięcia
 
-[? if not achievement_dustbin : **Свалка истории (The Dustbin of History)** - defeated by the Bolshevik revolution. ?]
+[? if not achievement_dustbin : **Свалка истории (Śmietnik historii)** - przegraj przeciw rewolucji bolszewickiej. ?]
 
-[? if not achievement_rev_failed : **Неудавшаяся революция (A Failed Revolution)** - as the Bolsheviks, launch the revolution and fail. ?]
+[? if not achievement_rev_failed : **Неудавшаяся революция (Nieudana Rewolucja)** - jako Bolszewicy, rozpocznij rewolucję i przegraj. ?]
 
-[? if not achievement_constituent_assembly : **Учредительное собрание (Constituent Assembly)** - hold the Constituent Assembly elections as the Mensheviks, SRs, or Kadets on at least Normal difficulty. ?]
+[? if not achievement_constituent_assembly : **Учредительное собрание (Zgromadzenie Ustawodawcze)** - przeprowadź wybory do Zgromadzenia Ustawodawczego jako Mienszewicy, Eserzy bądź Kadeci na przynajmniej Średnim poziomie trudności. ?]
 
-[? if not achievement_free_russia : **Свободная Россия (A Free Russia)** - reach the end of the game as the Mensheviks, SRs, or Kadets on Hard difficulty. ?]
+[? if not achievement_free_russia : **Свободная Россия (Wolna Rosja)** - przeprowadź wybory do Zgromadzenia Ustawodawczego jako Mienszewicy, Eserzy bądź Kadeci na Wysokim poziomie trudności. ?]
 
-[? if not achievement_red_october : **Красный Октябрь (Red October)** - as the Bolsheviks, launch the revolution and win. ?]
+[? if not achievement_red_october : **Красный Октябрь (Czerwony Październik)** - jako Bolszewicy, rozpocznij rewolucję i wygraj. ?]
 
-[? if not achievement_kamenevs_dream : **Мечта Каменева (Kamenev's Dream)** - as the Bolsheviks, win at least 30% of the vote in the Constituent Assembly election without launching a revolution. ?]
+[? if not achievement_kamenevs_dream : **Мечта Каменева (Marzenie Kamieniewa)** - jako Bolszewicy, zdobądź przynajmniej 30% głosów w wyborach do Zgromadzenia Ustawodawczego bez rozpoczynania rewolucji. ?]
 
-[? if not achievement_junior_partner : **Младший партнер (Junior Partner)** - join the Bolshevik revolution as a junior partner. ?]
+[? if not achievement_junior_partner : **Младший партнер (Młodszy partner)** - dołącz do rewolucji bolszewickiej jako młodszy partner. ?]
 
-[? if not achievement_historical_materialism : **Исторический материализм (Historical Materialism)** - reach the end of the game as the Mensheviks. ?]
+[? if not achievement_historical_materialism : **Исторический материализм (Historyczny Materializm)** - dotrwaj do końca gry jako Mienszewicy. ?]
 
-[? if not achievement_land_and_liberty : **Земля и воля (Land and Liberty)** - reach the end of the game as the Socialist-Revolutionaries. ?]
+[? if not achievement_land_and_liberty : **Земля и воля (Ziemia i Wolność)** - dotrwaj do końca gry jako Eserzy. ?]
 
-[? if not achievement_constitutional_democracy : **Народная Свобода (People's Freedom)** - reach the end of the game as the Kadets. ?]
+[? if not achievement_constitutional_democracy : **Народная Свобода (Wolność Ludu)** - dotrwaj do końca gry jako Kadeci. ?]
 
-[? if not achievement_peace : **Циммервальд (Zimmerwald)** - sign an armistice with the Central Powers. ?]
+[? if not achievement_peace : **Циммервальд (Zimmerwald)** - podpisz rozejm z Państwami Centralnymi. ?]
 
-[? if not achievement_no_peace_no_war: **Ни мира, ни войны (No peace, no war)** - sign an armistice, and then let the Central Powers declare war again. ?]
+[? if not achievement_no_peace_no_war: **Ни мира, ни войны (Ani pokój, ani wojna)** - podpisz rozejm, a następnie pozwól Państwom Centralnym ponownie wypowiedzieć wojnę. ?]
 
-[? if not achievement_peace_2: **Брест-Литовск (Brest-Litovsk)** - sign a permanent peace treaty with the Central Powers. ?] 
+[? if not achievement_peace_2: **Брест-Литовск (Brześć Litewski)** - podpisz trwały traktat pokojowy z Państwami Centralnymi. ?] 
 
-[? if not achievement_victory : **Прорыв (Breakthrough)** - win at least one battle in the Great War. ?]
+[? if not achievement_victory : **Прорыв (Przełom)** - wygraj przynajmniej jedną bitwę w Wielkiej Wojnie. ?]
 
-[? if not achievement_milyukovs_dream : **Мечта Милюкова (Milyukov's Dream)** - defeat the Ottoman Empire. ?]
+[? if not achievement_milyukovs_dream : **Мечта Милюкова (Marzenie Milukowa)** - pokonaj Imperium Osmańskie. ?]
 
-[? if not achievement_allied_victory : **Победа Антанты (Entente Victory)** - win the Great War as part of the Allies. ?]
+[? if not achievement_allied_victory : **Победа Антанты (Zwycięstwo Ententy)** - wygraj Wielką Wojnę jako członek Ententy. ?]
 
-[? if not achievement_womens_battalion : **Женские батальоны смерти (Women's Battalion of Death)** - form the Women's Battalion of Death. ?]
+[? if not achievement_womens_battalion : **Женские батальоны смерти (Kobiece Bataliony Śmierci)** - sformuj Kobiece Bataliony Śmierci. ?]
 
-[? if not achievement_martovs_dream : **Мечта Мартова (Martov's Dream)** - as the Mensheviks, form an all-socialist government, sign an armistice, and hold the Constituent Assembly elections. ?]
+[? if not achievement_martovs_dream : **Мечта Мартова (Marzenie Martowa)** - jako Mienszewicy, sformuj w pełni socjalistyczny rząd, podpisz rozejm i zorganizuj wybory do Zgromadzenia Ustawodawczego. ?]
 
-[? if not achievement_peace_land_bread : **Мир, земля, хлеб (Peace, Land, Bread)** - sign an armistice, commence land redistribution, and reduce hunger. ?]
+[? if not achievement_peace_land_bread : **Мир, земля, хлеб (Pokój, Ziemia, Chleb)** - podpisz rozejm, rozpocznij redystrybucję ziemi i zmniejsz głód. ?]
 
-[? if not achievement_end_famine : **Конец голода (The end of hunger)** - hunger has been reduced to a low level. ?]
+[? if not achievement_end_famine : **Конец голода (Koniec głodu)** - głód został obniżony do niskiego poziomu. ?]
 
-[? if not achievement_low_inflation : **Прекращение эмиссии (Stopping the printers)** - inflation is somewhat under control. ?]
+[? if not achievement_low_inflation : **Прекращение эмиссии (Zatrzymanie drukarek)** - inflacja jest pod pewną kontrolą. ?]
 
-[? if not achievement_law_and_order : **Правопорядок (Law and Order)** - reduce unrest among the working classes, soldiers, and peasantry. ?]
+[? if not achievement_law_and_order : **Правопорядок (Prawo i Porządek)** - zniewluj niezadowolenie żołnierzy, robotników i chłopów. ?]
 
-[? if not achievement_kornilovite : **Корниловцы (Kornilovite)** - successfully launch a military coup. ?]
+[? if not achievement_kornilovite : **Корниловцы (Korniłowcy)** - przeprowadź skuteczny przewrót wojskowy. ?]
 
-[? if not achievement_coup_defeated: **Корниловцы разгромлены (Kornilovites defeated)** - attempt to launch a coup and fail. ?]
+[? if not achievement_coup_defeated: **Корниловцы разгромлены (Korniłowcy pokonani)** - ponieś klęskę przy przeprowadzaniu przewrotu wojskowego. ?]
 
 @end_game
 game-over: true
