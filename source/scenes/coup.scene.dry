@@ -1,4 +1,4 @@
-title: A Coup!
+title: Przewrót!
 go-to: jumpScene
 on-arrival: {!
 // 1. re-normalize the militias...
