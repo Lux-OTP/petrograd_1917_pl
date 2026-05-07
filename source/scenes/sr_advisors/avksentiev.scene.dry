@@ -1,31 +1,31 @@
-title: Nikolai Avksentiev
+title: Nikołaj Awksientjew
 is-pinned-card: true
 tags: advisor
 card-image: img/portraits/sr/avksentiev.jpg
 view-if: avksentiev_advisor = 1 and player_party = "sr"
 new-page: true 
 
-= Nikolai Avksentiev
+= Nikołaj Awksientjew
 
-Avksentiev is a right-wing defensist SR leader.
+Awksientjew jest prawicowym, defensistycznym liderem Eserów.
 
 - @interior_
-- @root: Return to main
+- @root: Powrót.
 
 
 @interior_
-title: Internal Security
-subtitle: Avksentiev is the Interior Minister.
+title: Bezpieczeństwo Wewnętrzne
+subtitle: Awksientjew jest Ministrem Spraw Wewnętrznych.
 choose-if: advisor_action_timer = 0 and interior_minister = "Avksentiev"
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] weeks before next advisor action. ?] [? if interior_minister != "Avksentiev" : Avksentiev is not the Interior Minister. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : Tygodnie do następnej akcji doradcy: [+ advisor_action_timer +] ?] [? if interior_minister != "Avksentiev" : Awksientjew nie jest Ministrem Spraw Wewnętrznych. ?]
 on-arrival: advisor_action_timer = 4; internal_security_timer -= 4; last_advisor_action = 1
 go-to: internal_security
 
 @support_defensism_
-title: Support Revolutionary Defensism
-subtitle: Support the continuation of the war for national defense.
+title: Wsparcie polityki rewolucyjnego defensizmu
+subtitle: Poparcie kontynuacji wojny w celu obrony państwa i rewolucji.
 choose-if: advisor_action_timer = 0 
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] weeks before next advisor action. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : Tygodnie do następnej akcji doradcy: [+ advisor_action_timer +] ?]
 on-arrival: advisor_action_timer = 4; internal_security_timer -= 4; last_advisor_action = 1
 go-to: internal_security
 
