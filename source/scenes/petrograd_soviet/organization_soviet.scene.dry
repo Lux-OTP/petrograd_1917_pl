@@ -20,7 +20,7 @@ The Petrograd Soviet is a largely ad-hoc council; perhaps we should build up org
 
 @org_1
 title: Create an economic coordination infrastructure for the workers' councils.
-subtitle: -1 resource
+subtitle: -1 zasób partii
 choose-if: (player_party = "m" and m_resources >= 1) or (player_party = "sr" and sr_resources >= 1) or (player_party = "b" and b_resources >= 1) 
 on-arrival: soviet_organization += 1; soviet_efficacy += 0.05; soviet_economic_coordination += 1
 view-if: workers_councils >= 1 or factory_takeovers >= 1
@@ -29,7 +29,7 @@ We have started a council for coordinating the distribution of resources across 
 
 @org
 title: Build up economic coordination between factories and enterprises.
-subtitle: -1 resource
+subtitle: -1 zasób partii
 choose-if: (player_party = "m" and m_resources >= 1) or (player_party = "sr" and sr_resources >= 1) or (player_party = "b" and b_resources >= 1)
 view-if: soviet_organization > 0
 on-arrival: soviet_organization += 1; soviet_efficacy += 0.05; m_resources -= 1 if player_party = "m"; sr_resources -= 1 if player_party = "sr"; b_resources -= 1 if player_party = "b"; soviet_economic_coordination += 1

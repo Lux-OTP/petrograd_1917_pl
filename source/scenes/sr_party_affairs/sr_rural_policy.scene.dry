@@ -1,13 +1,13 @@
-title: Rural Policy
+title: Polityka rolna
 choose-if: sr_rural_policy_timer = 0
 on-arrival: sr_rural_policy_timer += 4
 unavailable-subtitle: It is too early to change this policy again.
 
-= Rural Policy
+= Polityka rolna
 
-There are two components of our land reform policy: how we acquire land to redistribute, and how we redistribute that land.
+Polityka rolna ma dwa aspekty: sposób zdobycia ziemi do redystrybucji oraz sposób samej redystrybucji.
 
-Historically, the SRs have supported uncompensated redistribution, but that may change in light of the present hunger crisis and our coalition with liberal elements. In terms of redistribution, the SRs historically supported giving land to peasants based on need and labor ability, with each household being allocated the amount it can farm without hired labor.
+Historycznie, Eserzy popierali niekompensowaną redystrybujcę, lecz w świetle panującego głodu i koalicji z liberałami może się to zmienić. W kwestiach redystrybucji, Eserzy historycznie popierali nadawanie ziemi chłopom w oparciu o ich potrzeby i zdolność do jej zagospodarowania, gdzie każde gospodarstwo otrzymałoby ilość ziemi którą mogłoby uprawiać bez zatrudniania dodatkowych rąk do pracy.
 
 Current land policy: [+ sr_land_policy : land_policy +]
 

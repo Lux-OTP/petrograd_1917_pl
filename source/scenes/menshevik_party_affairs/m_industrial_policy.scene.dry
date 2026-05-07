@@ -16,14 +16,14 @@ What should our policy be with respect to labor and industries?
 
 @unions
 title: Maintain the current ownership and management structure, but with freedom for trade unions to organize.
-subtitle: [? if m_industrial_policy = 0 : This is our current position. ?]
+subtitle: [? if m_industrial_policy = 0 : To jest już nasze obecne stanowisko. ?]
 on-arrival: m_industrial_policy = 0;
 
 Our policy is to maintain a capitalist ownership and management structure for now, but that workers should have the right to organize and strike.
 
 @supervision
 title: In addition to trade union rights, workers' councils should supervise management.
-subtitle: [? if m_industrial_policy = 1 : This is our current position. ?]
+subtitle: [? if m_industrial_policy = 1 : To jest już nasze obecne stanowisko. ?]
 on-arrival: social_patriot_dissent += 5 if m_industrial_policy = 0; defensist_dissent += 5 if m_industrial_policy = 0; internationalist_strength += 4 if m_industrial_policy = 0; m_industrial_policy = 1; m_k_relation -= 2;
 
 Our policy is that workers' councils should have the right to supervise management decisions.
@@ -31,7 +31,7 @@ Our policy is that workers' councils should have the right to supervise manageme
 @syndicalism
 title: In addition to the above, workers' councils should take over management and ownership.
 choose-if: m_industrial_policy >= 1
-subtitle: [? if m_industrial_policy = 2 : This is our current position. ?]
+subtitle: [? if m_industrial_policy = 2 : To jest już nasze obecne stanowisko. ?]
 unavailable-subtitle: This position is currently too radical for our party.
 on-arrival: social_patriot_dissent += 10 if m_industrial_policy < 2; defensist_dissent += 8 if m_industrial_policy < 2; m_industrial_policy = 2; m_k_relation -= 2;
 
@@ -40,7 +40,7 @@ Our policy is that workers' councils should take over enterprise management and 
 @nationalization
 title: The state should nationalize all major industries.
 choose-if: m_industrial_policy >= 1
-subtitle: [? if m_industrial_policy = 1 : This is our current position. ?]
+subtitle: [? if m_industrial_policy = 1 : To jest już nasze obecne stanowisko. ?]
 unavailable-subtitle: This position is currently too radical for our party.
 on-arrival: social_patriot_dissent += 5 if m_industrial_policy < 2; defensist_dissent += 5 if m_industrial_policy < 2; m_industrial_policy = 3; m_k_relation -= 2;
 

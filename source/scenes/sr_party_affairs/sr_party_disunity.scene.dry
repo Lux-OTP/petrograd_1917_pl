@@ -1,4 +1,4 @@
-title: Party Disunity
+title: Niezgoda w partii
 new-page: true
 view-if: sr_party_disunity_timer <= 0 and (sr_dissent >= 0.3 or ((left_sr_dissent > 30 and not left_sr_split) or (right_sr_dissent > 30 and not right_sr_split)))
 on-arrival: sr_party_disunity_timer += 3; week_actions += 1
@@ -7,13 +7,13 @@ is-card: true
 card-image: img/soviet_leaders.jpg
 tags: sr_party
 
-= Party Disunity
+= Niezgoda w partii
 
-The Socialist-Revolutionary Party is being torn apart by internal dissent. Upset at the leadership and general direction of the party, factions are openly discussing splitting or purging rivals. This hampers the effectiveness of all of our policies.
+Partia Socjalistów-Rewolucjonistów jest rozdzielona przez dysputy ideologiczne. Niechętne wobec przywództwa czy ogólnego kierunku naszej partii, frakcje wewnętrzne otwarcie rozważają odłączenie się lub czystkę swych rywali. Ogranicza to efektywność naszych działań.
 
-[? if left_sr_dissent > 30 : The Left-SRs are upset at the direction of the party, arguing that it is too right-wing and pro-war, and too cozy with the liberals. ?]
+[? if left_sr_dissent > 30 : Lewi Eserzy są rozczarowani obecnym kursem partii, uznając go za zbyt prawicowy i prowojenny, a także zbyt ugodowy wobec liberałów. ?]
 
-[? if right_sr_dissent > 30 : The Right-SRs are upset at the direction of the party, arguing that it is too radical. ?]
+[? if right_sr_dissent > 30 : Prawi Eserzy są rozczarowani obecnym kursem partii, uznając go za zbyt radykalny. ?]
 
 - @party_discipline
 - @concessions_left_srs
@@ -24,46 +24,46 @@ The Socialist-Revolutionary Party is being torn apart by internal dissent. Upset
 - @easy_discard
 
 @party_discipline
-title: Enforce party discipline.
+title: Wymusimy dyscyplinę w partii.
 on-arrival: left_sr_dissent -= sr_discipline_change; right_sr_dissent -= sr_discipline_change; workers_sr -= 4; soldiers_sr -= 4
 
-Enforcing party discipline reduces dissent, but it leads to demoralization among our base.
+Wymuszenie dyscypliny partyjnej gasi najgorętsze z dysput, lecz prowadzi do demoralizacji pośród naszych popleczników.
 
 @concessions_left_srs
-title: Give concessions to the Left-SRs.
+title: Damy koncesje Lewym Eserom.
 view-if: left_sr_dissent > 30 and not left_sr_split
 on-arrival: left_sr_dissent -= 6; right_sr_dissent += 6; left_sr_strength += sr_support_change/2
 
-We have responded by adopting more Left-SR positions. The right wing is somewhat displeased.
+Naszą odpowiedzią jest przyjęcie nieco bardziej lewicowej pozycji. Prawe skrzydło naszej partii jest nieco rozczarowane.
 
 
 @concessions_right_srs
-title: Give concessions to the Right-SRs.
+title: Damy koncesje Prawym Eserom.
 view-if: right_sr_dissent > 30 and not right_sr_split
 on-arrival: right_sr_dissent -= 6; left_sr_dissent += 6; right_sr_strength += sr_support_change/2
 
-We have responded by adopting more Right-SR positions. The left wing are somewhat displeased.
+Naszą odpowiedzią jest przyjęcie nieco bardziej lewicowej pozycji. Prawe skrzydło naszej partii jest nieco rozczarowane.
 
 
 @expel_left_srs
-title: Expel the Left-SRs.
+title: Wydalimy Lewych Eserów.
 view-if: left_sr_dissent > 40 and not left_sr_split
 choose-if: left_sr_strength <= right_sr_strength
-unavailable-subtitle: The Left-SRs are too strong.
+unavailable-subtitle: Lewi Eserzy mają zbyt silną pozycję w partii.
 on-arrival: left_sr_split = 1;
 go-to: sr_left_split
 
 @expel_right_srs
-title: Expel the Right-SRs.
+title: Wydalimy Prawych Eserów.
 view-if: right_sr_dissent > 30 and not right_sr_split
 choose-if: right_sr_strength <= left_sr_strength
-unavailable-subtitle: The Right-SRs are too strong.
+unavailable-subtitle: Prawi Eserzy mają zbyt silną pozycję w partii.
 on-arrival: right_sr_split = 1;
 go-to: sr_right_split
 
 
 @do_nothing
-title: Let the factions argue with themselves.
+title: Pozwolimy frakcjom dyskutować między sobą.
 on-arrival: right_sr_dissent += 4; left_sr_dissent += 4;
 
-Let the factions bicker; perhaps dissent is healthy for the party.
+Pozwólmy dyskutującym członkom na prowadzenie dysput; być może niezgoda jest zdrowa dla partii.

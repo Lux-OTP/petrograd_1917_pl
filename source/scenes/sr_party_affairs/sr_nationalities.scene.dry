@@ -1,8 +1,8 @@
-title: Nationalities policy
+title: Polityka narodowościowa
 
 # options: russian unity, federal state with local autonomy, personal but not territorial autonomy, self-determination
 
-What should our policy be regarding the nationalities?
+Jaka powinna być nasza polityka odnośnie mniejszości narodowych?
 
 - @russian_unity
 - @federal_state
@@ -10,15 +10,15 @@ What should our policy be regarding the nationalities?
 - @self_determination
 
 @russian_unity
-title: Maintain the integrity of the Russian Empire.
-subtitle: This is extremely unpopular among our base.
+title: Zachowanie integralności Cesarstwa Rosyjskiego.
+subtitle: Jest to niezmiernie niepopularne wśród naszej bazy poparcia.
 choose-if: social_patriot_strength > internationalist_strength + defensist_strength
 
 @federal_state
-title: Create a federal state in which nationalities will have local autonomy.
+title: Stworzenie federalnego państwa z autonomią dla lokalnych mniejszości.
 
 @personal_autonomy
-title: Every individual will have personal autonomy with regards to nationality, but the nationalities will not have territorial autonomy.
+title: Każda osoba otrzyma swobodę w kwestii swojej narodowości, lecz mniejszości narodowe nie otrzymają terytorialnej autonomii.
 
 @self_determination
-title: The nationalities will have self-determination, including independence if they so choose.
+title: Mniejszości narodowe otrzymają prawo do samostanowienia, w tym do ogłoszenia niepodległości jeśli sobie tego zażyczą.

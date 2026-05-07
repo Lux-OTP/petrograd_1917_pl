@@ -1,4 +1,4 @@
-title: Left-SR Split
+title: Rozłam Lewych Eserów
 view-if: left_sr_dissent > sr_split_threshold
 max-visits: 1
 on-arrival: {!
@@ -48,8 +48,8 @@ if (Q.natanson_advisor) {
 }
 !}
 
-The Left-SRs are splitting into a new party. Most of the Left-SR leadership has resigned, and their supporters will follow them.
+Lewi Eserzy odłączają się by stworzyć nową partię. Większość z ich przywódców zrezygnowała, podążą za nimi ich poplecznicy.
 
-This will result in a new election for Petrograd Soviet leadership.
+Spowoduje to nowe wybory do Rady.
 
-- @soviet_leadership_election: Conduct the Soviet leadership election.
+- @soviet_leadership_election: Przeprowadzimy nowe wybory do Rady Piotrogrodzkiej.

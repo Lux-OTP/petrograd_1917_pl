@@ -35,9 +35,9 @@ We have adopted a whole slew of Left-SR positions around the war, the Provisiona
 
 @rally_soldiers
 title: Rally the soldiers
-subtitle: Increase our support among the soldiers. -1 resource
+subtitle: Increase our support among the soldiers. -1 zasób partii
 choose-if: advisor_action_timer = 0 and sr_resources >= 1
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] weeks before next advisor action. ?][? if sr_resources < 1: Not enough resources. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] weeks before next advisor action. ?][? if sr_resources < 1: Brak dostatecznych zasobów. ?]
 on-arrival: advisor_action_timer = 4; sr_resources -= 1; soldiers_sr += 7*(1-sr_dissent); soldiers_sr -= 4 if war_weariness >= 50 and sr_war_policy <= 1; sr_soldiers_org += 1 if war_weariness <= 50 or sr_war_policy > 1
 
 We have increased our organizing among the soldiers. [? if war_weariness >= 50 and sr_war_policy <= 1 : Our policy is viewed as too pro-war, and makes it harder to organize among the soldiers. ?]

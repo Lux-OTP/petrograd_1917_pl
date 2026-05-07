@@ -1,4 +1,4 @@
-title: Right-SR Split
+title: Rozłam Prawych Eserów
 view-if: right_sr_dissent > sr_split_threshold
 max-visits: 1
 on-arrival: {!
@@ -111,8 +111,8 @@ if (Q.savinkov_advisor) {
 }
 !}
 
-The Right-SRs are splitting to form a new party. Right-SR leaders have resigned from the party's leadership, and their supporters will follow them. [? if sr_drop_gov: Most of the SR-affiliated ministers in the Provisional Government are no longer affiliated with the party. ?]
+TLewi Eserzy odłączają się by stworzyć nową partię. Większość z ich przywódców zrezygnowała, podążą za nimi ich poplecznicy. [? if sr_drop_gov: Większość ministrów Rządu Tymczasowego związanych z Eserami nie jest już naszymi stronnikami. ?]
 
-This will result in a new election for the Petrograd Soviet leadership.
+Spowoduje to nowe wybory do Rady.
 
-- @soviet_leadership_election: Conduct the Soviet leadership election.
+- @soviet_leadership_election: Przeprowadzimy nowe wybory do Rady Piotrogrodzkiej.

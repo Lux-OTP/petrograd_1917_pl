@@ -1,8 +1,8 @@
-title: Join the Provisional Government!
+title: Wchodzimy do Rządu Tymczasowego!
 view-if: player_party = "sr"
 go-to: menu
 
-Which ministerial positions should we take?
+Które pozycje ministerialne powinniśmy zająć?
 
 @menu
 
@@ -11,129 +11,129 @@ Which ministerial positions should we take?
 - @no_more
 
 @no_more
-title: No more ministries
-subtitle: [? if sr_influence >= 10: We still have some more influence to gain ministries. ?][? if sr_influence < 10 : We do not have much influence left. ?]
+title: Dość ministerstw
+subtitle: [? if sr_influence >= 10: Wciąż mamy dość wpływów by wynegocjować więcej ministertw. ?][? if sr_influence < 10 : Nie mamy wiele więcej wpływu na nowy rząd. ?]
 
-This coalition arrangement is tolerable to all the parties.
+Ta umowa koalicyjna jest akceptowalna dla wszystkich stron.
 
 
 @agriculture
-title: Agriculture Ministry
+title: Ministerstwo Rolnictwa
 tags: sr_mins
 choose-if: sr_influence >= 10
 view-if: agriculture_minister_party != "SR"
 on-arrival: sr_influence -= 10; agriculture_minister = "Chernov"; agriculture_minister_party = "SR"
 go-to: menu
 
-Viktor Chernov has been appointed Agriculture [+ government_form : minister +].
+Nowy [+ government_form : minister +] Rolnictwa - Wiktor Czernow.
 
 @food
-title: Food Ministry
-subtitle: The Food ministry deals with food procurement.
+title: Ministerstwo Żywności
+subtitle: Ministerstwo Żywności zajmuje się zaopatrzeniem populacji w żywność.
 tags: sr_mins
 choose-if: sr_influence >= 10
 view-if: food_minister_party != "SR"
 on-arrival: sr_influence -= 10; food_minister = "Kondratiev"; food_minister_party = "SR"
 go-to: menu
 
-Nikolai Kondratiev has been appointed Food [+ government_form : minister +].
+Nowy [+ government_form : minister +] Żywności - Nikołaj Kondratiew.
 
 @justice
-title: Justice Ministry
+title: Ministerstwo Sprawiedliwości
 tags: sr_mins
 choose-if: sr_influence >= 10
 view-if: justice_minister_party != "SR"
 go-to: menu
 on-arrival: sr_influence -= 10; justice_minister = "Kerensky"; justice_minister_party = "SR"
 
-Alexander Kerensky has been appointed Justice [+ government_form : minister +].
+Nowy [+ government_form : minister +] Sprawiedliwości - Aleksander Kiereński.
 
 @labor
-title: Labor Ministry
+title: Ministerstwo Pracy
 tags: sr_mins
 choose-if: sr_influence >= 10
 view-if: labor_minister_party != "SR"
 on-arrival: sr_influence -= 10; labor_minister = "Gots"; labor_minister_party = "SR"
 go-to: menu
 
-Abram Gots has been appointed Labor [+ government_form : minister +].
+Nowy [+ government_form : minister +] Pracy - Abram Goc.
 
 @interior
-title: Interior Ministry
-subtitle: The Interior Ministry deals with internal security.
+title: Ministerstwo Spraw Wewnętrznych
+subtitle: Ministerstwo Spraw Wewnętrznych zajmuje się bezpieczeństwem wewnętrznym.
 tags: sr_mins
 choose-if: sr_influence >= 15
 view-if: interior_minister_party != "SR"
 go-to: menu
 on-arrival: sr_influence -= 15; interior_minister = "Avksentiev"; interior_minister_party = "SR"
 
-Nikolai Avksentiev has been appointed Interior [+ government_form : minister +].
+Nowy [+ government_form : minister +] Spraw Wewnętrznych - Nikołaj Awksientjew.
 
 @finance
-title: Finance Ministry
+title: Ministerstwo Finansów
 tags: sr_mins
 choose-if: sr_influence >= 15
 view-if: finance_minister_party != "SR"
 go-to: menu
 on-arrival: sr_influence -= 15; finance_minister = "Kondratiev"; finance_minister_party = "SR"
 
-Nikolai Kondratiev has been appointed Finance [+ government_form : minister +].
+Nowy [+ government_form : minister +] Finansów - Nikołaj Kondratiew.
 
 # lol basically I don't have suitable ministers so it's just Kerensky appointing himself to everything
 
 @war
-title: War Ministry
+title: Ministerstwo Wojny
 tags: sr_mins
 choose-if: sr_influence >= 15
 view-if: war_minister_party != "SR"
 go-to: menu
 on-arrival: sr_influence -= 15; war_minister = "Kerensky"; war_minister_party = "SR"
 
-Alexander Kerensky has been appointed War [+ government_form : minister +].
+Nowy [+ government_form : minister +] Wojny - Aleksander Kiereński.
 
 # TODO: Verkhovsky should have this under circumstances
 
 
 @foreign
-title: Foreign Ministry
+title: Ministerstwo Spraw Zagranicznych
 tags: sr_mins
 choose-if: sr_influence >= 15
 view-if: foreign_minister_party != "SR"
 go-to: menu
 on-arrival: sr_influence -= 15; foreign_minister = "Kerensky"; foreign_minister_party = "SR"
 
-Alexander Kerensky has been appointed Foreign [+ government_form : minister +].
+Nowy [+ government_form : minister +] Spraw Zagranicznych - Aleksander Kiereński.
 
 
 @transport
-title: Transportation Ministry
-subtitle: This ministry manages the railroads.
+title: Ministerstwo Transportu
+subtitle: To ministerstwo zajmuje się kolejami.
 tags: sr_mins
 choose-if: sr_influence >= 10
 view-if: transport_minister_party != "SR"
 go-to: menu
 on-arrival: sr_influence -= 10; transport_minister = "Kerensky"; transport_minister_party = "SR"
 
-Alexander Kerensky has been appointed Transportation [+ government_form : minister +].
+Nowy [+ government_form : minister +] Transportu - Aleksander Kiereński.
 
 
 @trade
-title: Industry and Trade Ministry
-unavailable-subtitle: Not enough influence.
-subtitle: This ministry manages industrial production.
+title: Ministerstwo Przemysłu i Handlu
+unavailable-subtitle: Zbyt mało wpływów.
+subtitle: To ministerstwo zajmuje się produkcją przemysłową.
 view-if: trade_minister_party != "SR"
 tags: sr_mins
 choose-if: sr_influence >= 10
 go-to: menu
 on-arrival: sr_influence -= 10; trade_minister = "Kondratiev"; trade_minister_party = "SR"
 
-Nikolai Kondratiev been appointed Trade and Industry [+ government_form : minister +].
+Nowy [+ government_form : minister +] Przemysłu i Handlu - Nikołaj Kondratiew.
 
 
 
 @drop_agriculture
-title: Drop the Agriculture Ministry.
-unavailable-subtitle: As SRs, we must hold the Agriculture Ministry.
+title: Odpuszczamy Ministerstwo Rolnictwa.
+unavailable-subtitle: Jako Eserzy, musimy zająć Ministerstwo Rolnictwa.
 view-if: agriculture_minister_party = "SR"
 choose-if: m_rural_policy > 0
 tags: sr_drop_mins
@@ -144,10 +144,11 @@ Q.agriculture_minister_party = "Kadet";
 Q.sr_influence += 10;
 !}
 
-We have dropped the Agriculture Ministry, and the position has been assigned to [+ agriculture_minister +], the [+ agriculture_minister_party +].
+Odpuściliśmy Ministerstwo Rolnictwa.
+Nowy [+ government_form : minister +] Rolnictwa - [+ agriculture_minister +], [+ agriculture_minister_party +].
 
 @drop_food
-title: Drop the Food Ministry.
+title: Odpuszczamy Ministerstwo Żywności.
 view-if: food_minister_party = "SR"
 tags: sr_drop_mins
 go-to: menu
@@ -157,12 +158,13 @@ Q.food_minister_party = "Popular Socialist";
 Q.sr_influence += 10;
 !}
 
-We have dropped the Food Ministry, and the position has been assigned to [+ food_minister +], the [+ food_minister_party +].
+Odpuściliśmy Ministerstwo Żywności.
+Nowy [+ government_form : minister +] Żywności - [+ food_minister +], [+ food_minister_party +].
 
 
 
 @drop_justice
-title: Drop the Justice Ministry.
+title: Odpuszczamy Ministerstwo Sprawiedliwości.
 view-if: justice_minister_party = "SR"
 tags: sr_drop_mins
 go-to: menu
@@ -177,11 +179,12 @@ if (!Q.in_socialist_coalition) {
 Q.sr_influence += 10;
 !}
 
-We have dropped the Justice Ministry, and the position has been assigned to [+ justice_minister +], the [+ justice_minister_party +].
+Odpuściliśmy Ministerstwo Sprawiedliwości.
+Nowy [+ government_form : minister +] Sprawiedliwości - [+ justice_minister +], [+ justice_minister_party +].
 
 
 @drop_labor
-title: Drop the Labor Ministry.
+title: Odpuszczamy Ministerstwo Pracy.
 view-if: labor_minister_party = "SR"
 tags: sr_drop_mins
 go-to: menu
@@ -196,12 +199,13 @@ if (!Q.in_socialist_coalition) {
 Q.sr_influence += 10;
 !}
 
-We have dropped the Labor Ministry, and the position has been assigned to [+ labor_minister +], the [+ labor_minister_party +].
+Odpuściliśmy Ministerstwo Pracy.
+Nowy [+ government_form : minister +] Pracy - [+ labor_minister +], [+ labor_minister_party +].
 
 
 
 @drop_interior
-title: Drop the Interior Ministry.
+title: Odpuszczamy Ministerstwo Spraw Wewnętrznych.
 view-if: interior_minister_party = "SR"
 tags: sr_drop_mins
 go-to: menu
@@ -219,11 +223,12 @@ if (Q.kadets_resigned) {
 Q.sr_influence += 15;
 !}
 
-We have dropped the Interior Ministry, and the position has been assigned to [+ interior_minister +], the [+ interior_minister_party +].
+Odpuściliśmy Ministerstwo Spraw Wewnętrznych.
+Nowy [+ government_form : minister +] Spraw Wewnętrznych - [+ interior_minister +], [+ interior_minister_party +].
 
 
 @drop_finance
-title: Drop the Finance Ministry.
+title: Odpuszczamy Ministerstwo Finansów.
 view-if: finance_minister_party = "SR"
 tags: sr_drop_mins
 go-to: menu
@@ -238,12 +243,13 @@ if (Q.kadets_resigned) {
 Q.sr_influence += 15;
 !}
 
-We have dropped the Finance Ministry, and the position has been assigned to [+ finance_minister +], the [+ finance_minister_party +].
+Odpuściliśmy Ministerstwo Finansów.
+Nowy [+ government_form : minister +] Finansów - [+ finance_minister +], [+ finance_minister_party +].
 
 
 
 @drop_war
-title: Drop the War Ministry.
+title: Odpuszczamy Ministerstwo Wojny.
 view-if: war_minister_party = "SR"
 tags: sr_drop_mins
 go-to: menu
@@ -258,12 +264,13 @@ if (Q.kadets_resigned || Q.in_socialist_coalition) {
 Q.sr_influence += 15;
 !}
 
-We have dropped the War Ministry, and the position has been assigned to [+ war_minister +], the [+ war_minister_party +].
+Odpuściliśmy Ministerstwo Wojny.
+Nowy [+ government_form : minister +] Wojny - [+ war_minister +], [+ war_minister_party +].
 
 
 
 @drop_foreign
-title: Drop the Foreign Ministry.
+title: Odpuszczamy Ministerstwo Spraw Zagranicznych.
 view-if: foreign_minister_party = "SR"
 tags: sr_drop_mins
 go-to: menu
@@ -273,12 +280,13 @@ Q.foreign_minister_party = "Independent";
 Q.sr_influence += 15;
 !}
 
-We have dropped the Foreign Ministry, and the position has been assigned to [+ foreign_minister +], the [+ foreign_minister_party +].
+Odpuściliśmy Ministerstwo Spraw Zagranicznych.
+Nowy [+ government_form : minister +] Spraw Zagranicznych -  [+ foreign_minister +], [+ foreign_minister_party +].
 
 
 
 @drop_transport
-title: Drop the Transport Ministry.
+title: Odpuszczamy Ministerstwo Transportu.
 view-if: transport_minister_party = "SR"
 tags: sr_drop_mins
 go-to: menu
@@ -293,12 +301,13 @@ if (!Q.in_socialist_coalition) {
 Q.sr_influence += 10;
 !}
 
-We have dropped the Transport Ministry, and the position has been assigned to [+ transport_minister +], the [+ transport_minister_party +].
+Odpuściliśmy Ministerstwo Transportu.
+Nowy [+ government_form : minister +] Transportu -  [+ transport_minister +], [+ transport_minister_party +].
 
 
 
 @drop_trade
-title: Drop the Trade and Industry Ministry.
+title: Odpuszczamy Ministerstwo Przemysłu i Handlu.
 view-if: trade_minister_party = "SR"
 tags: sr_drop_mins
 go-to: menu
@@ -313,5 +322,6 @@ if (!Q.in_socialist_coalition) {
 Q.sr_influence += 10;
 !}
 
-We have dropped the Trade Ministry, and the position has been assigned to [+ trade_minister +], the [+ trade_minister_party +].
+Odpuściliśmy Ministerstwo Przemysłu i Handlu.
+Nowy [+ government_form : minister +] Przemysłu i Handlu -  [+ trade_minister +], [+ trade_minister_party +].
 

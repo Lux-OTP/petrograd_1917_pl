@@ -22,7 +22,7 @@ We can improve our relations with the other democratic or socialist parties.
 title: Improve our relations with the Socialist-Revolutionaries.
 on-arrival: b_sr_relation += 6*(1-b_dissent); b_resources -= 1;
 choose-if: b_resources >= 1
-subtitle: -1 resource
+subtitle: -1 zasób partii
 
 We have improved our relations with the Party of Socialist-Revolutionaries.
 
@@ -30,6 +30,6 @@ We have improved our relations with the Party of Socialist-Revolutionaries.
 title: Can we repair our relations with the Mensheviks?
 on-arrival: m_b_relation += 5*(1-b_dissent); m_b_relation -= 3 if leninist_strength >= moderate_strength; b_resources -= 1;
 choose-if: b_resources >= 1
-subtitle: -1 resource
+subtitle: -1 zasób partii
 
 We have attempted to build closer ties with the Mensheviks, our wayward cousins in the RSDLP. [? if leninist_strength >= moderate_strength : The influence of Lenin makes it difficult for us to build these relationships. ?]

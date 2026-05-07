@@ -361,7 +361,7 @@ go-to: menu
 
 **Frakcje wewnętrzne Bolszewików:**
 
-Ogólna Rozłamowość: [+ b_dissent_percent : dissent +]
+Ogólna Niezgoda: [+ b_dissent_percent : dissent +]
 
 **Umiarkowani**
 
@@ -369,7 +369,7 @@ Frakcja Umiarkowana Bolszewików dąży do współpracy z innymi partiami socjal
 
 Siła: [+ moderate_strength : strength_2 +]
 
-Rozłamowość: [+ moderate_dissent : dissent +]
+Niezgoda: [+ moderate_dissent : dissent +]
 
 **Centrum**
 
@@ -377,7 +377,7 @@ Większość Bolszewików to pragmatyści skłonni do obrania mniej lub bardziej
 
 Siła: [+ center_strength : strength_2 +]
 
-Rozłamowość: [+ center_dissent : dissent +]
+Niezgoda: [+ center_dissent : dissent +]
 
 
 **Leniniści**
@@ -386,7 +386,7 @@ Włodzimierz Lenin jest najbardziej wpływowym członkiem w partii Bolszewików,
 
 Siła: [+ leninist_strength : strength_2 +]
 
-Rozłamowość: [+ leninist_dissent : dissent +]
+Niezgoda: [+ leninist_dissent : dissent +]
 
 
 
@@ -401,7 +401,7 @@ Ugrupowanie Pawła Milukowa wsparło rewolucję ponieważ wierzyło że jest w s
 
 Siła: [+ right_kadet_strength : strength_2 +]
 
-Rozłamowość: [+ right_kadet_dissent : dissent +]
+Niezgoda: [+ right_kadet_dissent : dissent +]
 
 
 **Lewi Kadeci**
@@ -410,14 +410,14 @@ Nikołaj Niekrasow i jego poplecznicy są skłonni do współpracy z umiarkowany
 
 Siła: [+ left_kadet_strength : strength_2 +]
 
-Rozłamowość: [+ left_kadet_dissent : dissent +]
+Niezgoda: [+ left_kadet_dissent : dissent +]
 
 @factions_m
 go-to: menu
 
 **Frakcje Wewnętrzne Mienszewików:**
 
-Ogólna Rozłamowość: [+ m_dissent_percent : dissent +]
+Ogólna Niezgoda: [+ m_dissent_percent : dissent +]
 
 **Socjaliści-Patrioci**
 
@@ -425,7 +425,7 @@ Wpływowa grupa mienszewickich Socjaldemokratów aktywnie wspierająca działani
 
 Siła: [+ social_patriot_strength : strength_2 +]
 
-Rozłamowość: [+ social_patriot_dissent : dissent +]
+Niezgoda: [+ social_patriot_dissent : dissent +]
 
 
 **Rewolucjoniści - Defensiści**
@@ -434,7 +434,7 @@ Ideologicznie zdefiniowani przez "Syberyjskich Zimmerwaldystów" Irakliego Ceret
 
 Siła: [+ defensist_strength : strength_2 +]
 
-Rozłamowość: [+ defensist_dissent : dissent +]
+Niezgoda: [+ defensist_dissent : dissent +]
 
 
 **Internacjonaliści**
@@ -443,7 +443,7 @@ Wielu Socjaldemokratów wierzy że główną przyczyną wojny jest francuski i b
 
 Siła: [+ internationalist_strength : strength_2 +]
 
-Rozłamowość: [+ internationalist_dissent : dissent +]
+Niezgoda: [+ internationalist_dissent : dissent +]
 
 
 @factions_sr
@@ -451,7 +451,7 @@ go-to: menu
 
 **Frakcje Wewnętrzne Eserów:**
 
-Ogólna Rozłamowość: [+ sr_dissent_percent : dissent +]
+Ogólna Niezgoda: [+ sr_dissent_percent : dissent +]
 
 **Prawi Eserzy**
 
@@ -459,7 +459,7 @@ Prawe skrzydło Socjalistów-Rewolucjonistów popiera wojnę jako niezbędną w 
 
 Siła: [+ right_sr_strength : strength_2 +]
 
-Rozłamowość: [+ right_sr_dissent : dissent +]
+Niezgoda: [+ right_sr_dissent : dissent +]
 
 
 **Eserzy - Centryści**
@@ -468,7 +468,7 @@ Przewodzene przez szanowanego Wiktora Czernowa, centrum Eserów mają nadzieję 
 
 Siła: [+ center_sr_strength : strength_2 +]
 
-Rozłamowość: [+ center_sr_dissent : dissent +]
+Niezgoda: [+ center_sr_dissent : dissent +]
 
 
 **Lewi Eserzy**
@@ -477,7 +477,7 @@ Lewe skrzydło Eserów dąży do natychmiastowego zakończenia wojny i jest skł
 
 Siła: [+ left_sr_strength : strength_2 +]
 
-Rozłamowość: [+ left_sr_dissent : dissent +]
+Niezgoda: [+ left_sr_dissent : dissent +]
 
 
 @figures

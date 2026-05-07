@@ -54,7 +54,7 @@ We have called the workers to cease striking and go back to work. This hurts our
 
 @efficiency
 title: Use the Soviet's connections to improve production.
-subtitle: -1 resources
+subtitle: -1 zasób partiis
 choose-if: soviet_efficacy >= 0.6 and soviet_organization >= 1 and ((player_party = "m" and m_resources > 0) or (player_party = "sr" and sr_resources > 0) or (player_party = "b" and b_resources > 0) or (player_party = "k" and k_resources > 0))
 view-if: workers_councils >= 1 or factory_takeovers >= 1
 unavailable-subtitle: [? if soviet_efficacy < 0.6 : We do not have enough administrative capacity in the Soviet. ?][? if not ((player_party = "m" and m_resources > 0) or (player_party = "sr" and sr_resources > 0) or (player_party = "b" and b_resources > 0) or (player_party = "k" and k_resources > 0)) : We do not have enough resources. ?]

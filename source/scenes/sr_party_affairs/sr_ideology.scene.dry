@@ -16,8 +16,8 @@ Czy powinniśmy zmienić oficjalną linię na temat któregoś z tych problemów
 - @sr_war_policy: Polityka wojenna
 - @sr_prov_gov_policy: Rząd Tymczasowy
 - @sr_industrial_policy: Polityka przemysłowa
-#- @sr_rural_policy: Rural policy
-#- @sr_nationalities: The nationalities
+#- @sr_rural_policy: Polityka rolna
+#- @sr_nationalities: Polityka narodościowa
 - @root: Nie, nie zmienimy żadnej z naszych obecnych pozycji.
 - @easy_discard
 - @cancel_advisor_action

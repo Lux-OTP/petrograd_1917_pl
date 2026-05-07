@@ -106,7 +106,7 @@ Dostępne zasoby partii:
 [? if player_party == "k": [+ k_resources +] ?]
 [? if player_party == "sr": [+ sr_resources +] ?]
 
-Rozłamowość:
+Niezgoda:
 [? if player_party == "b": [+ b_dissent_percent : dissent +] ?]
 [? if player_party == "m": [+ m_dissent_percent : dissent +] ?]
 [? if player_party == "k": [+ k_dissent_percent : dissent +] ?]

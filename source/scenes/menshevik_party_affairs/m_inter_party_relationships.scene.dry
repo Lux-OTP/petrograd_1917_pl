@@ -25,7 +25,7 @@ According to the theory of dialectical materialism, it is the historic role of t
 title: Improve our relations with the Socialist-Revolutionaries.
 on-arrival: m_sr_relation += ipr_change*(1-m_dissent); m_resources -= 1;
 choose-if: m_resources >= 1
-subtitle: -1 resource
+subtitle: -1 zasób partii
 
 We have improved our relations with the Party of Socialist-Revolutionaries.
 
@@ -33,7 +33,7 @@ We have improved our relations with the Party of Socialist-Revolutionaries.
 title: Improve our relations with the Kadets, the middle class liberal party.
 on-arrival: m_k_relation += ipr_change*(1-m_dissent); m_k_relation -= (ipr_change/2)*(1-m_dissent) if internationalist_strength >= defensist_strength + social_patriot_strength or m_prov_gov_policy >= 2 or m_war_policy >= 2; m_resources -= 1;
 choose-if: m_resources >= 1
-subtitle: -1 resource
+subtitle: -1 zasób partii
 
 We are building our ties with the Kadets. [? if internationalist_strength >= defensist_strength + social_patriot_strength or m_war_policy >= 2 : Our support of Internationalism makes it more difficult to build relationships, as they consider our anti-war ideas to be treasonous. ?][? if m_prov_gov_policy >= 2: Our opposition to the Provisional Government makes improving relations difficult. ?]
 
@@ -41,6 +41,6 @@ We are building our ties with the Kadets. [? if internationalist_strength >= def
 title: Can we repair our relations with the Bolsheviks?
 on-arrival: m_b_relation += (ipr_change - 1)*(1-m_dissent); m_b_relation -= (ipr_change/2)*(1-m_dissent) if leninist_strength >= moderate_strength or m_war_policy <= 1 or m_prov_gov_policy <= 1; m_resources -= 1;
 choose-if: m_resources >= 1
-subtitle: -1 resource
+subtitle: -1 zasób partii
 
 We have attempted to build closer ties with the Bolsheviks, our wayward cousins in the RSDLP. [? if leninist_strength >= moderate_strength : The influence of Lenin makes it difficult for us to build these relationships. ?][? if m_war_policy <= 1 : Our defensist war policy makes it difficult to improve relations. ?][? if m_prov_gov_policy <= 1: Our support of the Provisional Government makes it difficult to improve relations. ?]

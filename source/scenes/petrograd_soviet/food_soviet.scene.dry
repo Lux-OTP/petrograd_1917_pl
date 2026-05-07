@@ -43,8 +43,8 @@ We are working with the cooperatives to improve the food purchasing and distribu
 
 @acquire
 title: Send teams into the countryside to acquire food.
-subtitle: -1 resource
-unavailable-subtitle: [? if soviet_organization < 2 and soviet_efficacy < 0.7 : The Soviet does not have the efficacy to do this. ?][? if (player_party = "sr" and sr_resources < 1) or (player_party = "m" and m_resources < 1) or (player_party = "b" and b_resources < 1) : Not enough resources. ?]
+subtitle: -1 zasób partii
+unavailable-subtitle: [? if soviet_organization < 2 and soviet_efficacy < 0.7 : The Soviet does not have the efficacy to do this. ?][? if (player_party = "sr" and sr_resources < 1) or (player_party = "m" and m_resources < 1) or (player_party = "b" and b_resources < 1) : Brak dostatecznych zasobów. ?]
 choose-if: (soviet_organization >= 2 or soviet_efficacy >= 0.7) and ((player_party = "sr" and sr_resources >= 1) or (player_party = "m" and m_resources >= 1) or (player_party = "b" and b_resources >= 1))
 on-arrival: food_teams += 1; b_resources -= 1 if player_party = "b"; m_resources -= 1 if player_party = "m"; sr_resources -= 1 if player_party = "sr"; food_sold += 0.02*soviet_efficacy; workers_m += 4*soviet_efficacy if m_in_exco; workers_sr += 4*soviet_efficacy if sr_in_exco; workers_b += 4*soviet_efficacy if b_in_exco
 

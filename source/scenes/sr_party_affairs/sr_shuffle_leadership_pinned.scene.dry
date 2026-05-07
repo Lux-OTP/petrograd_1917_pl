@@ -1,4 +1,4 @@
-title: Shuffle Leadership
+title: Zmiana przewodnictwa
 view-if: difficulty <= 0 and player_party = "sr"
 new-page: true
 is-card: true

@@ -80,9 +80,9 @@ We have improved relations with the Kadets[? if right_sr_split:. ?][? if not rig
 
 @media
 title: Media Campaigning
-subtitle: Use our media apparatus to support the Mensheviks. -1 resource
+subtitle: Use our media apparatus to support the Mensheviks. -1 zasób partii
 choose-if: advisor_action_timer <= 0
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] weeks before next advisor action. ?][? if m_resources < 1: Not enough resources. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] weeks before next advisor action. ?][? if m_resources < 1: Brak dostatecznych zasobów. ?]
 on-arrival: advisor_action_timer = 4; workers_m += 4*(1-m_dissent); soldiers_m += 4*(1-m_dissent); soldiers_m -= 2 if (war_weariness >= 60 and m_war_policy <= 1);
 
 Our propaganda campaign encourages support for the Menshevik party among the workers and soldiers.
