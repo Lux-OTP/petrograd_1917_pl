@@ -1,13 +1,13 @@
-title: Alexander Kerensky
+title: Aleksander Kiereński
 is-pinned-card: true
 tags: advisor
 card-image: img/portraits/sr/kerensky.jpg
 view-if: kerensky_advisor = 1 and player_party = "sr"
 new-page: true 
 
-= Alexander Kerensky
+= Aleksander Kiereński
 
-Kerensky is a Duma member for the Trudovik, or Labor, faction, and is affiliated with Socialist-Revolutionary circles. He has built a great deal of esteem as a lawyer for the common people, and is working as a bridge between the Provisional Government and the Soviet. [? if prime_minister = "Kerensky": Currently, he serves as the Prime Minister of the Provisional Government. ?]
+Kiereński jest członkiem Dumy z ramienia partii Trudowików, choć jest powiązany z kręgami Socjalistów-Rewolucjonistów. Zbudował renomę jako adwokat praw zwykłych obywateli i stanowi pomost w relacjach między Rządem Tymczasowym a Radą. [? if prime_minister = "Kerensky": Jest obecnym Premierem Rządu Tymczasowego. ?]
 
 - @civil_rights_
 - @military_policy_
@@ -18,47 +18,47 @@ Kerensky is a Duma member for the Trudovik, or Labor, faction, and is affiliated
 
 
 @civil_rights_
-title: Civil Rights
-subtitle: Kerensky is the Justice Minister.
+title: Prawa Obywatelskie
+subtitle: Kiereński jest Ministrem Sprawiedliwości.
 view-if: not womens_rights or not freedom_of_religion
 choose-if: advisor_action_timer = 0 and justice_minister = "Kerensky"
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] weeks before next advisor action. ?] [? if justice_minister != "Kerensky" : Kerensky is not the Justice Minister. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : Tygodnie do następnej akcji doradcy: [+ advisor_action_timer +]. ?] [? if justice_minister != "Kerensky" : Kiereński nie jest Ministrem Sprawiedliwości. ?]
 on-arrival: advisor_action_timer = 4; civil_rights_timer -= 4; last_advisor_action = 1
 go-to: civil_rights
 
 @military_policy_
-title: Military Policy
-subtitle: Kerensky is the War Minister.
+title: Polityka wojenna
+subtitle: Kiereński jest Ministrem Wojny.
 choose-if: advisor_action_timer = 0 and war_minister = "Kerensky"
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] weeks before next advisor action. ?] [? if war_minister != "Kerensky" : Kerensky is not the War Minister. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : Tygodnie do następnej akcji doradcy: [+ advisor_action_timer +]. ?] [? if war_minister != "Kerensky" : Kiereński nie jest Ministrem Wojny. ?]
 on-arrival: advisor_action_timer = 4; war_policy_timer -= 4; last_advisor_action = 1
 go-to: military_policy
 
 @elections_
-title: Preparing for Constituent Assembly Elections
-subtitle: We should prepare to hold Constituent Assembly elections soon.
+title: Przygotowanie wyborów do Zgromadzenia Ustawodawczego
+subtitle: Powinniśmy przygotować się do przeprowadzenia wyborów do Zgromadzenia Ustawodawczego.
 choose-if: advisor_action_timer = 0 and (war_minister = "Kerensky" or justice_minister = "Kerensky" or prime_minister = "Kerensky" or sr_in_gov)
 view-if: difficulty <= 0
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] weeks before next advisor action. ?] [? if not sr_in_gov : We are not in the Provisional Government. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : Tygodnie do następnej akcji doradcy: [+ advisor_action_timer +]. ?] [? if not sr_in_gov : Nie wchodzimy w skład Rządu Tymczasowego. ?]
 on-arrival: advisor_action_timer = 4; prepare_ca_timer -= 4; last_advisor_action = 1
 go-to: prepare_ca
 
 
 @troops
-title: Motivating the Troops
-subtitle: Kerensky enjoys touring the front and giving motivational speeches to the troops.
+title: Motywowanie Oddziałów
+subtitle: Kiereński lubi odwiedzać front i wygłaszać motywacyjne mowy do żołnierzy.
 choose-if: advisor_action_timer = 0 and war_minister = "Kerensky"
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] weeks before next advisor action. ?] [? if war_minister != "Kerensky" : Kerensky is not the War Minister. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : Tygodnie do następnej akcji doradcy: [+ advisor_action_timer +]. ?] [? if war_minister != "Kerensky" : Kiereński nie jest Ministrem Wojny. ?]
 on-arrival: advisor_action_timer = 4; morale += 0.1*(1-war_weariness/100);
 
-Kerensky launches a tour of the front, giving speeches to the troops to motivate them to fight for Russia. [? if war_weariness >= 50 : Our high war weariness impedes the effectiveness of Kerensky's tour. ?]
+Kiereński objeżdża front, głosząc przemówienia do żołnierzy by zmotywować ich do dalszej walki za Rosję. [? if war_weariness >= 50 : Wysokie zmęczenie wojną zmniejsza efektywność starań Kiereńskiego. ?]
 
 @shuffle_cabinet
-title: Shuffle Cabinet
-subtitle: Change the ministers of the Provisional Government.
+title: Przetasowanie Rządu
+subtitle: Wymiana Ministrów Rządu Tymczasowego.
 view-if: prime_minister = "Kerensky"
 choose-if: advisor_action_timer = 0 and sr_in_gov
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] weeks before next advisor action. ?] [? if not sr_in_gov : We are not in the Provisional Government. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : Tygodnie do następnej akcji doradcy: [+ advisor_action_timer +]. ?] [? if not sr_in_gov : Nie wchodzimy w skład Rządu Tymczasowego. ?]
 on-arrival: advisor_action_timer = 4;
 go-to: sr_join_prov_gov
 

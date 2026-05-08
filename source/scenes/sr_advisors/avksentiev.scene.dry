@@ -10,14 +10,14 @@ new-page: true
 Awksientjew jest prawicowym, defensistycznym liderem Eserów.
 
 - @interior_
-- @root: Powrót.
+- @root: Powrót
 
 
 @interior_
 title: Bezpieczeństwo Wewnętrzne
 subtitle: Awksientjew jest Ministrem Spraw Wewnętrznych.
 choose-if: advisor_action_timer = 0 and interior_minister = "Avksentiev"
-unavailable-subtitle: [? if advisor_action_timer > 0 : Tygodnie do następnej akcji doradcy: [+ advisor_action_timer +] ?] [? if interior_minister != "Avksentiev" : Awksientjew nie jest Ministrem Spraw Wewnętrznych. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : Tygodnie do następnej akcji doradcy: [+ advisor_action_timer +]. ?] [? if interior_minister != "Avksentiev" : Awksientjew nie jest Ministrem Spraw Wewnętrznych. ?]
 on-arrival: advisor_action_timer = 4; internal_security_timer -= 4; last_advisor_action = 1
 go-to: internal_security
 
@@ -25,7 +25,7 @@ go-to: internal_security
 title: Wsparcie polityki rewolucyjnego defensizmu
 subtitle: Poparcie kontynuacji wojny w celu obrony państwa i rewolucji.
 choose-if: advisor_action_timer = 0 
-unavailable-subtitle: [? if advisor_action_timer > 0 : Tygodnie do następnej akcji doradcy: [+ advisor_action_timer +] ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : Tygodnie do następnej akcji doradcy: [+ advisor_action_timer +]. ?]
 on-arrival: advisor_action_timer = 4; internal_security_timer -= 4; last_advisor_action = 1
 go-to: internal_security
 
