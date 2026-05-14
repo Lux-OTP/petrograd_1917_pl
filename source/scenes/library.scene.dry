@@ -171,7 +171,7 @@ Spis ludności wg ojczystego języka wedle spisu z 1897 roku:
 <tr><td>Rumuni</td><td>0.89</td></tr>
 <tr><td>Mordwini</td><td>0.81</td></tr>
 <tr><td>Estończycy</td><td>0.80</td></tr>
-<tr><td>Sartic</td><td>0.77</td></tr>
+<tr><td>Sartowie</td><td>0.77</td></tr>
 <tr><td>Czuwasze</td><td>0.67</td></tr>
 <tr><td>Gruzini</td><td>0.66</td></tr>
 <tr><td>Uzbekowie</td><td>0.58</td></tr>
@@ -206,11 +206,11 @@ Użytek armii: [+ military_trains +]%
 
 Użytek cywilny: [+ civilian_trains +]%
 
-Łączna przepustowość kolei: [+ trains_total +] milionów ton rocznie
+Łączna przepustowość kolei: [+ trains_total +] mil. ton rocznie
 
 = Rolnictwo
 
-Produkcja żywności: [+ food_total +] milionów ton rocznie
+Produkcja żywności: [+ food_total +] mil. ton rocznie
 
 Żywność sprzedawana miastom: [+ food_sold_disp +]%
 
@@ -218,9 +218,9 @@ Produkcja żywności: [+ food_total +] milionów ton rocznie
 
 = Spożycie żywności
 
-Zapotrzebowanie w miastach: [+ food_demand_urban +] milionów ton rocznie
+Zapotrzebowanie w miastach: [+ food_demand_urban +] mil. ton rocznie
 
-Zaopatrzenie w miastach: [+ food_supply_urban +] milionów ton rocznie
+Zaopatrzenie w miastach: [+ food_supply_urban +] mil. ton rocznie
 
 Niedostatek żywności: [+ hunger +]% 
 

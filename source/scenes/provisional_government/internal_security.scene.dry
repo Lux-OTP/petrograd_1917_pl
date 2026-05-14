@@ -37,7 +37,7 @@ We have strengthened the city militias.
 
 @recruit_militias
 title: Strengthen the city militias.
-subtitle: -1 budget
+subtitle: -1 do budżetu
 view-if: city_militias >= 1 and city_militias <= 10
 on-arrival: city_militia_strength += 8*(prov_gov_efficacy); city_militia_militancy += 0.02*prov_gov_efficacy; budget -= 1; city_militias += 1
 
@@ -52,14 +52,14 @@ We are trying to make the city militias more effective, and more responsive to t
 
 @rural_militias
 title: Form rural militias.
-subtitle: We need to maintain order in the countryside. -1 budget
+subtitle: We need to maintain order in the countryside. -1 do budżetu
 on-arrival: rural_militia_strength += 15; rural_militia_militancy = 0.5 if rural_militia_militancy = 0; budget -= 1
 
 We have formed a new body of rural militias to maintain order in the countryside.
 
 @rural_militias_2
 title: Continue building up our rural militias.
-subtitle: We need to maintain order in the countryside. -1 budget
+subtitle: We need to maintain order in the countryside. -1 do budżetu
 on-arrival: rural_militia_strength += 10*prov_gov_efficacy; rural_militia_militancy += 0.1*prov_gov_efficacy; budget -= 1
 
 We have increased the size and strength of our rural milita.

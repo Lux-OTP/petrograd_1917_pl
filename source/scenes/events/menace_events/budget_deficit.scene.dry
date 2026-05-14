@@ -24,7 +24,7 @@ We are spending more than our revenues. How do we address the hole in our budget
 
 @print_money
 title: We can always turn on the money printers...
-subtitle: +2 budget
+subtitle: +2 do budżetu
 view-if: budget < 0
 on-arrival: monthly_inflation += 0.4; budget += 2; workers_none += 5; middle_none += 5; soldiers_none += 5;
 go-to: budget_deficit_menu
@@ -33,9 +33,9 @@ We have turned on the money printers. This is bad for our government's legitimac
 
 @foreign_loans
 title: Seek out more foreign loans.
-subtitle: +2 budget
+subtitle: +2 do budżetu
 view-if: budget < 0
-unavailable-subtitle: Our relation with the West is not good enough.
+unavailable-subtitle: Nasze stosunki z Zachodem są zbyt niskie.
 choose-if: west_relation >= 60
 on-arrival: west_relation -= 10; west_loans += 2; foreign_debt += 2; budget += 2;
 go-to: budget_deficit_menu
@@ -44,7 +44,7 @@ We have taken out more loans from the Western powers. This reduces our relations
 
 @raise_taxes
 title: Raise taxes.
-subtitle: +2 budget
+subtitle: +2 do budżetu
 unavailable-subtitle: Taxes are already too high.
 choose-if: income_taxes < 5 and business_taxes < 5
 view-if: budget < 0
@@ -56,7 +56,7 @@ We have raised income and business taxes to cover our budget deficit. This hurts
 
 @bonds
 title: Issue more war bonds.
-subtitle: +2 budget
+subtitle: +2 do budżetu
 view-if: budget < 0
 unavailable-subtitle: People cannot afford any more bonds.
 choose-if: bonding_capacity >= 2

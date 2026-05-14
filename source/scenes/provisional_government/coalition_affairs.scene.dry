@@ -1,4 +1,4 @@
-title: Coalition Affairs
+title: Sprawy Koalicji Rządzącej
 new-page: true
 is-card: true
 on-arrival: week_actions += 1; coalition_affairs_timer += 4
@@ -6,9 +6,9 @@ view-if: (player_party == "m" or player_party == "sr") and player_in_gov and gov
 card-image: img/portraits/TaburinChildrens.jpg
 tags: prov_gov
 
-= Coalition Affairs
+= Sprawy Koalicji Rządzącej
 
-Changes in the Provisional Government might increase political instability and popular discontent with the government.
+Zmiany w Rządzie Tymczasowym mogą podważyć stabilność i zwiększyć publiczne niezadowolenie z Rządu Tymczasowego.
 
 - @m_increase
 - @m_demand_premier
@@ -19,30 +19,30 @@ Changes in the Provisional Government might increase political instability and p
 - @easy_discard
 
 @m_increase
-title: Increase our influence in the government.
-subtitle: We can reshuffle the cabinet and add an additional cabinet member. This might hurt our relations with other parties.
-unavailable-subtitle: [? if m_k_relation < 45 and prime_minister == "Lvov": Our relation with the Kadets are not good enough. ?][? if m_sr_relation < 45 and prime_minister == "Kerensky": Our relation with the SRs are not good enough. ?][? if m_influence > 65: Our coalition partners believe that we have enough influence in government. ?]
+title: Zwiększmy nasze wpływy w rządzie.
+subtitle: Możemy zmienić układ rządu i zyskać w nim dodatkową pozycję. Może to jednak negatywnie wpłynąć na nasze stosunki z innymi partiami.
+unavailable-subtitle: [? if m_k_relation < 45 and prime_minister == "Lvov": Nasze relacje z Kadetami są zbyt niskie. ?][? if m_sr_relation < 45 and prime_minister == "Kerensky": Nasze relacje z Eserami są zbyt niskie. ?][? if m_influence > 65: Nasi partnerzy koalicyjni sądzą że mamy już dość wpływów w rządzie. ?]
 view-if: player_party == "m" and prime_minister_party != "Menshevik"
 choose-if: ((m_k_relation >= 45 and prime_minister == "Lvov") or (m_sr_relation >= 45 and prime_minister == "Kerensky")) and (m_influence <= 65)
 on-arrival: m_k_relation -= 5 if prime_minister == "Lvov"; m_sr_relation -= 5 if prime_minister == "Kerensky"; m_influence += 15; prov_gov_legitimacy -= 4
 go-to: m_join_prov_gov
 
-We demand more Menshevik representation in the cabinet, and our demand have been grudgingly granted by the other government participants.
+Zażądaliśmy więcej reprezentacji w Rządzie Tymczasowym, na co opornie zgodzili się jego pozostali członkowie.
 
 @sr_increase
-title: Increase our influence in the government.
-subtitle: We can reshuffle the cabinet and add an additional cabinet member. This might hurt our relations with other parties.
-unavailable-subtitle: [? if sr_k_relation < 45 and prime_minister == "Lvov": Our relation with the Kadets are not good enough. ?][? if m_sr_relation < 45 and prime_minister == "Tsereteli": Our relation with the Mensheviks are not good enough. ?][? if sr_influence > 65: Our coalition partners believe that we have enough influence in government. ?]
+title: Zwiększmy nasze wpływy w rządzie.
+subtitle: Możemy zmienić układ rządu i zyskać w nim dodatkową pozycję. Może to jednak negatywnie wpłynąć na nasze stosunki z innymi partiami.
+unavailable-subtitle: [? if sr_k_relation < 45 and prime_minister == "Lvov": Nasze relacje z Kadetami są zbyt niskie. ?][? if m_sr_relation < 45 and prime_minister == "Tsereteli": Nasze relacje z Mienszewikami są zbyt niskie. ?][? if sr_influence > 65: Nasi partnerzy koalicyjni sądzą że mamy już dość wpływów w rządzie. ?]
 view-if: player_party == "sr" and prime_minister_party != "SR" and prime_minister != "Kerensky"
 choose-if: ((sr_k_relation >= 45 and prime_minister == "Lvov") or (m_sr_relation >= 45 and prime_minister == "Tsereteli")) and sr_influence <= 65
 on-arrival: sr_k_relation -= 5 if prime_minister == "Lvov"; m_sr_relation -= 5 if prime_minister == "Tsereteli"; sr_influence += 15; prov_gov_legitimacy -= 4
 go-to: m_join_prov_gov
 
-We demand more SR representation in the cabinet, and our demand have been grudgingly granted by the other government participants.
+Zażądaliśmy więcej reprezentacji w Rządzie Tymczasowym, na co opornie zgodzili się jego pozostali członkowie.
 
 @m_demand_premier
-title: Demand the appointment of Irakli Tsereteli as prime minister!
-unavailable-subtitle: [? if m_k_relation < 55 and prime_minister == "Lvov": Our relation with the Kadets are not good enough. ?][? if m_sr_relation < 55 and prime_minister == "Kerensky": Our relation with the SRs are not good enough. ?][? if prime_minister == "Lvov" and k_coalition_dissent >= dissent_threshold - 1 : Our coalition is too fragile for such a move. ?][? if prime_minister == "Kerensky" and socialist_coalition_dissent >= dissent_threshold - 1 : Our coalition is too fragile for such a move. ?]
+title: Zażądajmy ustanowienia Irakliego Cereteliego premierem!
+unavailable-subtitle: [? if m_k_relation < 55 and prime_minister == "Lvov": Nasze relacje z Kadetami są zbyt niskie. ?][? if m_sr_relation < 55 and prime_minister == "Kerensky": Nasze relacje z Eserami są zbyt niskie. ?][? if prime_minister == "Lvov" and k_coalition_dissent >= dissent_threshold - 1 : Nasza koalicja jest zbyt krucha by ryzykować to posunięcie. ?][? if prime_minister == "Kerensky" and socialist_coalition_dissent >= dissent_threshold - 1 : Nasza koalicja jest zbyt krucha by ryzykować to posunięcie. ?]
 view-if: player_party == "m" and prime_minister != "Tsereteli" and prime_minister_party != "Menshevik"
 choose-if: ((m_k_relation >= 55 and prime_minister == "Lvov" and k_coalition_dissent < dissent_threshold - 1) or (m_sr_relation >= 55 and prime_minister == "Kerensky" and socialist_coalition_dissent < dissent_threshold - 1))
 on-arrival: prime_minister = "Tsereteli"; prime_minister_party = "Menshevik"; k_coalition_dissent += 1
@@ -50,16 +50,16 @@ on-arrival: prime_minister = "Tsereteli"; prime_minister_party = "Menshevik"; k_
 Our coalition partners have accepted our demands. Irakli Tsereteli is now prime minister of the Provisional Government.
 
 @sr_demand_premier
-title: Demand the appointment of Alexander Kerensky as prime minister!
-unavailable-subtitle: [? if sr_k_relation < 55 and prime_minister == "Lvov": Our relation with the Kadets are not good enough. ?][? if m_sr_relation < 55 and prime_minister == "Kerensky": Our relation with the SRs are not good enough. ?]
+title: Zażądajmy ustanowienia Aleksandra Kiereńskiego premierem!
+unavailable-subtitle: [? if sr_k_relation < 55 and prime_minister == "Lvov": Nasze relacje z Kadetami są zbyt niskie. ?][? if m_sr_relation < 55 and prime_minister == "Kerensky": Nasze relacje z Eserami są zbyt niskie. ?]
 view-if: player_party == "sr" and prime_minister != "Kerensky" and prime_minister_party != "SR"
 choose-if: ((m_k_relation >= 55 and prime_minister == "Lvov") or (m_sr_relation >= 55 and prime_minister == "Tsereteli"))
 on-arrival: prime_minister = "Kerensky"; prime_minister_party = "SR";
 
 @establish_soviet
-title: Establish a Soviet government!
-subtitle: It is time to form a government based in the Soviets!
-unavailable-subtitle: [? if (player_party = "m" and m_prov_gov_policy < 3) or (player_party = "sr" and sr_prov_gov_policy < 3): The party does not support the formation of an all-socialist government. ?][? if (player_party = "m" and m_k_relation < 40) or (player_party = "sr" and sr_k_relation < 40) : Our relations with the Kadets are not good enough. ?][? if (player_party = "m" and m_sr_relation < 55) : Our relations with the SRs are not good enough. ?][? if (player_party = "sr" and m_sr_relation < 55) : Our relations with the Mensheviks are not good enough. ?][? if not player_in_exco: We must be in the Soviet Executive Committee. ?]
+title: Ustanówmy rządy radzieckie!
+subtitle: Czas sformować rząd oparty na Radach!
+unavailable-subtitle: [? if (player_party = "m" and m_prov_gov_policy < 3) or (player_party = "sr" and sr_prov_gov_policy < 3): Partia nie popiera powstania czysto socjalistycznego rządu. ?][? if (player_party = "m" and m_k_relation < 40) or (player_party = "sr" and sr_k_relation < 40) : Nasze relacje z Kadetami są zbyt niskie. ?][? if (player_party = "m" and m_sr_relation < 55) : Nasze relacje z Eserami są zbyt niskie. ?][? if (player_party = "sr" and m_sr_relation < 55) : Nasze relacje z Mienszewikami są zbyt niskie. ?][? if not player_in_exco: Musimy być częścią Komitetu Wykonawczego Rady. ?]
 view-if:((player_party = "m" and not m_defensist_split) or (player_party = "sr" and not right_sr_split)) and not in_socialist_coalition and government_form != 1
 choose-if: (player_party = "m" and m_prov_gov_policy >= 3 and m_sr_relation >= 55 and m_k_relation >= 40 and m_in_exco) or (player_party = "sr" and sr_prov_gov_policy >= 3 and m_sr_relation >= 55 and sr_k_relation >= 40 and sr_in_exco)
 on-arrival: k_in_gov = 0; sr_in_gov = 1; m_in_gov = 1; in_socialist_coalition = 1; prime_minister = "Kerensky"; prime_minister_party = "SR"; agriculture_minister = "Chernov"; agriculture_minister_party = "SR"; justice_minister = "Kerensky"; justice_minister_party = "SR"; interior_minister = "Tsereteli"; interior_minister_party = "Menshevik"; finance_minister = "Voitinsky"; finance_minister_party = "Menshevik"; war_minister = "Verkhovsky"; war_minister_party = "SR"; foreign_minister = "Tereshchenko"; foreign_minister_party = "Independent"; transport_minister = "Plekhanov"; transport_minister_party = "Menshevik"; trade_minister = "Groman"; trade_minister_party = "Menshevik"; food_minister = "Kondratiev"; food_minister_party = "SR"; m_influence = m_sr_relation - 35; sr_influence = m_sr_relation - 45; m_k_relation -= 10; sr_k_relation -= 10; prov_gov_legitimacy += 30; workers_sr += 15*(1-sr_dissent); soldiers_sr += 15*(1-sr_dissent); workers_m += 15*(1-m_dissent); soldiers_m += 15*(1-m_dissent); government_form = 1; m_k_relation -= 10; sr_k_relation -= 10; m_b_relation += 5; b_sr_relation += 5;
@@ -72,17 +72,17 @@ go-to: soviet_government_formation
 
 
 @m_leave_govt
-title: Resign from the government.
+title: Opuśćmy Rząd Tymczasowy.
 
 @sr_leave_govt
 
 @m_shuffle_cabinet
-title: Shuffle the cabinet, and increase our representation in government.
-subtitle: Our coalition partners might be upset...
+title: Zreorganizujmy rząd, zwiększając przy tym nasze wpływy.
+subtitle: Nasi partnerzy koalicyjni mogą być niezadowoleni...
 view-if: player_party == "m" and prime_minister_party == "Menshevik" and sr_influence <= 80
 
 @sr_shuffle_cabinet
-title: Shuffle the cabinet, and increase our representation in government.
-subtitle: Our coalition partners might be upset...
+title: Zreorganizujmy rząd, zwiększając przy tym nasze wpływy.
+subtitle: Nasi partnerzy koalicyjni mogą być niezadowoleni...
 view-if: player_party == "sr" and (prime_minister_party == "SR" or prime_minister_party == "Right-SR") and sr_influence <= 80
 

@@ -19,7 +19,7 @@ The workers are expecting great things from the post-revolutionary government - 
 
 @8_hour
 title: Impose an 8-hour workday.
-subtitle: -1 budget
+subtitle: -1 do budżetu
 on-arrival: budget -= 1; industry *= 0.95; workday = 1; labor_unrest -= 15*unrest_modifier; workers_m += 7*(1-m_dissent) if m_in_gov; workers_sr += 5*(1-sr_dissent) if sr_in_gov; capital_flight_progress += 2
 view-if: workday = 0
 
@@ -27,7 +27,7 @@ We have declared an 8-hour workday! This fulfills a longstanding demand of the l
 
 @safety
 title: Enforce safety regulations.
-subtitle: -1 budget
+subtitle: -1 do budżetu
 on-arrival: budget -= 1; labor_unrest -= 5*unrest_modifier; workers_m += 5*(1-m_dissent)*prov_gov_efficacy if m_in_gov; workers_sr += 5*(1-sr_dissent)*prov_gov_efficacy if sr_in_gov;
 
 We have started to enforce safety regulations at factories, and worked to change working conditions to ameliorate safety issues.

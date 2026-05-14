@@ -38,7 +38,7 @@ title: Improve relations with the United States.
 
 @loans
 title: Negotiate for new loans.
-subtitle: +2 budget; this will lower relations with the West.
+subtitle: +2 do budżetu; this will lower relations with the West.
 unavailable-subtitle: We do not have good enough relations with the Allies.
 choose-if: west_relation >= 55
 on-arrival: west_relation -= 8; budget += 2;

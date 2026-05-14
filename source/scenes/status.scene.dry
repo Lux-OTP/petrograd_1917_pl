@@ -369,11 +369,11 @@ Użytek armii: [+ military_trains +]%
 
 Użytek cywilny: [+ civilian_trains +]%
 
-Łączna przepustowość kolei: [+ trains_total +] milionów ton rocznie
+Łączna przepustowość kolei: [+ trains_total +] mil. ton rocznie
 
 = Rolnictwo
 
-Produkcja żywności: [+ food_total +] milionów ton rocznie
+Produkcja żywności: [+ food_total +] mil. ton rocznie
 
 Żywność sprzedawana miastom: [+ food_sold_disp +]%
 

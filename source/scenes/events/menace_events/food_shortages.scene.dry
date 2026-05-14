@@ -40,13 +40,13 @@ go-to: root
 
 @grain_monopoly
 title: Create a state monopoly for grain purchasing.
-subtitle: -2 budget
+subtitle: -2 do budżetu
 view-if: player_in_gov and grain_monopoly = 0
 go-to: food_policy.state_buyer
 
 
 @increase_price
 title: Increase the price of grain paid out to farmers.
-subtitle: -2 budget
+subtitle: -2 do budżetu
 view-if: grain_monopoly = 1 and player_in_gov
 go-to: food_policy.increase_price

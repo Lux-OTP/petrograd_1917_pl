@@ -48,7 +48,7 @@ title: Prioritize civilian rail capacity for industry.
 
 @rail_labor
 title: Work with the railworkers' union to improve wages and working conditions.
-subtitle: -2 budget
+subtitle: -2 do budżetu
 on-arrival: labor_unrest -= 5*unrest_modifier; train_capacity *= 1.002; budget -= 2
 
 Improving labor conditions might encourage rail workers to be better at their jobs, increasing rail capacity.
