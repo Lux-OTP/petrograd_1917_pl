@@ -63,97 +63,97 @@ Sprzętu transportowego: [+ transportation_industry +]%
 @reduce_military
 title: Zmniejszmy produkcję wojenną.
 subtitle: Na skutek wojny ogromna część przemysłu została przestawiona na tworzenie broni i amunicji dla armii.
-unavailable-subtitle: [? if industrial_changes >= industrial_changes_limit : Możemy przekierować tylko część produkcji za jednym razem. ?] [? if military_industry < 5 : Nie zostało już nic do przekierowania. ?]
+unavailable-subtitle: [? if industrial_changes >= industrial_changes_limit : Możemy przekierować tylko część produkcji za jednym razem. ?] [? if military_industry < 5 : Nie zostało już nic co możemy przekierować. ?]
 choose-if: industrial_changes < industrial_changes_limit and military_industry >= 5
 on-arrival: military_industry -= 5; unused_industry += 5; industrial_changes += 5
 go-to: ind_menu
 
 @reduce_civilian
 title: Zmniejszmy produkcję cywilną.
-subtitle: W czasie wojny produkcja dóbr konsumpcyjnych znacząco spadła.
-unavailable-subtitle: [? if industrial_changes >= industrial_changes_limit : Możemy przekierować tylko część produkcji za jednym razem. ?] [? if civilian_industry < 5 : Nie zostało już nic do przekierowania. ?]
+subtitle: Na skutek wojny produkcja dóbr konsumpcyjnych znacząco spadła.
+unavailable-subtitle: [? if industrial_changes >= industrial_changes_limit : Możemy przekierować tylko część produkcji za jednym razem. ?] [? if civilian_industry < 5 : Nie zostało już nic co możemy przekierować. ?]
 choose-if: industrial_changes < industrial_changes_limit and civilian_industry >= 5
 on-arrival: civilian_industry -= 5; unused_industry += 5; industrial_changes += 5
 go-to: ind_menu
 
 @reduce_agricultural
-title: Reduce agricultural production.
-subtitle: Since the war began, production of agricultural equipment has shrunk greatly.
-unavailable-subtitle: [? if industrial_changes >= industrial_changes_limit : Możemy przekierować tylko część produkcji za jednym razem. ?] [? if agricultural_industry < 5 : Nie zostało już nic do przekierowania. ?]
+title: Zmniejszmy produkcję sprzętu rolniczego.
+subtitle: Na skutek wojny produkcja wyposażenia dla rolników drastycznie zmalała.
+unavailable-subtitle: [? if industrial_changes >= industrial_changes_limit : Możemy przekierować tylko część produkcji za jednym razem. ?] [? if agricultural_industry < 5 : Nie zostało już nic co możemy przekierować. ?]
 choose-if: industrial_changes < industrial_changes_limit and agricultural_industry >= 5
 on-arrival: agricultural_industry -= 5; unused_industry += 5; industrial_changes += 5
 go-to: ind_menu
 
 @reduce_transportation
-title: Reduce transportation production.
-subtitle: Train cars, locomotives, and rail tracks are in great demand.
-unavailable-subtitle: [? if industrial_changes >= industrial_changes_limit : Możemy przekierować tylko część produkcji za jednym razem. ?] [? if transportation_industry < 5 : Nie zostało już nic do przekierowania. ?]
+title: Zmniejszmy produkcję sprzętu transportowego.
+subtitle: Tabor kolejowy i szyny są wysoce pożądane w całym kraju.
+unavailable-subtitle: [? if industrial_changes >= industrial_changes_limit : Możemy przekierować tylko część produkcji za jednym razem. ?] [? if transportation_industry < 5 : Nie zostało już nic co możemy przekierować. ?]
 choose-if: industrial_changes < industrial_changes_limit and transportation_industry >= 5
 on-arrival: transportation_industry -= 5; unused_industry += 5; industrial_changes += 5
 go-to: ind_menu
 
 @reduce_capital
-title: Reduce capital production.
-subtitle: Production of factory equipment and tools necessary to expand production.
-unavailable-subtitle: [? if industrial_changes >= industrial_changes_limit : Możemy przekierować tylko część produkcji za jednym razem. ?] [? if capital_industry < 5 : Nie zostało już nic do przekierowania. ?]
+title: Zmniejszmy produkcję środków produkcji.
+subtitle: Produkcja narzędzi i maszyn potrzebnych do powiększania i tworzenia ośrodków przemysłowych.
+unavailable-subtitle: [? if industrial_changes >= industrial_changes_limit : Możemy przekierować tylko część produkcji za jednym razem. ?] [? if capital_industry < 5 : Nie zostało już nic co możemy przekierować. ?]
 choose-if: industrial_changes < industrial_changes_limit and capital_industry >= 5
 on-arrival: capital_industry -= 5; unused_industry += 5; industrial_changes += 5
 go-to: ind_menu
 
 
 @increase_military
-title: Increase military production.
-subtitle: During the war, the bulk of the industry has been devoted to making guns and ammunition for the army.
-unavailable-subtitle: [? if unused_industry < 5 : There is not enough unused industrial capacity. ?] [? if military_industry >= 80 : We cannot increase anymore. ?]
+title: Zwiększmy produkcję wojenną.
+subtitle: Na skutek wojny ogromna część przemysłu została przestawiona na tworzenie broni i amunicji dla armii.
+unavailable-subtitle: [? if unused_industry < 5 : Nie ma dosyć wolnej mocy przerobowej. ?] [? if military_industry >= 80 : Nie możemy dalej zwiększyć nakładu. ?]
 choose-if: unused_industry >= 5 and military_industry < 80
 on-arrival: military_industry += 5; unused_industry -= 5;
 go-to: ind_menu
 
 @increase_civilian
-title: Increase civilian production.
-subtitle: Since the war began, production of consumer goods has shrunk greatly.
-unavailable-subtitle: [? if unused_industry < 5 : There is not enough unused industrial capacity. ?] [? if civilian_industry >= 80 : We cannot increase anymore. ?]
+title: Zwiększmy produkcję cywilną.
+subtitle: Na skutek wojny produkcja dóbr konsumpcyjnych znacząco spadła.
+unavailable-subtitle: [? if unused_industry < 5 : Nie ma dosyć wolnej mocy przerobowej. ?] [? if civilian_industry >= 80 : Nie możemy dalej zwiększyć nakładu. ?]
 choose-if: unused_industry >= 5 and civilian_industry < 80
 on-arrival: civilian_industry += 5; unused_industry -= 5
 go-to: ind_menu
 
 @increase_agricultural
-title: Increase agricultural production.
-subtitle: Since the war began, production of agricultural equipment has shrunk greatly.
-unavailable-subtitle: [? if unused_industry < 5 : There is not enough unused industrial capacity. ?] [? if agricultural_industry >= 80 : We cannot increase anymore. ?]
+title: Zwiększmy produkcję sprzętu rolniczego.
+subtitle: Na skutek wojny produkcja wyposażenia dla rolników drastycznie zmalała.
+unavailable-subtitle: [? if unused_industry < 5 : Nie ma dosyć wolnej mocy przerobowej. ?] [? if agricultural_industry >= 80 : Nie możemy dalej zwiększyć nakładu. ?]
 choose-if: unused_industry >= 5 and agricultural_industry < 80
 on-arrival: agricultural_industry += 5; unused_industry -= 5
 go-to: ind_menu
 
 @increase_transportation
-title: Increase transportation production.
-subtitle: Train cars, locomotives, and rail tracks are in great demand.
-unavailable-subtitle: [? if unused_industry < 5 : There is not enough unused industrial capacity. ?] [? if transportation_industry >= 80 : We cannot increase anymore. ?]
+title: Zwiększmy produkcję sprzętu transportowego.
+subtitle: Tabor kolejowy i szyny są wysoce pożądane w całym kraju.
+unavailable-subtitle: [? if unused_industry < 5 : Nie ma dosyć wolnej mocy przerobowej. ?] [? if transportation_industry >= 80 : Nie możemy dalej zwiększyć nakładu. ?]
 choose-if: unused_industry >= 5 and transportation_industry < 80
 on-arrival: transportation_industry += 5; unused_industry -= 5
 go-to: ind_menu
 
 @increase_capital
-title: Increase capital production.
+title: Zwiększmy produkcję środków produkcji.
 subtitle: Production of factory equipment and tools necessary to expand production.
-unavailable-subtitle: [? if unused_industry < 5 : There is not enough unused industrial capacity. ?] [? if capital_industry >= 80 : We cannot increase anymore. ?]
+unavailable-subtitle: [? if unused_industry < 5 : Nie ma dosyć wolnej mocy przerobowej. ?] [? if capital_industry >= 80 : Nie możemy dalej zwiększyć nakładu. ?]
 choose-if: unused_industry >= 5 and capital_industry < 80
 on-arrival: capital_industry += 5; unused_industry -= 5
 go-to: ind_menu
 
 @improve
-title: Improve industrial production with the aid of the Soviet.
-subtitle: Success depends on our level of cooperation with the Soviet and its efficacy.
+title: Poprawmy wydajność produkcji z pomocą Rady.
+subtitle: Powodzenie tego ruchu zależy od naszej kooperacji z Radą.
 choose-if: soviet_cooperation >= 0.7 and soviet_efficacy >= 0.7 and improve_production_count <= capital_industry
-unavailable-subtitle: [? if soviet_cooperation <= 0.7: The Provisional Government does not have enough cooperation with the Soviet. ?][? if soviet_efficacy < 0.7 : The Soviet does not have the administrative capacity to help. ?][? if improve_production_count >= capital_industry : There is not much room to improve without more capital production. ?]
+unavailable-subtitle: [? if soviet_cooperation <= 0.7: Kooperacja między Rządem Tymczasowym i Radą jest niewystarczająca. ?][? if soviet_efficacy < 0.7 : Rada nie ma dość rozbudowanego aparatu administracji aby nam pomóć. ?][? if improve_production_count >= capital_industry : Nie mamy możliwości dokonania dalszych poprawek bez zwiększenia zaopatrzenia środków produkcji. ?]
 on-arrival: improve_production_count += 1; industry += 10*soviet_efficacy*soviet_cooperation*prov_gov_efficacy;
 
-With the cooperation of the Petrograd Soviet, We have embarked on a project to organize industrial production and improve the efficiency of our industry. [? if prov_gov_efficacy < 0.6 : The inefficiency of our own government is a hindrance here. ?]
+We współpracy z Radą Piotrogrodzką, rozpoczęliśmy starania w celu poprawienia organizacji i wydajności produkcji przemysłowej. [? if prov_gov_efficacy < 0.6 : Niewydolność naszego własnego rządu obniża efektywność tych działań. ?]
 
 
 @demilitarization
-title: Return the industries to civilian footing.
-subtitle: This is a major undertaking - we will shift all of our military industries to various civilian uses.
+title: Przywróćmy przemysł na cywilne tory.
+subtitle: To poważne przedsięwzięcie - przestawimy całość naszego przemysłu zbrojeniowego na użytek różnych gałęzi cywilnych.
 view-if: (is_armistice or is_peace or allied_victory) and not is_demilitarized
 on-arrival: {!
 Q.is_demilitarized = 1;
@@ -173,4 +173,4 @@ Q.military_industry = 0;
 Q.unemployed += 4;
 !}
 
-We are rapidly demilitarizing our industries, shifting everything to various forms of civilian production. There are some inefficiencies involved, and many workers are laid off in the process.
+Masowo demilitaryzujemy nasze fabryki, przestwiając je na produkcję cywilną. Wiążą się z tym pewne niewydolności i wielu robotników jest zwolnionych w trakcie.
