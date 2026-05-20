@@ -1,4 +1,4 @@
-title: Industrial Policy
+title: Polityka Przemysłowa
 new-page: true
 is-card: true
 on-arrival: industrial_policy_timer += 4; week_actions += 1;
@@ -6,43 +6,45 @@ view-if: industrial_policy_timer == 0 and ((player_party = "k" and k_in_gov and 
 card-image: img/Putilov.jpg
 tags: prov_gov
 
-= Industrial Policy
+= Polityka Przemysłowa
 
-During the war, the Tsarist government essentially became the coordinator of all industrial production in Russia. The Provisional Government now must do the same. We must balance the needs of the war with the needs of the people.
+W trakcie wojny, carski rząd stał się koordynatorem całości produkcji przemysłowej w Rosji. Rząd Tymczasowy musi teraz przejąć jego rolę. Musimy pogodzić potrzeby działań wojennych z potrzebami ludu.
 
-Current production allocation:
+= Aktualna Produkcja Przemysłowa:
 
-Military: [+ military_industry +]%
+Wojskowa: [+ military_industry +]%
 
-Civilian goods: [+ civilian_industry +]%
+Cywilna: [+ civilian_industry +]%
 
-Agricultural equipment: [+ agricultural_industry +]%
+Sprzętu rolniczego: [+ agricultural_industry +]%
 
-Transportation equipment: [+ transportation_industry +]%
+Sprzętu transportowego: [+ transportation_industry +]%
 
-Capital goods: [+ capital_industry +]%
+Środków produkcji: [+ capital_industry +]%
 
-- @ind_menu: Change industrial production.
+Łączna produkcja (% roku 1916): [+ industry +]%
+
+- @ind_menu: Zmieńmy produkcję przemysłową.
 - @improve
-- @demilitarization: Return the industries to civilian footing.
-- @root: No production changes are necessary.
+- @demilitarization: Przywróćmy przemysł na cywilne tory.
+- @root: Nie potrzeba żadnych zmian w produkcji.
 - @easy_discard
 - @cancel_advisor_action
 
 
 @ind_menu
 
-Military: [+ military_industry +]%
+Wojskowa: [+ military_industry +]%
 
-Civilian goods: [+ civilian_industry +]%
+Cywilna: [+ civilian_industry +]%
 
-Agricultural equipment: [+ agricultural_industry +]%
+Sprzętu rolniczego: [+ agricultural_industry +]%
 
-Transportation equipment: [+ transportation_industry +]%
+Sprzętu transportowego: [+ transportation_industry +]%
 
-Capital goods: [+ capital_industry +]%
+Środków produkcji: [+ capital_industry +]%
 
-**Unused production capacity: [+ unused_industry +]**
+**Nieużyta moc przerobowa: [+ unused_industry +]**
 
 - @reduce_military
 - @reduce_civilian
@@ -59,17 +61,17 @@ Capital goods: [+ capital_industry +]%
 
 
 @reduce_military
-title: Reduce military production.
-subtitle: During the war, the bulk of the industry has been devoted to making guns and ammunition for the army.
-unavailable-subtitle: [? if industrial_changes >= industrial_changes_limit : We can only retool so much production at once. ?] [? if military_industry < 5 : We cannot reduce anymore. ?]
+title: Zmniejszmy produkcję wojenną.
+subtitle: Na skutek wojny ogromna część przemysłu została przestawiona na tworzenie broni i amunicji dla armii.
+unavailable-subtitle: [? if industrial_changes >= industrial_changes_limit : Możemy przekierować tylko część produkcji za jednym razem. ?] [? if military_industry < 5 : Nie zostało już nic do przekierowania. ?]
 choose-if: industrial_changes < industrial_changes_limit and military_industry >= 5
 on-arrival: military_industry -= 5; unused_industry += 5; industrial_changes += 5
 go-to: ind_menu
 
 @reduce_civilian
-title: Reduce civilian production.
-subtitle: Since the war began, production of consumer goods has shrunk greatly.
-unavailable-subtitle: [? if industrial_changes >= industrial_changes_limit : We can only retool so much production at once. ?] [? if civilian_industry < 5 : We cannot reduce anymore. ?]
+title: Zmniejszmy produkcję cywilną.
+subtitle: W czasie wojny produkcja dóbr konsumpcyjnych znacząco spadła.
+unavailable-subtitle: [? if industrial_changes >= industrial_changes_limit : Możemy przekierować tylko część produkcji za jednym razem. ?] [? if civilian_industry < 5 : Nie zostało już nic do przekierowania. ?]
 choose-if: industrial_changes < industrial_changes_limit and civilian_industry >= 5
 on-arrival: civilian_industry -= 5; unused_industry += 5; industrial_changes += 5
 go-to: ind_menu
@@ -77,7 +79,7 @@ go-to: ind_menu
 @reduce_agricultural
 title: Reduce agricultural production.
 subtitle: Since the war began, production of agricultural equipment has shrunk greatly.
-unavailable-subtitle: [? if industrial_changes >= industrial_changes_limit : We can only retool so much production at once. ?] [? if agricultural_industry < 5 : We cannot reduce anymore. ?]
+unavailable-subtitle: [? if industrial_changes >= industrial_changes_limit : Możemy przekierować tylko część produkcji za jednym razem. ?] [? if agricultural_industry < 5 : Nie zostało już nic do przekierowania. ?]
 choose-if: industrial_changes < industrial_changes_limit and agricultural_industry >= 5
 on-arrival: agricultural_industry -= 5; unused_industry += 5; industrial_changes += 5
 go-to: ind_menu
@@ -85,7 +87,7 @@ go-to: ind_menu
 @reduce_transportation
 title: Reduce transportation production.
 subtitle: Train cars, locomotives, and rail tracks are in great demand.
-unavailable-subtitle: [? if industrial_changes >= industrial_changes_limit : We can only retool so much production at once. ?] [? if transportation_industry < 5 : We cannot reduce anymore. ?]
+unavailable-subtitle: [? if industrial_changes >= industrial_changes_limit : Możemy przekierować tylko część produkcji za jednym razem. ?] [? if transportation_industry < 5 : Nie zostało już nic do przekierowania. ?]
 choose-if: industrial_changes < industrial_changes_limit and transportation_industry >= 5
 on-arrival: transportation_industry -= 5; unused_industry += 5; industrial_changes += 5
 go-to: ind_menu
@@ -93,7 +95,7 @@ go-to: ind_menu
 @reduce_capital
 title: Reduce capital production.
 subtitle: Production of factory equipment and tools necessary to expand production.
-unavailable-subtitle: [? if industrial_changes >= industrial_changes_limit : We can only retool so much production at once. ?] [? if capital_industry < 5 : We cannot reduce anymore. ?]
+unavailable-subtitle: [? if industrial_changes >= industrial_changes_limit : Możemy przekierować tylko część produkcji za jednym razem. ?] [? if capital_industry < 5 : Nie zostało już nic do przekierowania. ?]
 choose-if: industrial_changes < industrial_changes_limit and capital_industry >= 5
 on-arrival: capital_industry -= 5; unused_industry += 5; industrial_changes += 5
 go-to: ind_menu
