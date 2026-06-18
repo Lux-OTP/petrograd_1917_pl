@@ -65,12 +65,12 @@ on-arrival: rural_militia_strength += 10*prov_gov_efficacy; rural_militia_milita
 Zwiększyliśmy liczebność i siłę milicji wiejskich.
 
 @rural_suppress
-title: Użyjmy milicji wiejskich by  unrest in the countryside.
-subtitle: This may upset the left-SRs.
+title: Użyjmy milicji wiejskich by uspokoić nastroje na wsi.
+subtitle: To może zezłościć Lewych Eserów.
 view-if: rural_militia_strength >= 10
 on-arrival: rural_unrest -= rural_militia_strength*rural_militia_militancy*unrest_modifier; left_sr_dissent += 10 if sr_in_gov and sr_leadership = 0; sr_coalition_dissent += 1 if sr_leadership = 1; left_sr_coalition_dissent += 1; land_seizures_timer += 1; coup_progress -= 1
 
-We have sent the rural militias to suppress peasant land seizures.
+Wysłaliśmy milicje wiejskie do walki ze zbuntowanym chłopstwem i nielegalnym przejmowaniem ziemi.
 
 # TODO: investigate Bolsheviks
 
@@ -79,29 +79,29 @@ title: Investigate the Bolsheviks and anarchists
 
 
 @target_bolsheviks
-title: Persecute the Bolsheviks, anarchists, and other malcontents.
-unavailable-subtitle: Our city militias are not effective enough.
+title: Ścigajmy Bolszewików, anarchistów i innych wywrotowców.
+unavailable-subtitle: Nasze milicje miejskie nie są dość silne.
 view-if: b_threat >= 1 and player_party != "b" and not b_in_gov
 choose-if: city_militias >= 1
 on-arrival: workers_b -= 8*prov_gov_efficacy; soldiers_b -= 8*prov_gov_efficacy; b_threat -= 1; m_b_relation -= 15 if m_in_gov; b_sr_relation -= 15 if sr_in_gov; b_k_relation -= 15 if k_in_gov; mrc_timer += 1 if mrc_timer > 0; bolshevik_coup_timer += 1 if bolshevik_coup_timer > 0
 
-We have arrested some of the Bolsheviks who organized riots in the city, and forced others into exile.
+Aresztowaliśmy bądź zmusiliśmy do ucieczki niektórych Bolszewików odpowiedzialnych za wzniecanie protestów w mieście.
 
 
 @anti_crime
-title: Use the militias to combat crime.
-unavailable-subtitle: Our city militias are not effective enough.
+title: Wykorzystajmy milicje miejskie do walki z przestępczością.
+unavailable-subtitle: Nasze milicje miejskie nie są dość silne.
 choose-if: city_militias >= 1
 view-if: crime >= 30
 on-arrival: crime -= 6*city_militias*unrest_modifier; prov_gov_legitimacy += city_militias*3
 
-We have deployed the city militias to increase security and combat crime in Petrograd and other major cities.
+Wysłaliśmy milicje miejskie do walki z przestępcami i pilnowania porządku publicznego w Piotrogrodzie i innych miastach.
 
 @investigate_reactionaries
-title: Investigate right-wing and counterrevolutionary movements.
+title: Zbadajmy działanie skrajnie prawicowych ruchów kontrrewolucyjnych.
 view-if: player_party != "k"
 unavailable-subtitle: [? if city_militias < 1 : Our city militias are not effective enough. ?]
 choose-if: city_militias >= 1
 on-arrival: coup_progress -= city_militias; capital_flight_progress -= city_militias; k_coalition_dissent += 1; prov_gov_legitimacy += city_militias*2;
 
-Many members of the bourgeois and aristocratic classes are disillusioned with the revolution, and some are even discussing measures to overthrow the revolutionary government and replace it with a dictatorship or restored monarchy. There are rumors of sympathy towards the Germans, and plots to leave Petrograd open to German invasion. Our investigators have identified and thwarted some of this organizing.
+Wielu członków burżuazji i arystokracji jest krytycznie nastawionych wobec rewolucji, a niektórzy szukają nawet sposobu na obalenie rewolucyjnego rządu i zastąpienie go dyktaturą lub przywróceniem monarchii. Krążą plotki o niemieckich kolaborantach i spiskach dążących do poddania Piotrogrodu bez walki podczas niemieckiej ofensywy. Nasi śledczy zbadali i powstrzymali niektórych członków tych układów.
