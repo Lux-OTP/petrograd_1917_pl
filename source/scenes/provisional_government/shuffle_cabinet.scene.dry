@@ -1,4 +1,4 @@
-title: Shuffle Cabinet
+title: Zreorganizujmy rząd
 new-page: true
 is-card: true
 on-arrival: shuffle_cabinet_timer += 3; week_actions += 1
@@ -7,6 +7,6 @@ card-image: img/prov_gov_1.jpg
 
 
 @no_shuffle
-title: We do not need to shuffle the cabinet.
+title: Nie ma potrzeby by reorganizować rząd.
 on-arrival: week_actions -= 1
 

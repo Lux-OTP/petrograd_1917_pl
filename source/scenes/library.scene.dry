@@ -286,10 +286,12 @@ go-to: menu
 
 = Armie i Fronty
 
-Front Północny: [+ northern_front_soldiers +] dywizji -
+Dystrubucja dywizji:
+
+Front Północny: [+ northern_front_soldiers +] -
 {!</br>!}[+ northern_progress : war_progress +]
 
-Front Zachodni: [+ western_front_soldiers +] dywizji -
+Front Zachodni: [+ western_front_soldiers +]  -
 {!</br>!}[+ western_progress : war_progress +]
 
 Front Południowo-Zachodni: [+ southwestern_front_soldiers +] dywizji -

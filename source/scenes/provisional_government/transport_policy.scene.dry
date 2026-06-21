@@ -1,4 +1,4 @@
-title: Transportation Policy
+title: Polityka Transportu
 new-page: true
 is-card: true
 on-arrival: transport_policy_timer += 3; week_actions += 1
@@ -7,13 +7,13 @@ card-image: img/train.jpg
 tags: prov_gov
 go-to: transport_menu
 
-= Transportation Policy
+= Polityka Transportu
 
-Due to the war, the government has acquired a great deal of power over the railroads. What should our transportation policy be?
+W wyniku wojny rząd zgromadził w swym ręku kontrolę nad dużą częścią sieci kolejowej. Co powinniśmy z nią zrobić?
 
 @transport_menu
 
-Current allocation:
+Aktualna alokacja sieci transportu:
 
 - @allocate_military
 - @allocate_civilian
@@ -25,20 +25,20 @@ Current allocation:
 - @cancel_advisor_action
 
 @allocate_military
-title: Allocate more rail capacity for the military.
+title: Przydzielmy więcej pociągów armii.
 choose-if: civilian_trains > 0
-unavailable-subtitle: We have already allocated all rail capacity for civilian usage.
+unavailable-subtitle: Przydzieliliśmy już całą dostępną część sieci kolejowej na potrzeby armii.
 on-arrival: military_trains += 5; civilian_trains -= 5
 
-We have allocated more rail capacity for military use.
+Przydzieliliśmy więcej pociągów na potrzeby logistyki wojskowej.
 
 @allocate_civilian
-title: Allocate more rail capacity for civilian uses.
+title: Przydzielmy więcej pociągów do sektora cywilnego.
 choose-if: military_trains > 0
-unavailable-subtitle: We have already allocated all rail capacity for civilian usage.
+unavailable-subtitle: Przydzieliliśmy już całą dostępną część sieci kolejowej na potrzeby sektora cywilnego.
 on-arrival: military_trains -= 5; civilian_trains += 5
 
-We have allocated more rail capacity for civilian use.
+Przydzieliliśmy więcej pociągów do sektora cywilnego.
 
 @prioritize_food
 title: Prioritize civilian rail capacity for food.
@@ -47,8 +47,8 @@ title: Prioritize civilian rail capacity for food.
 title: Prioritize civilian rail capacity for industry.
 
 @rail_labor
-title: Work with the railworkers' union to improve wages and working conditions.
+title: Skontaktujmy się ze związkiem robotników kolejowych by poprawić pensje i warunki pracy.
 subtitle: -2 do budżetu
 on-arrival: labor_unrest -= 5*unrest_modifier; train_capacity *= 1.002; budget -= 2
 
-Improving labor conditions might encourage rail workers to be better at their jobs, increasing rail capacity.
+Poprawa losu pracowników kolei może skłonić ich do cięższej pracy i poprawy wydajności kolei.
