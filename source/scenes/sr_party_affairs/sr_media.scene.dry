@@ -21,7 +21,7 @@ Jaka powinna być nasza strategia dla gazet i innych organów masowego przekazu 
 
 @support_prov_gov
 title: Poparcie Rządu Tymczasowego.
-subtitle: -1 zasób partii
+subtitle: -1 do zasobów partii
 choose-if: sr_resources >= 1
 on-arrival: sr_k_relation += 6*(1-sr_dissent); soviet_cooperation += 0.04*(1-sr_dissent) if sr_in_exco; prov_gov_legitimacy += 4*(1-sr_dissent); sr_resources -= 1
 
@@ -29,7 +29,7 @@ Nasza kampania propagandowa ma zwiększyć poparcie dla Rządu Tymczasowego i je
 
 @support_sr
 title: Poparcie Partii Eserów.
-subtitle: -1 zasób partii
+subtitle: -1 do zasobów partii
 choose-if: sr_resources >= 1
 on-arrival: workers_sr += 4*(1-sr_dissent); peasants_sr += 3*(1-sr_dissent); soldiers_sr += 4*(1-sr_dissent); soldiers_sr -= 2 if (war_weariness >= 60 and sr_war_policy <= 1); sr_resources -= 1
 
@@ -37,7 +37,7 @@ Nasza kampania propagandowa skupia się na krzewieniu poparcia dla partii Socjal
 
 @support_rd
 title: Poparcie rewolucyjnego defensizmu - dalszego toczenia wojny niezbędnego dla zawarcia pokoju.
-subtitle: -1 zasób partii
+subtitle: -1 do zasobów partii
 choose-if: sr_resources >= 1
 on-arrival: right_sr_strength += (sr_support_change+1)*(1-sr_dissent); sr_resources -= 1; right_sr_dissent -= 4; soldier_unrest -= 2*(1-sr_dissent) if right_sr_strength > left_sr_strength; morale += 0.02*(1-sr_dissent) if right_sr_strength > left_sr_strength
 
@@ -45,7 +45,7 @@ Nasze gazety drukują wydania popierające rewolucyjny defensizm, argumentując 
 
 @support_id
 title: Poparcie internacjonalizmu - natychmiastowych negocjacji pokojowych.
-subtitle: -1 zasób partii
+subtitle: -1 do zasobów partii
 choose-if: sr_resources >= 1
 on-arrival: left_sr_strength += (sr_support_change+1)*(1-sr_dissent); left_sr_dissent -= 4; right_sr_dissent += 4; soldiers_sr += 3*(1-sr_dissent); sr_resources -= 1
 

@@ -32,7 +32,7 @@ Through our party organizations and propaganda campaigns, we are tying the milit
 
 @recruitment
 title: Recruit more workers into the militias.
-subtitle: -1 zasób partii
+subtitle: -1 do zasobów partii
 choose-if: workers_militia_strength <= 100 and b_resources >= 1
 unavailable-subtitle: [? if workers_militia_strength > 80 : There are not enough willing workers to recruit. ?][? if b_resources < 1 : Brak dostatecznych zasobów. ?]
 on-arrival: workers_militia_strength += 6*(1-b_dissent); b_resources -= 1
@@ -41,7 +41,7 @@ We have increased recruitment into the workers' militias.
 
 @arming
 title: Increase armaments for the militias.
-subtitle: -1 zasób partii
+subtitle: -1 do zasobów partii
 choose-if: workers_militia_militancy <= 1 and  b_resources >= 1
 unavailable-subtitle: [? if b_resources < 1: Not have enough resources. ?][? if workers_militia_militancy > 1 : We cannot arm them any further. ?]
 on-arrival: workers_militia_militancy += 0.09; b_resources -= 1;
@@ -50,7 +50,7 @@ We have spent resources on purchasing more armaments for the workers' militias.
 
 @mrc
 title: Form a Military-Revolutionary Committee!
-subtitle: We will organize the workers' militias for the defense of the revolution against all enemies. -2 resources
+subtitle: We will organize the workers' militias for the defense of the revolution against all enemies. -2 do zasobów partii
 unavailable-subtitle: [? if b_resources < 2: Brak dostatecznych zasobów. ?][? if not b_in_exco: We must control the Soviet's Executive Committee. ?]
 view-if: player_party = "b" and mrc = 0
 choose-if: b_resources >= 2 and b_in_exco

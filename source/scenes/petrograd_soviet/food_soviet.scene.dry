@@ -1,4 +1,4 @@
-title: Soviet Food Policy
+title: Polityka Żywnościowa Rady
 new-page: true
 view-if: food_soviet_timer = 0 and ((player_party = "b" and b_in_exco) or (player_party = "m" and m_in_exco) or (player_party = "sr" and sr_in_exco) or (player_party = "k" and kadet_in_exco)) and hunger >= 20
 on-arrival: week_actions += 1; food_soviet_timer += 3
@@ -6,15 +6,15 @@ tags: soviet
 is-card: true
 card-image: img/breadline.jpg
 
-= Food Policy
+= Polityka Żywnościowa Rady
 
-Hunger remains a major problem in the cities. The Provisional Government is unable or unwilling to fully deliver on the promises of bread; perhaps the Soviet could take control here?
+Głód pozostaje poważnym problemem w miastach. Rząd Tymczasowy jest niezdolny lub nieskory do spełnienia obietnicy chleba; być może Rada powinna zająć się tym problemem?
 
-Urban food demand: [+ food_demand_urban +] million kg/year
+Zapotrzebowanie w miastach: [+ food_demand_urban +] mil. ton rocznie
 
-Urban food supply: [+ food_supply_urban +] million kg/year
+Zaopatrzenie w miastach: [+ food_supply_urban +] mil. ton rocznie
 
-Food shortage: [+ hunger +]%
+Niedostatek żywności: [+ hunger +]% 
 
 # crack down on black markets
 # send teams to the countryside to acquire food
@@ -28,24 +28,24 @@ Food shortage: [+ hunger +]%
 - @cancel_advisor_action
 
 @crackdown
-title: Crack down on black markets.
+title: Zadziałajmy przeciw czarnym rynkom.
 on-arrival: workers_m += 3*(1-m_dissent)*soviet_efficacy if m_in_exco; workers_sr += 3*(1-sr_dissent)*soviet_efficacy if sr_in_exco; workers_b += 2*(1-b_dissent)*soviet_efficacy if b_in_exco
 
-Cracking down on black markets, hoarders, and profiteers is politically popular, but it does not actually substantially improve the food situation.
+Atakowanie czarnych rynków i spekulantów jest politycznie popularne, lecz nie poprawia znacząco niedostatków żywności.
 
 @coops
-title: Work with the cooperatives to organize food acquisition and distribution.
-unavailable-subtitle: The Soviet does not have the efficacy to do this.
+title: Współpracujmy ze współdzielniami pracy by lepiej zorganizować pozyskiwanie i dystrubucję żywnoś.
+unavailable-subtitle: Rada nie ma dość sprawczości by tego dokonać.
 choose-if: soviet_organization >= 1 or soviet_efficacy >= 0.6
 on-arrival: food_coops += 1; food_sold += 0.01; workers_m += 2*soviet_efficacy if m_in_exco; workers_sr += 2*soviet_efficacy if sr_in_exco; workers_b += 2*soviet_efficacy if b_in_exco
 
-We are working with the cooperatives to improve the food purchasing and distribution process.
+Pracujemy ze współdzielniami pracy by usprawnić proces pozyskiwania i dystrybucji żywności.
 
 @acquire
-title: Send teams into the countryside to acquire food.
-subtitle: -1 zasób partii
-unavailable-subtitle: [? if soviet_organization < 2 and soviet_efficacy < 0.7 : The Soviet does not have the efficacy to do this. ?][? if (player_party = "sr" and sr_resources < 1) or (player_party = "m" and m_resources < 1) or (player_party = "b" and b_resources < 1) : Brak dostatecznych zasobów. ?]
+title: Wyślijmy zespoły na wieś w celu pozyskania żywności.
+subtitle: -1 do zasobów partii
+unavailable-subtitle: [? if soviet_organization < 2 and soviet_efficacy < 0.7 : Rada nie ma dość sprawczości by tego dokonać. ?][? if (player_party = "sr" and sr_resources < 1) or (player_party = "m" and m_resources < 1) or (player_party = "b" and b_resources < 1) : Brak dostatecznych zasobów. ?]
 choose-if: (soviet_organization >= 2 or soviet_efficacy >= 0.7) and ((player_party = "sr" and sr_resources >= 1) or (player_party = "m" and m_resources >= 1) or (player_party = "b" and b_resources >= 1))
 on-arrival: food_teams += 1; b_resources -= 1 if player_party = "b"; m_resources -= 1 if player_party = "m"; sr_resources -= 1 if player_party = "sr"; food_sold += 0.02*soviet_efficacy; workers_m += 4*soviet_efficacy if m_in_exco; workers_sr += 4*soviet_efficacy if sr_in_exco; workers_b += 4*soviet_efficacy if b_in_exco
 
-We have sent teams into the countryside to acquire food. These teams are received with hostility by the peasantry, leading to tensions between the Soviets and the countryside.
+Wysłaliśmy zespoły reprezentantów Rady w tereny wiejskie by pozyskać żywność dla miast. Są one odbierane z wrogością przez chłopów, prowadząc do antypatii między Radą i wsią.

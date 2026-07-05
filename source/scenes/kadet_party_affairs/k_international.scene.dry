@@ -20,7 +20,7 @@ The Kadets are well-connected internationally, and many members have connections
 title: Improve our relations with France and Germany.
 on-arrival: west_relation += 6*(1-k_dissent); k_resources -= 1;
 choose-if: k_resources >= 1
-subtitle: -1 zasób partii
+subtitle: -1 do zasobów partii
 
 Our party members are working to convince foreign diplomats of the goodness of Russia's Provisional Government.
 

@@ -23,7 +23,7 @@ We can improve our relations with the parties on our left or the right.
 title: Improve our relations with the Socialist-Revolutionaries.
 on-arrival: sr_k_relation += ipr_change*(1-k_dissent); k_resources -= 1; sr_k_relation -= ipr_change/2 if left_sr_strength > right_sr_strength;
 choose-if: k_resources >= 1
-subtitle: -1 zasób partii
+subtitle: -1 do zasobów partii
 
 We have improved our relations with the Party of Socialist-Revolutionaries. [? if left_sr_strength > right_sr_strength: The left-wing alignment of the SRs makes it difficult to improve relations. ?]
 
@@ -31,7 +31,7 @@ We have improved our relations with the Party of Socialist-Revolutionaries. [? i
 title: Improve our relations with the Mensheviks.
 on-arrival: m_k_relation += ipr_change*(1-k_dissent); m_k_relation -= ipr_change/2 if internationalist_strength >= defensist_strength + social_patriot_strength; k_resources -= 1;
 choose-if: k_resources >= 1
-subtitle: -1 zasób partii
+subtitle: -1 do zasobów partii
 
 We are building our ties with the Mensheviks. [? if internationalist_strength >= defensist_strength + social_patriot_strength: The internationalist alignment of the Mensheviks makes it difficult to improve relations. ?]
 
@@ -39,6 +39,6 @@ We are building our ties with the Mensheviks. [? if internationalist_strength >=
 title: Improve our relations with the conservative factions to our right.
 on-arrival: k_conservative_relation += (ipr_change+5)*(1-k_dissent); k_conservative_relation -= (ipr_change/2) if left_kadet_strength > right_kadet_strength; k_resources -= 1;
 choose-if: k_resources >= 1
-subtitle: -1 zasób partii
+subtitle: -1 do zasobów partii
 
 The conservative and monarchist right has largely been marginalized since the revolution, but they still have important contacts within the military, church, and upper-level bureaucracy. We attempt to build our relations with them.

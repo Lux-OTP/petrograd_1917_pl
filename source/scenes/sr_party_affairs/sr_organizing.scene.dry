@@ -19,7 +19,7 @@ Partia Socjalistów-Rewolucjonistów ma historię organizowania pośród chłop�
 - @easy_discard
 
 @soldiers
-subtitle: -1 zasób partii
+subtitle: -1 do zasobów partii
 choose-if: sr_resources >= 1
 unavailable-subtitle: Brak dostatecznych zasobów.
 on-arrival: sr_resources -= 1; soldiers_sr += 5*(1-sr_dissent); soldiers_sr -= 4 if war_weariness >= 50 and sr_war_policy <= 1; sr_soldiers_org += 1 if war_weariness <= 50 or sr_war_policy > 1
@@ -27,7 +27,7 @@ on-arrival: sr_resources -= 1; soldiers_sr += 5*(1-sr_dissent); soldiers_sr -= 4
 Zintensyfikowaliśmy nasze próby organizacji pośród żołnierzy. [? if war_weariness >= 50 and sr_war_policy <= 1 : Nasza polityka jest postrzegana jako zbyt prowojenna i utrudnia organizowanie się pośród żołnierzy. ?]
 
 @workers
-subtitle: -1 zasób partii
+subtitle: -1 do zasobów partii
 choose-if: sr_resources >= 1
 unavailable-subtitle: Brak dostatecznych zasobów.
 on-arrival: sr_resources -= 1; workers_sr += 5*(1-sr_dissent); sr_workers_org += 1; workers_sr -= 2 if sr_in_gov and prov_gov_legitimacy <= 50;
@@ -35,7 +35,7 @@ on-arrival: sr_resources -= 1; workers_sr += 5*(1-sr_dissent); sr_workers_org +=
 Zintensyfikowaliśmy nasze próby organizacji pośród robotników. [? if sr_in_gov and prov_gov_legitimacy <= 50 : Nasze uczestnictwo w niepopularnym Rządzie Tymczasowym ogranicza nasze poparcie. ?]
 
 @middle_class
-subtitle: -1 zasób partii - klasa średnia nie jest częścią naszej bazy poparcia.
+subtitle: -1 do zasobów partii - klasa średnia nie jest częścią naszej bazy poparcia.
 choose-if: sr_resources >= 1
 unavailable-subtitle: Brak dostatecznych zasobów.
 on-arrival: sr_resources -= 1; middle_sr += 3*(1-sr_dissent); middle_sr_org += 1
@@ -44,7 +44,7 @@ Klasa średnia nigdy nie była naszą bazą poparcia, lecz to może się zmieni�
 
 
 @rural
-subtitle: -1 zasób partii
+subtitle: -1 do zasobów partii
 choose-if: sr_resources >= 1
 unavailable-subtitle: [? if sr_resources < 1 : Brak dostatecznych zasobów. ?][? if sr_rural_policy = 0 : Nie mamy polityki rolnej. ?]
 on-arrival: sr_resources -= 1; sr_peasants += 6*(1-sr_dissent); sr_peasants_org += 1

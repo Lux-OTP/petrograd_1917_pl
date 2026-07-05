@@ -24,7 +24,7 @@ What should be our strategy for our newspapers and party organs?
 
 @support_prov_gov
 title: Support the Provisional Government.
-subtitle: -1 zasób partii
+subtitle: -1 do zasobów partii
 choose-if: m_resources >= 1
 on-arrival: m_k_relation += 6*(1-m_dissent); soviet_cooperation += 0.04*(1-m_dissent); prov_gov_legitimacy += 5*(1-m_dissent); m_resources -= 1
 
@@ -32,7 +32,7 @@ Our propaganda campaign is aimed at supporting the Provisional Government and So
 
 @support_m
 title: Support the Menshevik party.
-subtitle: -1 zasób partii
+subtitle: -1 do zasobów partii
 choose-if: m_resources >= 1
 on-arrival: workers_m += 5*(1-m_dissent); soldiers_m += 5*(1-m_dissent); soldiers_m -= 2 if (war_weariness >= 60 and m_war_policy <= 1); workers_m -= 2 if prov_gov_legitimacy <= 40 and m_industrial_policy <= 0; m_resources -= 1
 
@@ -40,7 +40,7 @@ Our propaganda campaign encourages support for the Menshevik party among the wor
 
 @support_rd
 title: Support the ideology of revolutionary defensism - support a defensive war effort as necessary for peace.
-subtitle: -1 zasób partii
+subtitle: -1 do zasobów partii
 choose-if: m_resources >= 1
 on-arrival: defensist_strength += (m_support_change+2)*(1-m_dissent); defensist_dissent -= 8; m_resources -= 1; soldier_unrest -= 2*(1-m_dissent) if defensist_strength > internationalist_strength; morale += 0.02*(1-m_dissent) if defensist_strength > internationalist_strength
 
@@ -48,7 +48,7 @@ Our newspapers print editorials in support of revolutionary defensism, arguing t
 
 @support_id
 title: Support the ideology of internationalism - support immediate negotiations for a peace.
-subtitle: -1 zasób partii
+subtitle: -1 do zasobów partii
 choose-if: m_resources >= 1
 on-arrival: internationalist_strength += (m_support_change+2)*(1-m_dissent); internationalist_dissent -= 8*(1-m_dissent); social_patriot_dissent += 5; defensist_dissent += 4; soldiers_m += 3*(1-m_dissent); m_resources -= 1
 
@@ -57,7 +57,7 @@ Our newspapers print editorials in support of internationalism, arguing that an 
 @support_pat
 title: Support the war effort from a social-patriot standpoint.
 unavailable-subtitle: [? if m_resources < 1: Brak dostatecznych zasobów. ?][? if social_patriot_strength <= internationalist_strength: The Social Patriots are not strong enough. ?]
-subtitle: -1 zasób partii
+subtitle: -1 do zasobów partii
 choose-if: m_resources >= 1 and social_patriot_strength > internationalist_strength
 on-arrival: social_patriot_strength += (m_support_change+2)*(1-m_dissent); social_patriot_dissent -= 8*(1-m_dissent); internationalist_dissent += 5; war_weariness -= 3*(1-m_dissent); m_resources -= 1; soldier_unrest -= 3*(1-m_dissent) if defensist_strength > internationalist_strength; morale += 0.02*(1-m_dissent) if defensist_strength > internationalist_strength
 

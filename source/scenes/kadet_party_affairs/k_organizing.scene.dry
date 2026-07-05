@@ -19,7 +19,7 @@ If Russia is to become a democracy, there must be elections in the future. Which
 - @easy_discard
 
 @soldiers
-subtitle: -1 zasób partii
+subtitle: -1 do zasobów partii
 choose-if: k_resources >= 1
 unavailable-subtitle: Brak dostatecznych zasobów.
 on-arrival: k_resources -= 1; soldiers_k += 4*(1-k_dissent); soldiers_k -= 2 if war_weariness >= 40 and k_war_policy <= 0; soldiers_k -= 2 if war_weariness >= 50 and k_war_policy <= 1; k_soldiers_org += 1 if war_weariness <= 50 or k_war_policy > 1
@@ -27,7 +27,7 @@ on-arrival: k_resources -= 1; soldiers_k += 4*(1-k_dissent); soldiers_k -= 2 if 
 We have increased our campaigning among the soldiers. [? if (war_weariness >= 50 and k_war_policy <= 0) or (war_weariness >= 60 and k_war_policy <= 1): Our policy is viewed as too pro-war, and makes it harder to organize among the soldiers. ?]
 
 @workers
-subtitle: -1 zasób partii
+subtitle: -1 do zasobów partii
 choose-if: k_resources >= 1
 unavailable-subtitle: Brak dostatecznych zasobów.
 on-arrival: k_resources -= 1; workers_k += 3*(1-k_dissent); k_workers_org += 1; workers_k -= 2 if k_in_gov and prov_gov_legitimacy <= 50;
@@ -35,7 +35,7 @@ on-arrival: k_resources -= 1; workers_k += 3*(1-k_dissent); k_workers_org += 1; 
 We have increased our campaigning among the workers. [? if k_in_gov and prov_gov_legitimacy <= 50 : Our participation in the unpopular Provisional Government limits our support. ?]
 
 @middle_class
-subtitle: -1 zasób partii
+subtitle: -1 do zasobów partii
 choose-if: k_resources >= 1
 unavailable-subtitle: Brak dostatecznych zasobów.
 on-arrival: k_resources -= 1; k_kiddle_class += 7*(1-k_dissent); k_middle_class_org += 1
@@ -44,7 +44,7 @@ While the Kadets are a non-class party, the middle class are our primary support
 
 
 @rural
-subtitle: -1 zasób partii - this will be very difficult, as we do not have a traditional base among the peasantry.
+subtitle: -1 do zasobów partii - this will be very difficult, as we do not have a traditional base among the peasantry.
 choose-if: k_resources >= 1 and k_rural_policy > 0
 unavailable-subtitle: [? if k_resources < 1 : Brak dostatecznych zasobów. ?][? if k_rural_policy = 0 : We do not have a rural policy. ?]
 on-arrival: k_resources -= 1; k_peasants += 2*(1-k_dissent); k_peasants_org += 1

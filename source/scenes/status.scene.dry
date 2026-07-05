@@ -100,7 +100,7 @@ Tydzień [+ week +], [+ month : month +] [+ year +]
 
 Pozycja: [+ position +]
 
-Dostępne zasoby partii:
+Dostępne do zasobów partii:
 [? if player_party == "b": [+ b_resources +] ?]
 [? if player_party == "m": [+ m_resources +] ?]
 [? if player_party == "k": [+ k_resources +] ?]

@@ -1,4 +1,4 @@
-title: Soviet Labor Affairs
+title: Sprawy Robotnicze Rady
 new-page: true
 view-if: labor_soviet_timer = 0 and ((player_party = "b" and b_in_exco) or (player_party = "m" and m_in_exco) or (player_party = "sr" and sr_in_exco) or (player_party = "k" and k_in_exco))
 on-arrival: week_actions += 1; labor_soviet_timer += 4
@@ -6,9 +6,9 @@ tags: soviet
 is-card: true
 card-image: img/industry.jpg
 
-= Labor Affairs
+= Sprawy Robotnicze
 
-Workers across Petrograd and the cities of Russia are striking and forming ad-hoc workers' councils, calling for higher wages and control over management decisions. What should the Soviet policy be towards the workers?
+Robotnicy Piotrogrodu i innych rosyjskich miast strajkują i tworzą doraźne spółdzielnie pracy, żądając wyższych wynagrodzeń i głosu w zarządzaniu. Jakie powinno być stanowisko Rady odnośnie robotników?
 
 # support higher wages
 # support councils, and individual decisions.
@@ -22,42 +22,42 @@ Workers across Petrograd and the cities of Russia are striking and forming ad-ho
 - @cancel_advisor_action
 
 @conditions
-title: Support the workers' demands for higher wages and improved working conditions.
+title: Poprzyjmy żądania robotników w sprawie podwyżki płac i poprawy warunków pracy.
 on-arrival: monthly_inflation += 0.2; capital_flight_progress += 1; workers_m += 5*(1-m_dissent) if m_in_exco; workers_sr += 5*(1-sr_dissent) if sr_in_exco; workers_b += 5*(1-b_dissent) if b_in_exco; m_k_relation -= 4 if m_in_exco; sr_k_relation -= 4 if sr_in_exco; prov_gov_soviet_cooperation -= 0.02; income += 1; labor_unrest -= 5*unrest_modifier;
 
-We have supported the workers in their economic demands and their struggles with their employers. Strikes are ended with agreements favorable to workers. The employers are somewhat displeased, and higher wages without increased production can lead to more inflation.
+Wsparliśmy robotników w ich żądaniach ekonomicznych i sporach z pracodawcami. Niektóre strajki kończą się ugodami faworyzującymi robotników. Pracodawcy są zniesmaczeni, a podwyżki płac niepoprate wzrostem produktywności mogą prowadzić do wzrostu inflacji.
 
 
 @councils
-title: Support the workers' councils' supervision over management.
+title: Poprzyjmy kontrolę spółdzielni pracy nad nadzorem i zarządzaniem.
 choose-if: (player_party = "m" and m_industrial_policy >= 1) or (player_party = "sr" and sr_industrial_policy >= 1) or (player_party = "b")
-unavailable-subtitle: Our party does not support this.
+unavailable-subtitle: Nasza partia tego nie popiera.
 on-arrival: workers_councils += 1; monthly_inflation += 0.1; capital_flight_progress += 2; workers_m += 7*(1-m_dissent) if m_in_exco; m_k_relation -= 5 if m_in_exco; workers_sr += 7*(1-sr_dissent) if sr_in_exco; sr_k_relation -= 5 if sr_in_exco; prov_gov_soviet_cooperation -= 0.04; labor_unrest -= 10*unrest_modifier; industry += 1;
 
-We support the workers' councils taking supervision over management - the councils must be allowed to read management's documents and have justifications for management decisions. The employers are not pleased with this policy. However, for the most part the councils are genuinely interested in maintaining or expanding production.
+Wspieramy przejmowanie nadzoru i zarządzania pracy przez spółdzielnie robotnicze - muszą one mieć dostęp do dokumentów kierownictwa i otrzymywać wyjaśnienia decyzji zarządu. Pracodawcy nie są zadowoleni z tej polityki. W większości przypadków spółdzielnie są jednak szczerze zainteresowane utrzymaniem lub zwiększeniem produktywności.
 
 @takeover
-title: Support workers' councils seizing control over factories.
+title: Poprzyjmy przejmowanie kontroli nad fabrykami przez spółdzielnie pracy.
 choose-if: (player_party = "m" and m_internationalist_strength > m_defensist_strength and m_industrial_policy >= 2) or (player_party = "sr" and left_sr_strength >= right_sr_strength and sr_industrial_policy >= 2) or (player_party = "b" and b_industrial_policy >= 2)
-unavailable-subtitle: Our party does not support this.
+unavailable-subtitle: Nasza partia tego nie popiera.
 on-arrival: factory_takeovers += 1; monthly_inflation += 0.2; capital_flight_progress += 6; workers_m += 7*(1-m_dissent) if m_in_exco; m_k_relation -= 8 if m_in_exco; workers_sr += 7*(1-sr_dissent) if sr_in_exco; sr_k_relation -= 8 if sr_in_exco; prov_gov_soviet_cooperation -= 0.15; labor_unrest -= 20*unrest_modifier; industry *= 0.95;
 
-We have encouraged the workers to take over factories directly, kicking out their capitalist overseers! In the short term, this is bad for industrial production, although hopefully we can reorganize production to rebuild.
+Zachęciliśmy robotników do całkowitego przejmowania kontroli nad fabrykami i pozbywania się ich kapitalistycznych nadzorców! Krótkoterminowo, jest to rujnujące dla wydajności produkcji przemysłowej. Miejmy nadzieję że zdołamy zreorganizować produkcję.
 
 @back_to_work
-title: Call for striking workers to go back to work.
-unavailable-subtitle: We cannot do this after starting the process of factory takeovers.
+title: Zaapelujmy do strajkujących robotników o powrócenie do pracy.
+unavailable-subtitle: Nie możemy tego zrobić po rozpoczęciu procesu wywłaszczania fabryk.
 choose-if: factory_takeovers = 0
 on-arrival: workers_m -= 5 if m_in_exco; workers_sr -= 5 if sr_in_exco; m_k_relation += 3 if m_in_exco; sr_k_relation += 3 if sr_in_exco; soviet_cooperation += 0.03; industry *= (1 + 0.02*soviet_efficacy);
 
-We have called the workers to cease striking and go back to work. This hurts our prestige among the workers, and it is unclear if they will heed our calls in the long run.
+Wystosowaliśmy apel do strajkujących robotników o powrót do pracy. Obniża to nasz posłuch wśród robotników, nie wiemy też czy i na jak długo wysłuchają oni naszych próśb.
 
 @efficiency
-title: Use the Soviet's connections to improve production.
-subtitle: -1 zasób partiis
+title: Użyjmy wpływów Rady by zwiększyć produktywność.
+subtitle: -1 do zasobów partiis
 choose-if: soviet_efficacy >= 0.6 and soviet_organization >= 1 and ((player_party = "m" and m_resources > 0) or (player_party = "sr" and sr_resources > 0) or (player_party = "b" and b_resources > 0) or (player_party = "k" and k_resources > 0))
 view-if: workers_councils >= 1 or factory_takeovers >= 1
-unavailable-subtitle: [? if soviet_efficacy < 0.6 : We do not have enough administrative capacity in the Soviet. ?][? if not ((player_party = "m" and m_resources > 0) or (player_party = "sr" and sr_resources > 0) or (player_party = "b" and b_resources > 0) or (player_party = "k" and k_resources > 0)) : We do not have enough resources. ?]
+unavailable-subtitle: [? if soviet_efficacy < 0.6 : We do not have enough administrative capacity in the Soviet. ?][? if not ((player_party = "m" and m_resources > 0) or (player_party = "sr" and sr_resources > 0) or (player_party = "b" and b_resources > 0) or (player_party = "k" and k_resources > 0)) : Brak dostatecznych zasobów. ?]
 on-arrival: industry *= (1+0.05*soviet_efficacy) if industry <= 100; industry *= (1 + 0.01*soviet_efficacy) if industry > 100; m_resources -= 1 if player_party = "m"; sr_resources -= 1 if player_party = "sr"; b_resources -= 1 if player_party = "b"; k_resources -= 1 if player_party = "k"
 
-We are attempting to use the Soviet's administrative apparatus and the connections forged among the workers' councils to find ways to improve production. It is a difficult task.
+Próbujemy wykorzystać administrację Rady i nasze koneksje zdobyte pośród spółdzielni pracy by znaleźć sposoby poprawy wydajności fabryk. To trudne zadanie.

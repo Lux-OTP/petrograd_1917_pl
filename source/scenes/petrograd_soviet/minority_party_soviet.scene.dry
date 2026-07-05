@@ -21,7 +21,7 @@ As a minority party in the Soviet not represented in the Executive Committee, we
 
 @militia_
 title: Increase support for our party among the workers' militias.
-subtitle: -1 zasób partii
+subtitle: -1 do zasobów partii
 choose-if: (player_party = "b" and b_resources >= 1) or (player_party = "m" and m_resources >= 1) or (player_party = "sr" and sr_resources >= 1)
 on-arrival: b_resources -= 1 if player_party = "b"; m_resources -= 1 if player_party = "m"; sr_resources -= 1 if player_party = "sr"; workers_militia_m_loyalty += 7*(1-m_dissent) if player_party = "m"; workers_militia_sr_loyalty += 7*(1-sr_dissent) if player_party = "sr"; workers_militia_b_loyalty += 7*(1-b_dissent) if player_party = "b"
 
@@ -36,7 +36,7 @@ choose-if: (player_party = "b" and b_soviet >= 25) or (player_party = "m" and m_
 
 @s_campaign
 title: Campaign among the Soviet delegates.
-subtitle: -1 zasób partii - increase our vote share in the Soviet.
+subtitle: -1 do zasobów partii - increase our vote share in the Soviet.
 choose-if: (player_party = "b" and b_resources >= 1) or (player_party = "m" and m_resources >= 1) or (player_party = "sr" and sr_resources >= 1)
 on-arrival: b_resources -= 1 if player_party = "b"; m_resources -= 1 if player_party = "m"; sr_resources -= 1 if player_party = "sr"; b_soviet_bonus += 100 if player_party = "b"; m_soviet_bonus += 100 if player_party = "m"; sr_soviet_bonus += 100 if player_party = "sr";
 

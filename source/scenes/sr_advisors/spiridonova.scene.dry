@@ -35,7 +35,7 @@ Przyjęliśmy cały szereg postulatów Lewych Eserów dotyczących wojny, Rządu
 
 @rally_soldiers
 title: Zjednanie Żołnierzy
-subtitle: Zwiększenie poparcia dla naszej partii pośród żołnierzy. -1 zasób partii
+subtitle: Zwiększenie poparcia dla naszej partii pośród żołnierzy. -1 do zasobów partii
 choose-if: advisor_action_timer = 0 and sr_resources >= 1
 unavailable-subtitle: [? if advisor_action_timer > 0 : Tygodnie do następnej akcji doradcy:[+ advisor_action_timer +]. ?][? if sr_resources < 1: Brak dostatecznych zasobów. ?]
 on-arrival: advisor_action_timer = 4; sr_resources -= 1; soldiers_sr += 7*(1-sr_dissent); soldiers_sr -= 4 if war_weariness >= 50 and sr_war_policy <= 1; sr_soldiers_org += 1 if war_weariness <= 50 or sr_war_policy > 1
