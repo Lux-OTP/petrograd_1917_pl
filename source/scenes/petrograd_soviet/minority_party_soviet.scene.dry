@@ -1,4 +1,4 @@
-title: Minority Party Affairs
+title: Sprawy Partii Mniejszościowej Rady
 new-page: true
 view-if: minority_party_soviet_timer = 0 and ((player_party = "m" and not m_in_exco) or (player_party = "sr" and not sr_in_exco) or (player_party = "b" and not b_in_exco))
 on-arrival: week_actions += 1; minority_party_soviet_timer += 3
@@ -6,9 +6,9 @@ tags: soviet
 is-card: true
 card-image: img/tauride.jpg
 
-= Minority Party Affairs
+= Sprawy Partii Mniejszościowej Rady
 
-As a minority party in the Soviet not represented in the Executive Committee, we have a limited range of potential actions.
+Jako partia należąca do mniejszości w Radzie i niereprezentowana w Komitecie Wykonawczym, mamy niewielki zakres działań których możemy dokonać w Radzie.
 
 # coalitions: M-D + R-SR (center-left), M-I + L-SR + B (internationalist) (depending on leadership of the other parties)
 
@@ -20,24 +20,24 @@ As a minority party in the Soviet not represented in the Executive Committee, we
 - @cancel_advisor_action
 
 @militia_
-title: Increase support for our party among the workers' militias.
+title: Zwiększmy poparcie dla naszej partii pośród milicji robotniczych.
 subtitle: -1 do zasobów partii
 choose-if: (player_party = "b" and b_resources >= 1) or (player_party = "m" and m_resources >= 1) or (player_party = "sr" and sr_resources >= 1)
 on-arrival: b_resources -= 1 if player_party = "b"; m_resources -= 1 if player_party = "m"; sr_resources -= 1 if player_party = "sr"; workers_militia_m_loyalty += 7*(1-m_dissent) if player_party = "m"; workers_militia_sr_loyalty += 7*(1-sr_dissent) if player_party = "sr"; workers_militia_b_loyalty += 7*(1-b_dissent) if player_party = "b"
 
-We have organized among the workers' militias to increase their loyalty to our party.
+Zintensyfikowaliśmy działania pośród milicji robotniczych by zdobyć ich lojalność dla naszej partii.
 
 @takeover
-title: Force a vote to create a new Executive Committee!
-unavailable-subtitle: Our party does not have enough support in the Soviet - we should try to get at least 25% support.
+title: Wymuśmy głosowanie w celu wyłonienia nowego Komitetu Wykonawczego!
+unavailable-subtitle: Nasza partia nie ma dość poparcia w Radzie - powinniśmy zdobyć co najmniej 25% poparcia.
 choose-if: (player_party = "b" and b_soviet >= 25) or (player_party = "m" and m_soviet >= 25) or (player_party = "sr" and sr_soviet >= 25)
 
-- @soviet_leadership_election: We will hold a new leadership election.
+- @soviet_leadership_election: Przeprowadzimy nowe głosowanie.
 
 @s_campaign
-title: Campaign among the Soviet delegates.
-subtitle: -1 do zasobów partii - increase our vote share in the Soviet.
+title: Przeprowadźmy kampanię pośród delegatów Rady.
+subtitle: -1 do zasobów partii - zwiększymy ilość naszych głosów w Radzie.
 choose-if: (player_party = "b" and b_resources >= 1) or (player_party = "m" and m_resources >= 1) or (player_party = "sr" and sr_resources >= 1)
 on-arrival: b_resources -= 1 if player_party = "b"; m_resources -= 1 if player_party = "m"; sr_resources -= 1 if player_party = "sr"; b_soviet_bonus += 100 if player_party = "b"; m_soviet_bonus += 100 if player_party = "m"; sr_soviet_bonus += 100 if player_party = "sr";
 
-Many of the Soviet's delegates are unaligned with any major faction, and many can be swayed by arguments or resources. Thus, we can increase our share of votes.
+Wielu delegatów do Rady nie jest silnie związanych z żadną większą organizacją i może być przekonanych do poparcia nas argumentami bądź wynagrodzeniem. W ten sposób możemy zwiększyć naszą część głosów w Radzie.
