@@ -24,7 +24,7 @@ on-arrival: workers_sr += 3*(1-sr_dissent); b_sr_relation += 3*(1-sr_dissent); m
 Atakowanie sił kontrrewolucji jest popularne wśród wszystkich frakcji Eserów.
 
 @bourgeois
-title: Kadetów i inne partie burżuazji.
+title: Kadetów i inne partie burżuazyjne.
 on-arrival: sr_k_relation -= 8; left_sr_dissent -= 4; left_sr_strength += 5*(1-sr_dissent); right_sr_dissent += 4; b_sr_relation += 5*(1-sr_dissent); soviet_cooperation -= 0.05;
 
 Atakowanie Kadetów jest popularne pośród Lewych Eserów, lecz może zakłócić kooperację między Radą a Rządem Tymczasowym.

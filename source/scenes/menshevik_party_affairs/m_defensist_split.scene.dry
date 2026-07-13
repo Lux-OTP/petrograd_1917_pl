@@ -1,4 +1,4 @@
-title: Defensist Split
+title: Rozłam Defensistów
 view-if: defensist_dissent > m_split_threshold and not defensist_split
 max-visits: 1
 on-arrival: {!
@@ -89,8 +89,8 @@ if (Q.voitinsky_advisor) {
 }
 !}
 
-The defensists and social patriots are splitting to form a new party, the Menshevik-Defensists. Defensist leaders have resigned from the party's leadership. [? if m_drop_gov: Most of the Menshevik ministers in the Provisional Government are no longer affiliated with the party. ?][? if m_drop_gov and m_in_gov: The remaining mainline Mensheviks still have a small presence in the Provisional Government, however. ?]
+Defensiści i Socjaliści-Patrioci odłączają się by stworzyć nową partię Mienszewików-Defensistów. Ich liderzy zrezygnowali z pozycji kierowniczych w partii. [? if m_drop_gov: Większość Mienszewickich ministrów w Rządzie Tymczasowym nie jest już związana z naszą partią. ?][? if m_drop_gov and m_in_gov: Pozostali przy nas czołowi Mienszewicy wciąż trzymają jednak nieliczne pozycje w Rządzie Tymczasowym. ?]
 
-This will result in a new election for Petrograd Soviet leadership.
+Spowoduje to nowe wybory do Rady.
 
-- @soviet_leadership_election: Conduct the Soviet leadership election.
+- @soviet_leadership_election: Przeprowadzimy nowe wybory do Rady Piotrogrodzkiej.

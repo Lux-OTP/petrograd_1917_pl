@@ -1,4 +1,4 @@
-title: The War and the Soldiers
+title: Wojna i Żołnierze
 new-page: true
 view-if: war_soviet_timer = 0 and ((player_party = "b" and b_in_exco) or (player_party = "m" and m_in_exco) or (player_party = "sr" and sr_in_exco) or (player_party = "k" and kadet_in_exco))
 on-arrival: week_actions += 1; war_soviet_timer += 4
@@ -6,16 +6,16 @@ tags: soviet
 is-card: true
 card-image: img/ww1.jpg
 
-= The War and the Soldiers
+= Wojna i Żołnierze
 
-The soldiers see the Soviet as the guarantor of their rights, and they see us as a counterbalance to the pro-war policies of the Provisional Government.
+Źołnierze uważają Radę za strażnika swoich praw i przeciwwagę dla prowojennej polityki Rządu Tymczasowego.
 
 # issue a general call for peace. (1 visit)
 # continue to enforce Order Number 1 against reactionary attempts to impose discipline.
 
 - @discipline
 - @order1
-- @root: No action is needed.
+- @root: Nie musimy nic robić.
 - @easy_discard
 - @cancel_advisor_action
 
@@ -24,13 +24,13 @@ title: Issue a call for international peace.
 max-visits: 1
 
 @discipline
-title: Support discipline in the military.
+title: Poprzyjmy dyscyplinę w siłach zbrojnych.
 on-arrival: discipline += 0.05*soviet_efficacy; morale -= 0.01; soldiers_m -= 4 if m_in_exco; soldiers_sr -= 4 if sr_in_exco; soldiers_b -= 4 if b_in_exco; soldier_unrest -= 5*unrest_modifier;
 
-Despite our support for soldiers' rights, there must be a balance for the functioning of the army. Thus, we are allowing the reinstatement of some forms of military discipline. The soldiers are displeased about this, of course.
+Mimo naszego poparcia dla praw żołnierzy, musimy zachować równowagę by zapewnić dalsze funkcjonowanie armii. Z tego powodu musimy pozwolić na przywrócenie pewnych metod utrzymywania dyscypliny wojskowej. Żołnierze są oczywiście niezadowoleni.
 
 @order1
-title: Work on preventing abuses by officers.
+title: Zadbajmy o ukrócenie nadużyć oficerów.
 on-arrival: morale += 0.05*soviet_efficacy; discipline -= 0.01; soldiers_m += 4*(1-m_dissent)*soviet_efficacy if m_in_exco; soldiers_sr += 5*(1-sr_dissent)*soviet_efficacy if sr_in_exco; soldiers_b += 5*(1-b_dissent)*soviet_efficacy if b_in_exco; soldier_unrest -= 5*unrest_modifier;
 
-We must continue to enforce Order No. 1, our order aimed at giving the soldiers equal rights. This might reduce discipline, but increase morale and support of the soldiers for the Soviet.
+Musimy kontynuować wypełnianie rozkazu nr 1, gwarantującego równouprawnienie żołnierzy. Może to obniżyć dyscyplinę, lecz w zamian możemy oczekiwać poprawy morale i wzrostu poparcia dla Rady wśród żołnierzy.
