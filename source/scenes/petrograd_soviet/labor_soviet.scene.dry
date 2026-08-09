@@ -8,7 +8,7 @@ card-image: img/industry.jpg
 
 = Sprawy Robotnicze
 
-Robotnicy Piotrogrodu i innych rosyjskich miast strajkują i tworzą doraźne spółdzielnie pracy, żądając wyższych wynagrodzeń i głosu w zarządzaniu. Jakie powinno być stanowisko Rady odnośnie robotników?
+Robotnicy Piotrogrodu i innych rosyjskich miast strajkują i tworzą doraźne rady robotnicze żądając wyższych wynagrodzeń i głosu w zarządzaniu. Jakie powinno być stanowisko Rady odnośnie robotników?
 
 # support higher wages
 # support councils, and individual decisions.
@@ -29,7 +29,7 @@ Wsparliśmy robotników w ich żądaniach ekonomicznych i sporach z pracodawcami
 
 
 @councils
-title: Poprzyjmy kontrolę spółdzielni pracy nad nadzorem i zarządzaniem.
+title: Poprzyjmy kontrolę rad robotniczycg nad nadzorem i zarządzaniem.
 choose-if: (player_party = "m" and m_industrial_policy >= 1) or (player_party = "sr" and sr_industrial_policy >= 1) or (player_party = "b")
 unavailable-subtitle: Nasza partia tego nie popiera.
 on-arrival: workers_councils += 1; monthly_inflation += 0.1; capital_flight_progress += 2; workers_m += 7*(1-m_dissent) if m_in_exco; m_k_relation -= 5 if m_in_exco; workers_sr += 7*(1-sr_dissent) if sr_in_exco; sr_k_relation -= 5 if sr_in_exco; prov_gov_soviet_cooperation -= 0.04; labor_unrest -= 10*unrest_modifier; industry += 1;
@@ -37,7 +37,7 @@ on-arrival: workers_councils += 1; monthly_inflation += 0.1; capital_flight_prog
 Wspieramy przejmowanie nadzoru i zarządzania pracy przez spółdzielnie robotnicze - muszą one mieć dostęp do dokumentów kierownictwa i otrzymywać wyjaśnienia decyzji zarządu. Pracodawcy nie są zadowoleni z tej polityki. W większości przypadków spółdzielnie są jednak szczerze zainteresowane utrzymaniem lub zwiększeniem produktywności.
 
 @takeover
-title: Poprzyjmy przejmowanie kontroli nad fabrykami przez spółdzielnie pracy.
+title: Poprzyjmy przejmowanie kontroli nad fabrykami przez rady robotnicze.
 choose-if: (player_party = "m" and m_internationalist_strength > m_defensist_strength and m_industrial_policy >= 2) or (player_party = "sr" and left_sr_strength >= right_sr_strength and sr_industrial_policy >= 2) or (player_party = "b" and b_industrial_policy >= 2)
 unavailable-subtitle: Nasza partia tego nie popiera.
 on-arrival: factory_takeovers += 1; monthly_inflation += 0.2; capital_flight_progress += 6; workers_m += 7*(1-m_dissent) if m_in_exco; m_k_relation -= 8 if m_in_exco; workers_sr += 7*(1-sr_dissent) if sr_in_exco; sr_k_relation -= 8 if sr_in_exco; prov_gov_soviet_cooperation -= 0.15; labor_unrest -= 20*unrest_modifier; industry *= 0.95;
@@ -60,4 +60,4 @@ view-if: workers_councils >= 1 or factory_takeovers >= 1
 unavailable-subtitle: [? if soviet_efficacy < 0.6 : We do not have enough administrative capacity in the Soviet. ?][? if not ((player_party = "m" and m_resources > 0) or (player_party = "sr" and sr_resources > 0) or (player_party = "b" and b_resources > 0) or (player_party = "k" and k_resources > 0)) : Brak dostatecznych zasobów. ?]
 on-arrival: industry *= (1+0.05*soviet_efficacy) if industry <= 100; industry *= (1 + 0.01*soviet_efficacy) if industry > 100; m_resources -= 1 if player_party = "m"; sr_resources -= 1 if player_party = "sr"; b_resources -= 1 if player_party = "b"; k_resources -= 1 if player_party = "k"
 
-Próbujemy wykorzystać administrację Rady i nasze koneksje zdobyte pośród spółdzielni pracy by znaleźć sposoby poprawy wydajności fabryk. To trudne zadanie.
+Próbujemy wykorzystać administrację Rady i nasze koneksje zdobyte pośród rad robotniczych by znaleźć sposoby poprawy wydajności fabryk. To trudne zadanie.

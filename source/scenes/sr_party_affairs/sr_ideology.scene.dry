@@ -1,4 +1,4 @@
-title: Kwestie ideologiczne
+title: Kwestie Ideologiczne
 new-page: true
 view-if: sr_ideology_timer <= 0
 on-arrival: sr_ideology_timer += 1; week_actions += 1
@@ -7,15 +7,15 @@ is-card: true
 card-image: img/portraits/taburin_sr.jpg
 tags: sr_party
 
-= Kwestie ideologiczne
+= Kwestie Ideologiczne
 
-Rewolucja stworzyła przestrzeń dla burzliwej debaty na temat przyszłości naszego kraju. Wewnątrz Partii Socjalistów-Rewolucjonistów, sprawa odpowiedzi na wiele kwestii jest paląca.
+Rewolucja stworzyła przestrzeń dla burzliwej debaty na temat przyszłości naszego kraju. Wewnątrz Partii Socjalistów-Rewolucjonistów sprawa odpowiedzi na wiele kwestii jest paląca.
 
-Czy powinniśmy zmienić oficjalną linię na temat któregoś z tych problemów?
+Czy powinniśmy zmienić oficjalną linię partii wobec któregoś z tych problemów?
 
 - @sr_war_policy: Polityka wojenna
 - @sr_prov_gov_policy: Rząd Tymczasowy
-- @sr_industrial_policy: Polityka przemysłowa
+- @sr_industrial_policy: Polityka Przemysłowa
 #- @sr_rural_policy: Polityka rolna
 #- @sr_nationalities: Polityka narodościowa
 - @root: Nie, nie zmienimy żadnej z naszych obecnych pozycji.

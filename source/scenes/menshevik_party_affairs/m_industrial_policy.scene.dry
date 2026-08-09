@@ -1,13 +1,13 @@
 title: Industrial policy
 choose-if: m_industrial_policy_timer = 0
-unavailable-subtitle: It is too early to change this policy again.
+unavailable-subtitle: Jest za wcześnie by znów zmienić naszą politykę w tej kwestii.
 on-arrival: m_industrial_policy_timer = 6;
 
-= Industrial Policy
+= Polityka Prze
 
 # options: maintain current ownership structures but with trade unions, supervision by worker's councils, worker's councils as owners, state ownership
 
-What should our policy be with respect to labor and industries?
+Jaka powinna być nasza polityka odnośnie związków zawodowych i przemysłu?
 
 - @unions
 - @supervision
@@ -15,33 +15,33 @@ What should our policy be with respect to labor and industries?
 - @nationalization
 
 @unions
-title: Maintain the current ownership and management structure, but with freedom for trade unions to organize.
+title: Zachowanie obecnej własności i struktury zarządzania, lecz z prawem organizacji związków zawodowych.
 subtitle: [? if m_industrial_policy = 0 : To jest już nasze obecne stanowisko. ?]
 on-arrival: m_industrial_policy = 0;
 
-Our policy is to maintain a capitalist ownership and management structure for now, but that workers should have the right to organize and strike.
+Naszą polityką jest na chwilę obecną zachowanie kapitalistycznych struktur własności i zarządzania, lecz z zapewnieniem robotnikom prawa do organizowania i strajkowania.
 
 @supervision
-title: In addition to trade union rights, workers' councils should supervise management.
+title: W dodatku do prawa tworzenia związków zawodowych, rady robotnicze powinny nadzorować zarządzanie..
 subtitle: [? if m_industrial_policy = 1 : To jest już nasze obecne stanowisko. ?]
 on-arrival: social_patriot_dissent += 5 if m_industrial_policy = 0; defensist_dissent += 5 if m_industrial_policy = 0; internationalist_strength += 4 if m_industrial_policy = 0; m_industrial_policy = 1; m_k_relation -= 2;
 
-Our policy is that workers' councils should have the right to supervise management decisions.
+Naszą polityką jest zapewnienie radom złożonym z robotników prawa do nadzorowania decyzji dotyczących zarządzania.
 
 @syndicalism
-title: In addition to the above, workers' councils should take over management and ownership.
+title: W dodatku do powyższego, rady robotnicze powinny przejąć posiadanie nad przemysłem.
 choose-if: m_industrial_policy >= 1
 subtitle: [? if m_industrial_policy = 2 : To jest już nasze obecne stanowisko. ?]
-unavailable-subtitle: This position is currently too radical for our party.
+unavailable-subtitle: Ta pozycja jest aktualnie zbyt radykalna dla naszej partii.
 on-arrival: social_patriot_dissent += 10 if m_industrial_policy < 2; defensist_dissent += 8 if m_industrial_policy < 2; m_industrial_policy = 2; m_k_relation -= 2;
 
-Our policy is that workers' councils should take over enterprise management and ownership directly. This is a syndicalist position, which is popular among the worker grassroots but less popular among our intellectual leadership.
+Naszą polityką jest przekazanie kontroli nad działaniem przedsiębiorstw w ręce robotników. To pozycja syndykalistyczna, bardzo popularna pośród szeregowych robotników, mniej zaś pośród naszych intelektualnych przywódców.
 
 @nationalization
-title: The state should nationalize all major industries.
+title: Państwo powinno przejąć wszystkie większe przedsiębiorstwa.
 choose-if: m_industrial_policy >= 1
 subtitle: [? if m_industrial_policy = 1 : To jest już nasze obecne stanowisko. ?]
-unavailable-subtitle: This position is currently too radical for our party.
+unavailable-subtitle: Ta pozycja jest aktualnie zbyt radykalna dla naszej partii.
 on-arrival: social_patriot_dissent += 5 if m_industrial_policy < 2; defensist_dissent += 5 if m_industrial_policy < 2; m_industrial_policy = 3; m_k_relation -= 2;
 
-Our policy is that the state should nationalize all major industries.
+Naszą polityką jest nacjonalizacja wszystkich większych przedsiębiorstw.

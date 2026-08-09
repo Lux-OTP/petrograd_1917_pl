@@ -1,4 +1,4 @@
-title: Inter-Party Relationships
+title: Relacje Międzypartyjne
 new-page: true
 view-if: m_inter_party_relationships_timer <= 0
 is-card: true
@@ -7,40 +7,40 @@ card-image: img/rsdlp.jpg
 max-visits: 12
 tags: m_party
 
-= Inter-Party Relationships
+= Relacje Międzypartyjne
 
-We can improve our relations with the other democratic or socialist parties.
+Możemy poprawić nasze relacje z innymi partiami demokratycznymi bądź socjalistycznymi.
 
-According to the theory of dialectical materialism, it is the historic role of the bourgeoisie and middle class to lead the revolution and develop a liberal democracy. It is our task to assist the bourgeoisie parties, or at most oversee them along their historic path.
+Zgodnie z teorią materializmu dialektycznego, historyczną rolą burżuazji i klasy średniej jest przewodzenie rewolucji w celu ustanowienia liberalnej demokracji. Naszym zadaniem jest wsparcie burżuazyjnych partii, a przynajmniej nadzorowanie ich na ich historycznej drodze.
 
 - @sr
 - @k
 - @b
-- @root: We do not need to improve our relations.
+- @root: Nie musimy poprawiać naszych relacji.
 - @easy_discard
 - @cancel_advisor_action
 
 
 @sr
-title: Improve our relations with the Socialist-Revolutionaries.
+title: Poprawmy nasze relacje z Socjalistami-Rewolucjonistami.
 on-arrival: m_sr_relation += ipr_change*(1-m_dissent); m_resources -= 1;
 choose-if: m_resources >= 1
 subtitle: -1 do zasobów partii
 
-We have improved our relations with the Party of Socialist-Revolutionaries.
+Polepszyliśmy nasze relacje z Eserami.
 
 @k
-title: Improve our relations with the Kadets, the middle class liberal party.
+title: Poprawmy nasze relacje z Kadetami, partią liberalną klasy średniej.
 on-arrival: m_k_relation += ipr_change*(1-m_dissent); m_k_relation -= (ipr_change/2)*(1-m_dissent) if internationalist_strength >= defensist_strength + social_patriot_strength or m_prov_gov_policy >= 2 or m_war_policy >= 2; m_resources -= 1;
 choose-if: m_resources >= 1
 subtitle: -1 do zasobów partii
 
-We are building our ties with the Kadets. [? if internationalist_strength >= defensist_strength + social_patriot_strength or m_war_policy >= 2 : Our support of Internationalism makes it more difficult to build relationships, as they consider our anti-war ideas to be treasonous. ?][? if m_prov_gov_policy >= 2: Our opposition to the Provisional Government makes improving relations difficult. ?]
+Budujemy dobre stosunki z Kadetami. [? if internationalist_strength >= defensist_strength + social_patriot_strength or m_war_policy >= 2 : Nasze poparcie dla internacjonalizmu utrudnia ocieplenie stosunków gdyż uznają nasze idee antywojenne za zdradzieckie. ?][? if m_prov_gov_policy >= 2: Nasza opozycja wobec Rządu Tymczasowego utrudnia poprawę stosunków. ?]
 
 @b
-title: Can we repair our relations with the Bolsheviks?
+title: Czy możemy naprawić nasze relacje z Bolszewikami?
 on-arrival: m_b_relation += (ipr_change - 1)*(1-m_dissent); m_b_relation -= (ipr_change/2)*(1-m_dissent) if leninist_strength >= moderate_strength or m_war_policy <= 1 or m_prov_gov_policy <= 1; m_resources -= 1;
 choose-if: m_resources >= 1
 subtitle: -1 do zasobów partii
 
-We have attempted to build closer ties with the Bolsheviks, our wayward cousins in the RSDLP. [? if leninist_strength >= moderate_strength : The influence of Lenin makes it difficult for us to build these relationships. ?][? if m_war_policy <= 1 : Our defensist war policy makes it difficult to improve relations. ?][? if m_prov_gov_policy <= 1: Our support of the Provisional Government makes it difficult to improve relations. ?]
+Próbujemy zacieśnić więzi z Bolszewikami, naszymi niepewnymi kuzynami z SDPRR. [? if leninist_strength >= moderate_strength : Wpływy Lenina utrudniają poprawę stosunków. ?][? if m_war_policy <= 1 : Nasza defensistyczna polityka utrudnia poprawę stosunków. ?][? if m_prov_gov_policy <= 1: Nasze poparcie dla Rządu Tymczasowego utrudnia poprawę stosunków. ?]

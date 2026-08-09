@@ -7,17 +7,17 @@ is-card: true
 card-image: img/rsdlp_2.jpg
 tags: m_party
 
-= Questions of Ideology
+= Kwestie Ideologiczne
 
-The revolution has opened up a space for raucous debate on the future of the country. Within the Social Democrats, many questions are hotly contested.
+Rewolucja stworzyła przestrzeń dla burzliwej debaty na temat przyszłości naszego kraju. Wewnątrz partii Socjaldemokratów sprawa odpowiedzi na wiele kwestii jest paląca.
 
-Should we change the party's position on any of these issues?
+Czy powinniśmy zmienić oficjalną linię partii wobec któregoś z tych problemów?
 
-- @m_war_policy: War policy
-- @m_prov_gov_policy: The Provisional Government
-- @m_industrial_policy: Industrial policy
-- @m_rural_policy: Rural policy
-- @m_nationalities: The nationalities
-- @root: No, we will not change any of our ideological positions.
+- @m_war_policy: Polityka wojenna
+- @m_prov_gov_policy: Rząd Tymczasowy
+- @m_industrial_policy: Polityka Przemysłowa
+- @m_rural_policy: Polityka rolna
+- @m_nationalities: Polityka narodościowa
+- @root: Nie, nie zmienimy żadnej z naszych obecnych pozycji.
 - @easy_discard
 

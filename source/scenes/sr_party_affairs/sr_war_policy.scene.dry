@@ -1,6 +1,6 @@
 title: Polityka wojenna
 choose-if: sr_war_policy_timer = 0
-unavailable-subtitle: It is too early to change this policy again.
+unavailable-subtitle: Jest za wcześnie by znów zmienić naszą politykę w tej kwestii.
 on-arrival: sr_war_policy_timer = 4;
 
 # maybe this should be a subset of questions of ideology

@@ -1,6 +1,6 @@
 title: The Provisional Government
 choose-if: k_prov_gov_policy_timer = 0
-unavailable-subtitle: It is too early to change this policy again.
+unavailable-subtitle: Jest za wcześnie by znów zmienić naszą politykę w tej kwestii.
 on-arrival: k_prov_gov_policy_timer = 6;
 
 = Provisional Government Policy
