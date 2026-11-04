@@ -16,7 +16,7 @@ Zenzinow był jednym z niewielu eserowskich liderów którzy pozostali na wolno�
 title: Organizowanie chłopów
 subtitle: Zenzinov dąży do zorganizowania Rady Chłopów.
 choose-if: advisor_action_timer = 0
-unavailable-subtitle: [? if advisor_action_timer > 0 : Tygodnie do następnej akcji doradcy:[+ advisor_action_timer +]. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : Tygodnie do następnej akcji doradcy: [+ advisor_action_timer +]:[+ advisor_action_timer +]. ?]
 on-arrival: advisor_action_timer = 4; last_advisor_action = 1; sr_peasants += 6*(1-sr_dissent); sr_peasants_org += 1
 
 Zwiększyliśmy nasze starania w organizowaniu się pośród chłopstwa.

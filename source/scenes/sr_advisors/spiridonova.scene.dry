@@ -16,18 +16,18 @@ Maria Spiridonowa jest przywódczynią z lewego ramienia Socjalistów-Rewolucjon
 
 @support_left
 title: Wsparcie Lewych Eserów
-subtitle: Wzmocnienie poparcia dla ideologii Lewych Eserów wewnątrz partii.
+subtitle: Zwiększenie poparcia dla ideologii Lewych Eserów wewnątrz partii.
 choose-if: advisor_action_timer = 0
-unavailable-subtitle: [? if advisor_action_timer > 0 : Tygodnie do następnej akcji doradcy:[+ advisor_action_timer +]. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : Tygodnie do następnej akcji doradcy: [+ advisor_action_timer +]:[+ advisor_action_timer +]. ?]
 on-arrival: advisor_action_timer = 4; left_sr_strength += sr_support_change+2; left_sr_dissent -= 6; right_sr_dissent += 6
 
-Wpłynęliśmy na partię, wzmacniając poparcie dla Lewych Eserów wśród członków.
+Wpłynęliśmy na partię, wzmacniając poparcie dla Lewych Eserów wśród jej członków.
 
 @adopt_left
 title: Przyjęcie postulatów Lewych Eserów
 subtitle: Przyjęcie części ideologicznych postulatów Lewych Eserów jako oficjalnej pozycji partii.
 choose-if: advisor_action_timer = 0 and left_sr_strength >= right_sr_strength
-unavailable-subtitle: [? if advisor_action_timer > 0 : Tygodnie do następnej akcji doradcy:[+ advisor_action_timer +]. ?][? if left_sr_strength < right_sr_strength: Lewi Eserzy nie są wystarczająco silni. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : Tygodnie do następnej akcji doradcy: [+ advisor_action_timer +]:[+ advisor_action_timer +]. ?][? if left_sr_strength < right_sr_strength: Lewi Eserzy nie są wystarczająco silni. ?]
 on-arrival: advisor_action_timer = 4; sr_leadership = 1; sr_war_policy = 2; sr_prov_gov_policy = 3 if sr_prov_gov_policy < 3 else sr_prov_gov_policy = 4; sr_industrial_policy = 2; left_sr_strength += 10; left_sr_dissent -= 10; right_sr_dissent += 25;  
 
 Przyjęliśmy cały szereg postulatów Lewych Eserów dotyczących wojny, Rządu Tymczasowego i polityki pracy.
@@ -37,7 +37,7 @@ Przyjęliśmy cały szereg postulatów Lewych Eserów dotyczących wojny, Rządu
 title: Zjednanie Żołnierzy
 subtitle: Zwiększenie poparcia dla naszej partii pośród żołnierzy. -1 do zasobów partii
 choose-if: advisor_action_timer = 0 and sr_resources >= 1
-unavailable-subtitle: [? if advisor_action_timer > 0 : Tygodnie do następnej akcji doradcy:[+ advisor_action_timer +]. ?][? if sr_resources < 1: Brak dostatecznych zasobów. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : Tygodnie do następnej akcji doradcy: [+ advisor_action_timer +]:[+ advisor_action_timer +]. ?][? if sr_resources < 1: Brak dostatecznych zasobów. ?]
 on-arrival: advisor_action_timer = 4; sr_resources -= 1; soldiers_sr += 7*(1-sr_dissent); soldiers_sr -= 4 if war_weariness >= 50 and sr_war_policy <= 1; sr_soldiers_org += 1 if war_weariness <= 50 or sr_war_policy > 1
 
 Zintensyfikowaliśmy nasze próby organizacji pośród żołnierzy. [? if war_weariness >= 50 and sr_war_policy <= 1 : Nasza polityka jest postrzegana jako zbyt prowojenna i utrudnia organizowanie się pośród żołnierzy. ?]

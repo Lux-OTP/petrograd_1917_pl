@@ -28,7 +28,7 @@ Otrzymaliśmy +3 zasoby.
 title: Agricultural Policy
 subtitle: Chernov is the Agriculture Minister.
 choose-if: advisor_action_timer = 0 and agriculture_minister = "Chernov"
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] weeks before next advisor action. ?] [? if agriculture_minister != "Chernov" : Chernov is not the Agriculture Minister. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : Tygodnie do następnej akcji doradcy: [+ advisor_action_timer +]. ?] [? if agriculture_minister != "Chernov" : Chernov is not the Agriculture Minister. ?]
 on-arrival: advisor_action_timer = 4; agricultural_policy_timer -= 4; last_advisor_action = 1
 go-to: agricultural_policy
 
@@ -37,7 +37,7 @@ go-to: agricultural_policy
 title: Party Unity
 subtitle: Reduce dissent across the party.
 choose-if: advisor_action_timer = 0
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] weeks before next advisor action. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : Tygodnie do następnej akcji doradcy: [+ advisor_action_timer +]. ?]
 on-arrival: advisor_action_timer = 4; left_sr_dissent -= 6; right_sr_dissent -= 6; center_sr_dissent -= 10;
 
 With Chernov's help, we have reduced dissent across the party.

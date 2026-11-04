@@ -1,13 +1,13 @@
-title: War Policy
+title: Polityka wojenna
 choose-if: m_war_policy_timer = 0
 unavailable-subtitle: Jest za wcześnie by znów zmienić naszą politykę w tej kwestii.
 on-arrival: m_war_policy_timer = 4;
 
 # maybe this should be a subset of questions of ideology
 
-= War Policy
+= Polityka wojenna
 
-The war is the greatest question in politics at this moment. What should be our policy regarding the war?
+Wojna jest najgorętszym tematem obecnej polityki. Jaka powinna być nasza postawa wobec niej?
 
 - @rd
 - @rd_2

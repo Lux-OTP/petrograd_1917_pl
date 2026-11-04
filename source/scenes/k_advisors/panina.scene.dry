@@ -19,7 +19,7 @@ Countess Sofia Panina is an aristocratic woman and social reformer who previousl
 title: Clear the agenda
 subtitle: Removes all cards from the hand.
 choose-if: advisor_action_timer = 0
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] weeks before next advisor action. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : Tygodnie do następnej akcji doradcy: [+ advisor_action_timer +]. ?]
 on-arrival: {!
 Q.advisor_action_timer = 4;
 if (Q.difficulty >= 0) {
@@ -37,7 +37,7 @@ title: Emergency fundraising
 subtitle: An emergency infusion of resources.
 choose-if: advisor_action_timer <= 0
 on-arrival: advisor_action_timer = 4; k_resources += k_dues
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] weeks before next advisor action. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : Tygodnie do następnej akcji doradcy: [+ advisor_action_timer +]. ?]
 
 We have gained [+ k_dues +] additional resources.
 
@@ -46,7 +46,7 @@ We have gained [+ k_dues +] additional resources.
 title: Liberal Feminism
 subtitle: Promote the rights of women.
 choose-if: advisor_action_timer = 0
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] weeks before next advisor action. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : Tygodnie do następnej akcji doradcy: [+ advisor_action_timer +]. ?]
 on-arrival: advisor_action_timer = 4;
 
 # TODO

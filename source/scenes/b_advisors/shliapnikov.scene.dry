@@ -17,7 +17,7 @@ Shliapnikov is a metalworker and labor organizer in the factories of Petrograd, 
 title: Organizing workers
 subtitle: Campaigning and organizing among the industrial workers. -1 do zasobów partii.
 choose-if: advisor_action_timer = 0 and b_resources >= 1
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] weeks before next advisor action. ?][? if b_resources < 1 : Brak dostatecznych zasobów. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : Tygodnie do następnej akcji doradcy: [+ advisor_action_timer +]. ?][? if b_resources < 1 : Brak dostatecznych zasobów. ?]
 on-arrival: advisor_action_timer += 4; b_resources -= 1; workers_b += 6*(1-b_dissent); b_workers_org += 1; workers_b -= 2 if b_in_gov and prov_gov_legitimacy <= 50;
 
 We have increased our organizing among the workers.
@@ -27,6 +27,6 @@ We have increased our organizing among the workers.
 title: Militia Loyalty
 subtitle: Support Bolsheviks among the workers' militias. -1 do zasobów partii.
 choose-if: advisor_action_timer = 0 and b_resources >= 1
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] weeks before next advisor action. ?][? if b_resources < 1 : Brak dostatecznych zasobów. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : Tygodnie do następnej akcji doradcy: [+ advisor_action_timer +]. ?][? if b_resources < 1 : Brak dostatecznych zasobów. ?]
 on-arrival: advisor_action_timer = 4; 
 go-to: b_workers_militias.loyalty

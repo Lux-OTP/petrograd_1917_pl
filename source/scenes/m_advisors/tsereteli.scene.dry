@@ -7,7 +7,7 @@ new-page: true
 
 = Irakli Tsereteli
 
-Irakli Tsereteli is a Georgian Menshevik revolutionary who returned from Siberian exile. He is widely viewed as the leader of the Mensheviks. In exile, he developed a nuanced position on the war, calling for a negotiated end to the war without defeatism, although in Petrograd he tends to support the Provisional Government's policies.
+Irakli Tsereteli jest gruzińskim Mienszewickim rewolucjonistą, do niedawna wygnany na Syberię. Jest powszechnie uważany za przywódcę Mienszewików. Na wygnaniu wyrobił u siebie zniuansowane poglądy dotyczące wojny, opowiadając się za wynegocjowaniem zakończenia wojny bez defetyzmu, choć w Piotrogrodzie z reguły popiera działalność Rządu Tymczasowego.
 
 # actions: fundraising, organizing workers, inter-party relations, clear the agenda
 
@@ -20,22 +20,22 @@ Irakli Tsereteli is a Georgian Menshevik revolutionary who returned from Siberia
 - @party_discipline
 - @interior_
 - @shuffle_cabinet
-- @root: Return to main
+- @root: Powrót
 
 @fundraising
-title: Emergency fundraising
-subtitle: An emergency infusion of resources.
+title: Nagła zbiórka funduszy
+subtitle: Nadzwyczajne zebranie składek partyjnych.
 choose-if: advisor_action_timer <= 0
 on-arrival: advisor_action_timer = 4; m_resources += m_dues
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] weeks before next advisor action. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : Tygodnie do następnej akcji doradcy: [+ advisor_action_timer +]. ?]
 
 We have gained [+ m_dues +] additional resources.
 
 @clear_agenda
-title: Clear the agenda
-subtitle: Removes all cards from the hand.
+title: Oczyszczenie agendy
+subtitle: Usuwa wszystkie karty z ręki.
 choose-if: advisor_action_timer = 0
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : Tygodnie do następnej akcji doradcy: [+ advisor_action_timer +]. ?]
 on-arrival: {!
 Q.advisor_action_timer = 4;
 if (Q.difficulty == 0) {
@@ -47,51 +47,51 @@ if (Q.difficulty == 0) {
 } 
 !}
 
-All items from our agenda have been cleared.
+Wszystkie pozycje z naszej agendy zostały usunięte.
 
 
 @prov_gov_cooperation
 title: Soviet-Government Cooperation
 subtitle: Improve cooperation between the Petrograd Soviet and the Provisional Government.
 choose-if: advisor_action_timer <= 0
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] weeks before next advisor action. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : Tygodnie do następnej akcji doradcy: [+ advisor_action_timer +]. ?]
 on-arrival: advisor_action_timer = 4; soviet_cooperation += 0.05; m_k_relation += 5*(1-m_dissent) if k_in_gov; soviet_efficacy += 0.01
 
 We have increased cooperation between the Soviet and the Provisional Government. This also improves our relations with the Kadets.
 
 @support_defensism
-title: Support Revolutionary Defensism
-subtitle: Increase support for revolutionary defensism within our party.
+title: Wsparcie Rewolucjonistów-Defensistów
+subtitle: Zwiększenie poparcia dla ideologii Rewolucjonistów-Defensistów wewnątrz partii.
 choose-if: advisor_action_timer <= 0
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] weeks before next advisor action. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : Tygodnie do następnej akcji doradcy: [+ advisor_action_timer +]. ?]
 on-arrival: advisor_action_timer = 4; defensist_strength += m_support_change; defensist_dissent -= 5; internationalist_strength -= 4;
 
-Tsereteli is advocating in favor of the Revolutionary Defensist position.
+Wpłynęliśmy na partię, wzmacniając poparcie dla Rewolucjonistów-Defensistów wśród jej członków.
 
 
 @inter_party_relations
-title: Inter-party Relations
-subtitle: Improve cooperation with the moderate pro-government parties.
+title: Relacje Międzypartyjne
+subtitle: Polepszenie stosunków z umiarkowanymi partiami prorządowymi.
 choose-if: advisor_action_timer <= 0
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] weeks before next advisor action. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : Tygodnie do następnej akcji doradcy: [+ advisor_action_timer +]. ?]
 on-arrival: advisor_action_timer = 4; soviet_cooperation += 0.05; m_k_relation += 5*(1-m_dissent); m_sr_relation += 5*(1-m_dissent) if not right_sr_split; soviet_efficacy += 0.01
 
-We have improved relations with the Kadets[? if right_sr_split:. ?][? if not right_sr_split: and the SRs. ?]
+Poprawiliśmy nasze stosunki z Kadetami[? if right_sr_split:. ?][? if not right_sr_split: i Eserami. ?]
 
 @media
-title: Media Campaigning
-subtitle: Use our media apparatus to support the Mensheviks. -1 do zasobów partii
+title: Kampania Medialna
+subtitle: Wsparcie działań Mienszewików w partyjnych mediach. -1 do zasobów partii
 choose-if: advisor_action_timer <= 0
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] weeks before next advisor action. ?][? if m_resources < 1: Brak dostatecznych zasobów. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : Tygodnie do następnej akcji doradcy: [+ advisor_action_timer +]. ?][? if m_resources < 1: Brak dostatecznych zasobów. ?]
 on-arrival: advisor_action_timer = 4; workers_m += 4*(1-m_dissent); soldiers_m += 4*(1-m_dissent); soldiers_m -= 2 if (war_weariness >= 60 and m_war_policy <= 1);
 
-Our propaganda campaign encourages support for the Menshevik party among the workers and soldiers.
+Nasza kampania propagandowa zwiększa poparcie dla Mienszewików wśród robotników i żołnierzy.
 
 @party_discipline
-title: Party Discipline
+title: Dyscyplina Partyjna
 subtitle: Reduce dissent across the party.
 choose-if: advisor_action_timer = 0
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] weeks before next advisor action. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : Tygodnie do następnej akcji doradcy: [+ advisor_action_timer +]. ?]
 on-arrival: advisor_action_timer = 4; defensist_dissent -= m_discipline_change; internationalist_dissent -= m_discipline_change; social_patriot_dissent -= m_discipline_change;
 
 We have enforced party discipline to reduce dissent across all factions.
@@ -101,7 +101,7 @@ title: Internal Security
 subtitle: Tsereteli is the Interior Minister.
 view-if: m_in_gov
 choose-if: advisor_action_timer = 0 and interior_minister = "Tsereteli"
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] weeks before next advisor action. ?] [? if interior_minister != "Tsereteli" : Tsereteli is not the Interior Minister. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : Tygodnie do następnej akcji doradcy: [+ advisor_action_timer +]. ?] [? if interior_minister != "Tsereteli" : Tsereteli is not the Interior Minister. ?]
 on-arrival: advisor_action_timer = 4; internal_security_timer -= 4; last_advisor_action = 1
 go-to: internal_security
 
@@ -110,7 +110,7 @@ title: Shuffle Cabinet
 subtitle: Change the ministers of the Provisional Government.
 view-if: prime_minister = "Tsereteli" 
 choose-if: advisor_action_timer = 0 and m_in_gov 
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] weeks before next advisor action. ?] [? if not m_in_gov : We are not in the Provisional Government. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : Tygodnie do następnej akcji doradcy: [+ advisor_action_timer +]. ?] [? if not m_in_gov : We are not in the Provisional Government. ?]
 on-arrival: advisor_action_timer = 4; 
 go-to: m_join_prov_gov 
 
