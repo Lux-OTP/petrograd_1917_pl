@@ -51,8 +51,8 @@ Wszystkie pozycje z naszej agendy zostały usunięte.
 
 
 @prov_gov_cooperation
-title: Soviet-Government Cooperation
-subtitle: Improve cooperation between the Petrograd Soviet and the Provisional Government.
+title: Koordynacja Rządu i Rady
+subtitle: Usprawnienie kooperacji między Rządem Tymczasowym i Radą Piotrogrodzką.
 choose-if: advisor_action_timer <= 0
 unavailable-subtitle: [? if advisor_action_timer > 0 : Tygodnie do następnej akcji doradcy: [+ advisor_action_timer +]. ?]
 on-arrival: advisor_action_timer = 4; soviet_cooperation += 0.05; m_k_relation += 5*(1-m_dissent) if k_in_gov; soviet_efficacy += 0.01
@@ -89,16 +89,16 @@ Nasza kampania propagandowa zwiększa poparcie dla Mienszewików wśród robotni
 
 @party_discipline
 title: Dyscyplina Partyjna
-subtitle: Reduce dissent across the party.
+subtitle: Obniżenie niezadowolenia frakcji partii.
 choose-if: advisor_action_timer = 0
 unavailable-subtitle: [? if advisor_action_timer > 0 : Tygodnie do następnej akcji doradcy: [+ advisor_action_timer +]. ?]
 on-arrival: advisor_action_timer = 4; defensist_dissent -= m_discipline_change; internationalist_dissent -= m_discipline_change; social_patriot_dissent -= m_discipline_change;
 
-We have enforced party discipline to reduce dissent across all factions.
+Wymusiliśmy przestrzeganie dyscypliny partyjnej na co bardziej radykalnych członkach.
 
 @interior_
-title: Internal Security
-subtitle: Tsereteli is the Interior Minister.
+title: Bezpieczeństwo Wewnętrzne
+subtitle: Tsereteli jest ministrem spraw wewnętrznych.
 view-if: m_in_gov
 choose-if: advisor_action_timer = 0 and interior_minister = "Tsereteli"
 unavailable-subtitle: [? if advisor_action_timer > 0 : Tygodnie do następnej akcji doradcy: [+ advisor_action_timer +]. ?] [? if interior_minister != "Tsereteli" : Tsereteli is not the Interior Minister. ?]
@@ -106,8 +106,8 @@ on-arrival: advisor_action_timer = 4; internal_security_timer -= 4; last_advisor
 go-to: internal_security
 
 @shuffle_cabinet
-title: Shuffle Cabinet 
-subtitle: Change the ministers of the Provisional Government.
+title: Reorganizacja Rządu
+subtitle: Zmieńmy resorty zajmowane przez nas w Rządzie Tymczasowym.
 view-if: prime_minister = "Tsereteli" 
 choose-if: advisor_action_timer = 0 and m_in_gov 
 unavailable-subtitle: [? if advisor_action_timer > 0 : Tygodnie do następnej akcji doradcy: [+ advisor_action_timer +]. ?] [? if not m_in_gov : We are not in the Provisional Government. ?]

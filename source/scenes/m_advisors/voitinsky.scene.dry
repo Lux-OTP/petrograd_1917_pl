@@ -1,13 +1,13 @@
-title: Vladimir Voitinsky
+title: Władimir Wojtiński
 is-pinned-card: true
 tags: advisor, labor
 card-image: img/portraits/m/voitinsky.jpg
 view-if: voitinsky_advisor = 1 and player_party = "m"
 new-page: true 
 
-= Vladimir Voitinsky
+= Władimir Wojtiński
 
-Vladimir Voitinsky is an Menshevik recolutionary who returned from exile in Siberia. He is an academic from Petrograd who studied economics, and is close to the revolutionary defensist faction led by Tsereteli.
+Władimir Wojtiński to Mienszewicki rewolucjonista który powrócił z wygnania na Syberii. Jest piotrogrodzkim uczonym i absolwentem ekonomii zbliżonym do skrzydła Rewolucjonistów-Defensistów Tsereteliego.
 
 # organizing soldiers, worker's militias, trade ministry, finance ministry, foreign ministry
 # soviet labor affairs
@@ -18,26 +18,26 @@ Vladimir Voitinsky is an Menshevik recolutionary who returned from exile in Sibe
 - @root: Return to main
 
 @organizing_
-title: Soviet Organizations
-subtitle: Voitinsky can help build the Soviet's organizational infrastructure.
+title: Organizacje Rady
+subtitle: Wojtiński może pomóc w budowie instytucji administracyjnych Rady.
 choose-if: advisor_action_timer = 0 and m_in_exco
-unavailable-subtitle: [? if advisor_action_timer > 0 : Tygodnie do następnej akcji doradcy: [+ advisor_action_timer +]. ?] [? if not m_in_exco : We are not in the Soviet Executive Committee. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : Tygodnie do następnej akcji doradcy: [+ advisor_action_timer +]. ?] [? if not m_in_exco : Nie wchodzimy w skład Komitetu Wykonawczego Rady. ?]
 on-arrival: advisor_action_timer = 4; organization_soviet_timer -= 4; last_advisor_action = 1
 go-to: organization_soviet
 
 @militias_
-title: Workers' Militias
-subtitle: Build up the Workers' Militias.
+title: Milicje Robotnicze
+subtitle: Rozbudowa struktur milicji robotniczych.
 choose-if: advisor_action_timer = 0 and m_in_exco
-unavailable-subtitle: [? if advisor_action_timer > 0 : Tygodnie do następnej akcji doradcy: [+ advisor_action_timer +]. ?] [? if not m_in_exco : We are not in the Soviet Executive Committee. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : Tygodnie do następnej akcji doradcy: [+ advisor_action_timer +]. ?] [? if not m_in_exco : Nie wchodzimy w skład Komitetu Wykonawczego Rady. ?]
 on-arrival: advisor_action_timer = 4; militias_timer -= 4; last_advisor_action = 1
 go-to: militias
 
 @finance_
-title: Fiscal Policy
-subtitle: Voitinsky is the Finance Minister.
+title: Polityka Fiskalna
+subtitle: Wojtiński jest ministrem finansów.
 choose-if: advisor_action_timer = 0 and finance_minister = "Voitinsky"
-unavailable-subtitle: [? if advisor_action_timer > 0 : Tygodnie do następnej akcji doradcy: [+ advisor_action_timer +]. ?] [? if finance_minister != "Voitinsky" : Voitinsky is not the Finance Minister. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : Tygodnie do następnej akcji doradcy: [+ advisor_action_timer +]. ?] [? if finance_minister != "Voitinsky" : Wojtiński nie jest ministrem finansów. ?]
 on-arrival: advisor_action_timer = 4; fiscal_policy_timer -= 4; last_advisor_action = 1
 go-to: fiscal_policy 
 

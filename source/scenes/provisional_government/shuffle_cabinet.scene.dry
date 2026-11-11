@@ -1,4 +1,4 @@
-title: Zreorganizujmy rząd
+title: Reorganizacja Rządu
 new-page: true
 is-card: true
 on-arrival: shuffle_cabinet_timer += 3; week_actions += 1

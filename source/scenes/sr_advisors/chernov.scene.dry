@@ -36,7 +36,7 @@ go-to: agricultural_policy
 
 @party_unity
 title: Jedność Partii
-subtitle: Obniżenie niezadowolenia na wskroś partii.
+subtitle: Obniżenie niezadowolenia frakcji partii.
 choose-if: advisor_action_timer = 0
 unavailable-subtitle: [? if advisor_action_timer > 0 : Tygodnie do następnej akcji doradcy: [+ advisor_action_timer +]. ?]
 on-arrival: advisor_action_timer = 4; left_sr_dissent -= sr_discipline_change+1; right_sr_dissent -= sr_discipline_change+1; center_sr_dissent -= sr_discipline_change+4;
