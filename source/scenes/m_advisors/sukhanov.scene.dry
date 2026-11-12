@@ -1,13 +1,13 @@
-title: Nikolai Sukhanov
+title: Mikołaj Suchanow
 is-pinned-card: true
 tags: advisor
 card-image: img/portraits/m/sukhanov.jpg
 view-if: sukhanov_advisor = 1 and player_party = "m"
 new-page: true 
 
-= Nikolai Sukhanov
+= Mikołaj Suchanow 
 
-Nikolai Sukhanov is an independent Social Democrat who is one of the leading proponents of the internationalist position.
+Mikołaj Suchanow jest niezależnym socjaldemokratą i jednym z czołowych proponentów internacjonalizmu.
 
 # actions: increase internationalist strength, adopt anti-war ideology
 
@@ -18,38 +18,38 @@ Nikolai Sukhanov is an independent Social Democrat who is one of the leading pro
 - @root: Return to main
 
 @adopt_internationalism
-title: Adopt Internationalism as our party policy.
-unavailable-subtitle: [? if advisor_action_timer > 0 : Tygodnie do następnej akcji doradcy: [+ advisor_action_timer +]. ?][? if m_war_policy = 2 : We already have an internationalist war policy. ?][? if internationalist_strength < defensist_strength + social_patriot_strength: There is not enough support for this position within the party. ?]
+title: Przyjęcie Internacjonalizmu jako doktryny partii
+unavailable-subtitle: [? if advisor_action_timer > 0 : Tygodnie do następnej akcji doradcy: [+ advisor_action_timer +]. ?][? if m_war_policy = 2 : Zajmujemy już internacjonalistyczną pozycję względem wojny. ?][? if internationalist_strength < defensist_strength + social_patriot_strength: Ta pozycja nie ma dość poparcia w szeregach partii. ?]
 choose-if: advisor_action_timer <= 0 and internationalist_strength >= defensist_strength + social_patriot_strength and m_war_policy != 2
 on-arrival: advisor_action_timer = 4; m_war_policy = 2; internationalist_strength += 5; internationalist_dissent -= 5; defensist_dissent += 15; social_patriot_dissent += 30; m_leadership = 1;
 
-We have adopted an internationalist position, calling for an immediate end to the war.
+Przyjęliśmy pozycję internacjonalistyczną, nawołującą do natychmiastowego zakończenia wojny.
 
 @internationalism
-title: Support Internationalism
-subtitle: Increase support for internationalism among our party.
-unavailable-subtitle: [? if advisor_action_timer > 0 : Tygodnie do następnej akcji doradcy: [+ advisor_action_timer +]. ?][? if m_war_policy = 2 : We already have an internationalist war policy. ?]
+title: Promocja Internacjonalizmu
+subtitle: Zwiększenie poparcia dla ideologii Internacjonalizmu wewnątrz partii.
+unavailable-subtitle: [? if advisor_action_timer > 0 : Tygodnie do następnej akcji doradcy: [+ advisor_action_timer +]. ?][? if m_war_policy = 2 : Zajmujemy już internacjonalistyczną pozycję względem wojny. ?]
 choose-if: advisor_action_timer <= 0 and m_war_policy != 2
 on-arrival: advisor_action_timer = 4; internationalist_strength += 6; internationalist_dissent -= 3; defensist_dissent += 5
 
-We are building up support for internationalism within the party, so that we may eventually adopt this position.
+Poszerzamy poparcie członków partii dla doktryny Internacjonalizmu, przybliżając przyjęcie jej jako naszej oficjalnej doktryny.
 
 
 @sd_cooperation
-title: Social-Democratic Cooperation
-subtitle: Increase cooperation between the Mensheviks and Bolsheviks.
+title: Współpraca między Socjaldemokratami
+subtitle: Pogłębienie kooperacji między Mienszewikami i Bolszewikami.
 unavailable-subtitle: [? if advisor_action_timer > 0 : Tygodnie do następnej akcji doradcy: [+ advisor_action_timer +]. ?]
 choose-if: advisor_action_timer <= 0
 on-arrival: advisor_action_timer = 4; m_b_relation += 5*(1-m_dissent); m_b_relation -= 3 if leninist_strength >= moderate_strength or m_war_policy <= 1 or m_prov_gov_policy <= 1; m_resources -= 1;
 
-We have attempted to build closer ties with the Bolsheviks, our wayward cousins in the RSDLP. [? if leninist_strength >= moderate_strength : The influence of Lenin makes it difficult for us to build these relationships. ?][? if m_war_policy <= 1 : Our defensist war policy makes it difficult to improve relations. ?][? if m_prov_gov_policy <= 1: Our support of the Provisional Government makes it difficult to improve relations. ?]
+Próbujemy poprawić nasze stosunki z Bolszewikami, nieprzychylnym nam kuzynami z SDPRR. [? if leninist_strength >= moderate_strength : Wpływy Lenina spowalniają nasze postępy. ?][? if m_war_policy <= 1 : Nasza defensistyczna pozycja stoi w sprzeciwie z ideologią Bolszewików, co spowalnia nasze starania. ?][? if m_prov_gov_policy <= 1: Nasze poparcie dla Rządu Tymczasowego utrudnia nasze działania. ?]
 
 
 @media_campaign
-title: Media Campaign
-subtitle: Use our media to campaign among the workers and soldiers.
+title: Kampania Medialna
+subtitle: Użycie prasy i innych środków przekazu do pozyskania poparcia robotników i żołnierzy.
 unavailable-subtitle: [? if advisor_action_timer > 0 : Tygodnie do następnej akcji doradcy: [+ advisor_action_timer +]. ?]
 choose-if: advisor_action_timer <= 0
 on-arrival: advisor_action_timer = 4; workers_m += 4*(1-m_dissent); soldiers_m += 4*(1-m_dissent); soldiers_m -= 2 if (war_weariness >= 60 and m_war_policy <= 1);
 
-Our propaganda campaign encourages support for the Menshevik party among the workers and soldiers.
+Nasza kampania propagandowa przekonuje część robotników i żołnierzy do poparcia nas.

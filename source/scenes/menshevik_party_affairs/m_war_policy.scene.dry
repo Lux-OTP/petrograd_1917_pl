@@ -29,7 +29,7 @@ We are continuing to support a policy of revolutionary defensism.
 @rd_2
 title: Adopt a policy of revolutionary defensism.
 subtitle: Support an international peace without annexations or indemnities, but fight to defend the revolution in the meantime.
-unavailable-subtitle: There is not enough support for this position within the party.
+unavailable-subtitle: Ta pozycja nie ma dość poparcia w szeregach partii.
 view-if: m_war_policy != 1
 choose-if: defensist_strength >= internationalist_strength and defensist_strength >= social_patriot_strength
 on-arrival: m_war_policy = 1; defensist_strength += 10; internationalist_dissent += 20 if m_war_policy > 1; m_leadership = 0;
@@ -40,7 +40,7 @@ We have adopted a revolutionary defensist position, calling on continued support
 @i_1
 title: Adopt an internationalist position.
 subtitle: Support an immediate end to the war, even a separate peace if necessary.
-unavailable-subtitle: There is not enough support for this position within the party.
+unavailable-subtitle: Ta pozycja nie ma dość poparcia w szeregach partii.
 view-if: m_war_policy != 2
 choose-if: internationalist_strength >= defensist_strength + social_patriot_strength
 on-arrival: m_war_policy = 2; internationalist_strength += 10; internationalist_dissent -= 10; defensist_dissent += 20; social_patriot_dissent += 30; m_leadership = 1; m_sr_relation -= 8 if sr_leadership = 0; m_k_relation -= 8; soldiers_m += 8*(1-m_dissent);
@@ -72,7 +72,7 @@ We are continuing to support an internationalist position.
 @sp_1
 title: Adopt a social patriot position.
 subtitle: Musimy kontynuować wojnę aż do zwycięstwa.
-unavailable-subtitle: There is not enough support for this position within the party.
+unavailable-subtitle: Ta pozycja nie ma dość poparcia w szeregach partii.
 view-if: m_war_policy > 0 
 choose-if: social_patriot_strength >= internationalist_strength
 on-arrival: m_war_policy = 0; social_patriot_strength += 10; internationalist_dissent += 30

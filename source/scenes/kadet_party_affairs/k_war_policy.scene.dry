@@ -44,7 +44,7 @@ We have adopted a policy of expansionism.
 @sp_1
 title: Adopt a social patriot position.
 subtitle: Musimy kontynuować wojnę aż do zwycięstwa.
-unavailable-subtitle: There is not enough support for this position within the party.
+unavailable-subtitle: Ta pozycja nie ma dość poparcia w szeregach partii.
 view-if: k_war_policy != 0 
 choose-if: left_kadet_strength >= right_kadet_strength
 on-arrival: k_war_policy = 0
@@ -69,7 +69,7 @@ We are continuing to support a policy of revolutionary defensism.
 @rd_2
 title: Adopt a policy of revolutionary defensism.
 subtitle: Support an international peace without annexations or indemnities, but fight to defend the revolution in the meantime.
-unavailable-subtitle: There is not enough support for this position within the party.
+unavailable-subtitle: Ta pozycja nie ma dość poparcia w szeregach partii.
 view-if: k_war_policy != 1
 choose-if: left_kadet_strength >= 80
 on-arrival: k_war_policy = 1; right_kadet_dissent += 50; middle_k -= 5; elites_k -= 5;
